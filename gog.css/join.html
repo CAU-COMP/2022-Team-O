@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중앙대 게시판 회원가입</title>
+    <script src="common.js"></script>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        div {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CAU</h1>
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <div class="dropdown-menu">Menu1</div>
+                <div class="dropdown-content">
+                    <a href="#">Menu1-1</a>
+                    <a href="#">Menu1-2</a>
+                    <a href="#">Menu1-3</a>
+                    <a href="#">Menu1-4</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <div class="dropdown-menu">Menu2</div>
+                <div class="dropdown-content">
+                    <a href="#">Menu2-1</a>
+                    <a href="#">Menu2-2</a>
+                    <a href="#">Menu2-3</a>
+                    <a href="#">Menu2-4</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <div class="dropdown-menu">Menu3</div>
+                <div class="dropdown-content">
+                    <a href="#">Menu3-1</a>
+                    <a href="#">Menu3-2</a>
+                    <a href="#">Menu3-3</a>
+                    <a href="#">Menu3-4</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <div class="dropdown-menu">Menu4</div>
+            </li>
+            <li class="home"><a href="index.html">Home</a></li>
+
+        </ul>
+    </nav>
+    <div>
+        <label>아이디: <input id="id" type="text"></label>
+    </div>
+    <div>
+        <label>비밀번호: <input id="pw" type="text"></label>
+    </div>
+    <div>
+        <label>비밀번호 확인: <input id="r_pw" type="text"></label>
+    </div>
+
+    <div>
+        <style>
+            input{
+                color: blue;
+            
+            }
+        </style>
+        <input type="button" value="뒤로가기" onclick="back();">
+        <input type="button" value="계정 생성" onclick="create_id();">
+    </div>
+</body>
+</html>

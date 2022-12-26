@@ -1,0 +1,86 @@
+h1{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+    color:rgba(38, 117, 236, 0.77);
+}
+
+
+.cau{
+  margin-top: 10px;
+  text-align:center;
+}
+
+.log-in{
+  padding: 15px;
+}
+
+nav ul{
+  width: 100%;
+  background-color: rgba(38, 117, 236, 0.77);
+  list-style-type:decimal-leading-zero;
+  margin: 0;
+  padding: 0;
+}
+nav ul li{
+  display: inline-block;
+}
+
+h2 li{
+  display:inline-block;  /*.찍는거는 class를 지정해서 꾸밀때, 그냥하는거는 그냥 하는거 ㅇㅇ*+ 이제 저기다가 좀더 꾸미는 것까지만 하기*/
+}
+
+
+.home{
+  background-color: darkorange;
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+  float: right;
+}
+
+.home a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 16px 16px;
+}
+
+.dropdown{
+  position: relative;
+}
+
+.dropdown-menu{
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropdown-content{
+  position: absolute;
+  background-color:rgb(98, 171, 239);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+}
+.dropdown-content a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display:block;
+}
+
+.dropdown-content{
+  display: none;
+}
+
+.dropdown-menu:hover:not(.home){
+  background-color: darkorange;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown-content a:hover{background-color: aliceblue;}

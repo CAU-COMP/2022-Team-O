@@ -8,7 +8,6 @@ import iconv from "iconv-lite";
 
 let url_list = [];
 let title_list = [];
-var chunks = [];
 
 const crawl = async({ url }) =>{
     const response = await axios({

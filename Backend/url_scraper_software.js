@@ -11,7 +11,7 @@ let title_list = [];
 const crawl = async({ url }) =>{
     const response = await fetch(url);
     const body = await response.text();
-    const $ = cheerio.load(body) // 읽어들인 html을 조작 가능하게끔
+    const $ = cheerio.load(body, { decodeEntities: false }) // 읽어들인 html을 조작 가능하게끔
 
     // let all = $('*');
     // let res = all.filter((index, element) => { 

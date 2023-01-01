@@ -14,10 +14,9 @@
     "cheerio": "^1.0.0-rc.12",
     "fetch": "^1.1.0",
     "pretty": "^2.0.0",
-    "utf8": "^3.0.0"
-  },
-  "devDependencies": {
+    "utf8": "^3.0.0",
     "axios": "^1.2.2",
+    "http": "^0.0.1-security",
     "iconv": "^3.0.1",
     "iconv-lite": "^0.6.3"
   }

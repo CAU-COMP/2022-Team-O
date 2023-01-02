@@ -46,8 +46,51 @@
 
         </ul>
     </nav>
+    <main>
  
-  
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 text-secondary">학과 게시판</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">학교 공지사항</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">주요 사이트</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">도움말</a></li>
+        </ul>
+</main>
+
+<div class="container">
+<table class="table table-hover">
+<h3>학과 게시판</h3>
+<form class="form-inline d-flex justify-content-end" method="GET", th:action="@{/board/boardList}" th:value="${param.searchText}">
+    <div class="form-group mx-sm-3 mb-2 pull-right">
+        <label for="searchText" class="sr-only">검색</label>
+        <input type="text" class="form-control" id="searchText" name="searchText">
+    <button type="submit" class="btn btn-primary mb-2">검색 </button>
+    </div>
+</form>
+<thead>
+<tr>
+    <th>학과명</th>
+    <th>제목</th>
+    <th>날짜</th>
+    <th>조회수</th>
+    <th>구독 정보</th>
+</tr>
+</thead>
+</table>
+
+<hr/>
+<button type="button" class="btn btn-default pull-right" onclick="location.href='/board/boardForm'">글쓰기</button>
+
+<div class="center text-center">
+<nav aria-label="Page navigation example">
+    <ul class="pagination justifiy-content-center" th:if="${totalPage != 0}">
+    <li class="page-item"><a class="page-link" th:href="@{/board/boardList(page=${boards.pageable.pageNumber - 1}, searchText=${param.searchText})}">Previous</a></li>
+    <li class="" th:classappend="${page == boards.pageable.pageNumber + 1} ? 'disabled'" th:each="page : ${#numbers.sequence(startPage, endPage)}">
+        <a th:href="@{/board/boardList(page=${page - 1}, searchText=${param.searchText})}" th:text="${page}"></a>
+    </li>
+    <li class="page-item"><a class="page-link" th:href="@{/board/boardList(page=${boards.pageable.pageNumber + 1}, searchText=${param.searchText})}">Next</a></li>
+</ul>
+</nav>
+</div>
 
 
 </body>

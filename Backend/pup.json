@@ -1,0 +1,1761 @@
+{}{"lang":"ko"}
+{}
+{"charset":"UTF-8"}
+{"name":"viewport","content":"width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1"}
+{"http-equiv":"X-UA-Compatible","content":"ie=edge"}
+{}
+{"rel":"shortcut icon","href":"/cau2021/type/common/img/common/ico_favicon.ico"}
+{"rel":"icon","type":"image/png","href":"/cau2021/type/common/img/common/ico_favicon.png","sizes":"192x192"}
+{"rel":"stylesheet","type":"text/css","href":"/cau2021/type/common/js/slick/slick.css"}
+{"rel":"stylesheet","type":"text/css","href":"/cau2021/type/common/js/mCustomScrollbar/jquery.mCustomScrollbar.css"}
+{"rel":"stylesheet","type":"text/css","href":"/cau/css/common.css"}
+{"rel":"stylesheet","type":"text/css","href":"/cau/css/board.css"}
+{"rel":"stylesheet","type":"text/css","href":"/cau/css/conts.css"}
+{"rel":"stylesheet","type":"text/css","href":"/cau2021/type/KOR_A/css/layout.css"}
+{"rel":"stylesheet","href":"/css/jquery-ui.css"}
+{"type":"text/javascript","async":"","src":"https://www.google-analytics.com/analytics.js"}
+{"type":"text/javascript","async":"","src":"https://www.googletagmanager.com/gtag/js?id=G-QPFFTJ8J2D&l=dataLayer&cx=c"}
+{"type":"text/javascript","src":"/cau/js/jquery-2.2.1.min.js"}
+{"type":"text/javascript","src":"/js/fontsize.js"}
+{"type":"text/javascript","src":"/js/jquery.form.js"}
+{"type":"text/javascript","src":"/cau/js/jquery.font-accessibility.dev.js"}
+{"type":"text/javascript","src":"/js/jquery.tmpl.js"}
+{"type":"text/javascript","src":"/js/jquery-ui.min.js"}
+{"type":"text/javascript","src":"/cau2021/type/KOR_A/js/layout.js"}
+{"type":"text/javascript","src":"/cau2021/type/common/js/slick/slick.min.js"}
+{"type":"text/javascript","src":"/cau2021/type/common/js/slick/slick.acc.js"}
+{"type":"text/javascript","src":"/cau2021/type/common/js/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"}
+{"type":"text/javascript","src":"/js/util.js"}
+{"type":"text/javascript","src":"/js/comm_fr.js"}
+{"type":"text/javascript","src":"/cau/js/board.js"}
+{"type":"text/javascript","src":"/js/clipboard.min.js"}
+{"type":"text/javascript","src":"/js/printThis.js"}
+{"async":"","src":"https://www.googletagmanager.com/gtag/js?id=UA-21253938-2"}
+{}
+{"id":"verKor","class":"typeSub"}
+{"id":"skip_menu"}
+{"href":"#contFocus"}
+{"href":"#header"}
+{"href":"#footer"}
+{"id":"dim"}
+{"id":"header"}
+{}
+{"class":"logo"}
+{"href":"/index.do"}
+{"href":"javascript:void(0)","class":"mBtn_home"}
+{"id":"gnb_dim"}
+{"href":"/","class":"mBtn_home"}
+{}
+{"class":"mCustomScrollbar _mCS_1","style":"height: 545px;"}
+{"id":"mCSB_1","class":"mCustomScrollBox mCS-light mCSB_vertical mCSB_inside","style":"max-height: none;","tabindex":"0"}
+{"id":"mCSB_1_container","class":"mCSB_container","style":"position:relative; top:0; left:0;","dir":"ltr"}
+{"id":"gnb_parent"}
+{"data-showyn":"Y","data-lvl":"1","name":"gnb_lvl1","data-linksubyn":"Y","class":"child"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=10","title":"대학소개","class":""}
+{"data-showyn":"Y","data-lvl":"1","name":"gnb_lvl1","data-linksubyn":"Y","class":"child"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=310","title":"입학","class":"","target":"_blank"}
+{"data-showyn":"Y","data-lvl":"1","name":"gnb_lvl1","data-linksubyn":"Y","class":"child"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=160","title":"교육","class":""}
+{"data-showyn":"Y","data-lvl":"1","name":"gnb_lvl1","data-linksubyn":"N","class":"child"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=170","title":"연구산학","class":""}
+{"data-showyn":"Y","data-lvl":"1","name":"gnb_lvl1","data-linksubyn":"Y","class":"child on"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=80","title":"대학생활","class":"on"}
+{"data-showyn":"Y","data-lvl":"1","name":"gnb_lvl1","data-linksubyn":"Y","class":""}
+{"href":"https://news.cau.ac.kr/","title":"CAU NEWS TODAY","class":"","target":"_blank"}
+{"style":"display:none","data-showyn":"N","data-lvl":"1","name":"gnb_lvl1","data-linksubyn":"Y","class":"child"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=700","title":"메뉴","class":""}
+{"style":"display:none","data-showyn":"N","data-lvl":"1","name":"gnb_lvl1","data-linksubyn":"Y","class":"child"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1920","title":"ETC","class":""}
+{"id":"gnb"}
+{"data-showyn":"Y","data-lvl":"1","name":"gnb_lvl1","data-linksubyn":"Y","class":"child"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=10","title":"대학소개","class":""}
+{"class":"menuM"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=140","target":"_self","title":"학교법인"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1720","title":"이사장인사말"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=600","title":"역대이사장"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=180","title":"법인현황"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=350","target":"_self","title":"총장실"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=360","title":"인사말"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=670","title":"약력"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1860","title":"주요활동"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=680","title":"역대총장"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1810","target":"_self","title":"CAU2030"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=190","target":"_self","title":"이념 및 역사"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1620","title":"창학정신과 교훈"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1630","title":"교육이념/목적/목표"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=200","title":"중앙대 역사"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2610","target":"_self","title":"안전·보건목표 및 방침"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=210","target":"_self","title":"대학상징"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=220","title":"상징"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=230","title":"UI"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=20","target":"_self","title":"대학현황"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=30","title":"대학규정/학칙"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"http://www.academyinfo.go.kr/pubinfo/pubinfo1600/doInit.do?schlId=0000175 ","target":"_blank","title":"대학정보공시 새창 열림"}
+{"class":"pageLink","href":"http://www.academyinfo.go.kr/pubinfo/pubinfo1600/doInit.do?schlId=0000175 ","target":"_blank","title":"대학정보공시 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=40","title":"요람"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=50","title":"통계연보"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=690","title":"대학자체평가 결과"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1650","title":"재정 정보"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1660","title":"입찰공고"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1670","title":"채용공고"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1680","title":"정보공개"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1690","title":"등록금 심의위원회"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=60","target":"_self","title":"대학기관"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=70","title":"조직도"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=240","title":"기능형 부총장"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=250","title":"행정기관"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=740","title":"부속병원"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=750","title":"부설기관"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=760","title":"대학언론"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=770","title":"대학평의원회"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=780","title":"노동조합"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2720","title":"교수노동조합"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=790","title":"교수협의회"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2600","title":"대학교회"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=280","target":"_self","title":"캠퍼스안내"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=610","title":"캠퍼스맵"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/vr2020/seoul/","target":"_blank","title":"캠퍼스VR투어 새창 열림"}
+{"class":"pageLink","href":"/vr2020/seoul/","target":"_blank","title":"캠퍼스VR투어 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"N","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=290","title":"찾아오시는길"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1730","title":"주차 안내"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1760","title":"통합상황실 안내"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2710","target":"_self","title":"캠퍼스투어 신청"}
+{"data-showyn":"Y","data-lvl":"1","name":"gnb_lvl1","data-linksubyn":"Y","class":"child"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=310","title":"입학","class":""}
+{"class":"menuM"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"http://admission.cau.ac.kr","target":"_blank","title":"대학입학 새창 열림"}
+{"class":" pageLink","href":"http://admission.cau.ac.kr","target":"_blank","title":"대학입학 새창 열림"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"https://oia.cau.ac.kr/k_intro.php","target":"_blank","title":"외국인입학 새창 열림"}
+{"class":" pageLink","href":"https://oia.cau.ac.kr/k_intro.php","target":"_blank","title":"외국인입학 새창 열림"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"http://graduate.cau.ac.kr/2018/index.php","target":"_blank","title":"일반대학원입학 새창 열림"}
+{"class":" pageLink","href":"http://graduate.cau.ac.kr/2018/index.php","target":"_blank","title":"일반대학원입학 새창 열림"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"N"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=540","target":"_self","title":"전문대학원입학"}
+{"class":"pageView","href":"/cms/FR_CON/index.do?MENU_ID=540","target":"_self","title":"전문대학원입학"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"http://gsis.cau.ac.kr/gsis_index.html","target":"_blank","title":"국제대학원 새창 열림"}
+{"class":"pageLink","href":"http://gsis.cau.ac.kr/gsis_index.html","target":"_blank","title":"국제대학원 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"http://gsaim.cau.ac.kr/","target":"_blank","title":"첨단영상대학원 새창 열림"}
+{"class":"pageLink","href":"http://gsaim.cau.ac.kr/","target":"_blank","title":"첨단영상대학원 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"http://mba.cau.ac.kr/main.php","target":"_blank","title":"경영전문대학원 새창 열림"}
+{"class":"pageLink","href":"http://mba.cau.ac.kr/main.php","target":"_blank","title":"경영전문대학원 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"http://lawschool.cau.ac.kr/","target":"_blank","title":"법학전문대학원 새창 열림"}
+{"class":"pageLink","href":"http://lawschool.cau.ac.kr/","target":"_blank","title":"법학전문대학원 새창 열림"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"N"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=370","target":"_self","title":"특수대학원입학"}
+{"class":"pageView","href":"/cms/FR_CON/index.do?MENU_ID=370","target":"_self","title":"특수대학원입학"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"http://causd.cau.ac.kr/","target":"_blank","title":"사회복지대학원 새창 열림"}
+{"class":"pageLink","href":"http://causd.cau.ac.kr/","target":"_blank","title":"사회복지대학원 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"http://gse.cau.ac.kr/","target":"_blank","title":"교육대학원 새창 열림"}
+{"class":"pageLink","href":"http://gse.cau.ac.kr/","target":"_blank","title":"교육대학원 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"http://shinbang.cau.ac.kr/index/","target":"_blank","title":"커뮤니케이션대학원 새창 열림"}
+{"class":"pageLink","href":"http://shinbang.cau.ac.kr/index/","target":"_blank","title":"커뮤니케이션대학원 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"http://www.caugsce.org/wordpress/","target":"_blank","title":"건설대학원 새창 열림"}
+{"class":"pageLink","href":"http://www.caugsce.org/wordpress/","target":"_blank","title":"건설대학원 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"http://gspa.cau.ac.kr/2018/","target":"_blank","title":"행정대학원 새창 열림"}
+{"class":"pageLink","href":"http://gspa.cau.ac.kr/2018/","target":"_blank","title":"행정대학원 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"http://iem.cau.ac.kr/","target":"_blank","title":"창업경영대학원 새창 열림"}
+{"class":"pageLink","href":"http://iem.cau.ac.kr/","target":"_blank","title":"창업경영대학원 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"http://www.gsa.cau.ac.kr/2017/index.php","target":"_blank","title":"예술대학원 새창 열림"}
+{"class":"pageLink","href":"http://www.gsa.cau.ac.kr/2017/index.php","target":"_blank","title":"예술대학원 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"http://gugak.cau.ac.kr","target":"_blank","title":"국악교육대학원 새창 열림"}
+{"class":"pageLink","href":"http://gugak.cau.ac.kr","target":"_blank","title":"국악교육대학원 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"http://ghrd.cau.ac.kr/","target":"_blank","title":"글로벌인적자원개발대학원 새창 열림"}
+{"class":"pageLink","href":"http://ghrd.cau.ac.kr/","target":"_blank","title":"글로벌인적자원개발대학원 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"http://gsn.cau.ac.kr/","target":"_blank","title":"건강간호대학원 새창 열림"}
+{"class":"pageLink","href":"http://gsn.cau.ac.kr/","target":"_blank","title":"건강간호대학원 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"http://gsps.cau.ac.kr/20141001/main/main.php","target":"_blank","title":"심리서비스대학원 새창 열림"}
+{"class":"pageLink","href":"http://gsps.cau.ac.kr/20141001/main/main.php","target":"_blank","title":"심리서비스대학원 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"http://gss.cau.ac.kr/","target":"_blank","title":"보안대학원 새창 열림"}
+{"class":"pageLink","href":"http://gss.cau.ac.kr/","target":"_blank","title":"보안대학원 새창 열림"}
+{"data-showyn":"Y","data-lvl":"1","name":"gnb_lvl1","data-linksubyn":"Y","class":"child"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=160","title":"교육","class":""}
+{"class":"menuM"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"N"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=800","target":"_self","title":"대학"}
+{"class":"pageView","href":"/cms/FR_CON/index.do?MENU_ID=800","target":"_self","title":"대학"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"N","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=810","title":"인문대학"}
+{"class":"menuS","style":"display:none;","name":"menu_lvl_4"}
+{"class":"","data-id":"gnb_lvl4","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=820","target":"_self","title":"국어국문학과"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"N","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=830","title":"사회과학대학"}
+{"class":"menuS","style":"display:none;","name":"menu_lvl_4"}
+{"class":"","data-id":"gnb_lvl4","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=990","target":"_self","title":"정치국제학과"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"N","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=840","title":"사범대학"}
+{"class":"menuS","style":"display:none;","name":"menu_lvl_4"}
+{"class":"","data-id":"gnb_lvl4","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1000","target":"_self","title":"교육학과"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=850","title":"자연과학대학"}
+{"class":"menuS","style":"display:none;","name":"menu_lvl_4"}
+{"class":"","data-id":"gnb_lvl4","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1010","target":"_self","title":"물리학과"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=860","title":"생명공학대학"}
+{"class":"menuS","style":"display:none;","name":"menu_lvl_4"}
+{"class":"","data-id":"gnb_lvl4","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1020","target":"_self","title":"생명자원공학부"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=870","title":"공과대학"}
+{"class":"menuS","style":"display:none;","name":"menu_lvl_4"}
+{"class":"","data-id":"gnb_lvl4","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1030","target":"_self","title":"사회기반시스템공학부"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=880","title":"창의ICT공과대학"}
+{"class":"menuS","style":"display:none;","name":"menu_lvl_4"}
+{"class":"","data-id":"gnb_lvl4","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1040","target":"_blank","title":"전자전기공학부"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"N","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=980","title":"소프트웨어대학"}
+{"class":"menuS","style":"display:none;","name":"menu_lvl_4"}
+{"class":"","data-id":"gnb_lvl4","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1830","target":"_self","title":"소프트웨어학부"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"N","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=890","title":"경영경제대학"}
+{"class":"menuS","style":"display:none;","name":"menu_lvl_4"}
+{"class":"","data-id":"gnb_lvl4","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1050","target":"_self","title":"경영학부"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"N","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=900","title":"의과대학"}
+{"class":"menuS","style":"display:none;","name":"menu_lvl_4"}
+{"class":"","data-id":"gnb_lvl4","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1060","target":"_self","title":"의학부"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"N","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=910","title":"약학대학"}
+{"class":"menuS","style":"display:none;","name":"menu_lvl_4"}
+{"class":"","data-id":"gnb_lvl4","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1070","target":"_self","title":"약학부"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"N","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=920","title":"적십자간호대학"}
+{"class":"menuS","style":"display:none;","name":"menu_lvl_4"}
+{"class":"","data-id":"gnb_lvl4","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1080","target":"_self","title":"간호학과"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"N","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=930","title":"예술대학"}
+{"class":"menuS","style":"display:none;","name":"menu_lvl_4"}
+{"class":"","data-id":"gnb_lvl4","data-linksubyn":"N"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1090","target":"_self","title":"공연영상창작학부"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"N","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=940","title":"예술공학대학"}
+{"class":"menuS","style":"display:none;","name":"menu_lvl_4"}
+{"class":"","data-id":"gnb_lvl4","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1700","target":"_self","title":"예술공학부"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=950","title":"체육대학"}
+{"class":"menuS","style":"display:none;","name":"menu_lvl_4"}
+{"class":"","data-id":"gnb_lvl4","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1710","target":"_self","title":"스포츠과학부"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"N","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=960","title":"다빈치교양대학"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2670","title":"다빈치가상대학"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"N","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=970","title":"융합·연계·자기설계전공"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1100","target":"_self","title":"대학원"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1110","title":"일반대학원"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1130","title":"전문대학원"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1150","title":"특수대학원"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=110","target":"_self","title":"학사정보"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=130","title":"학사행정"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=590","title":"학사일정"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1230","title":"등록금"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1240","title":"장학안내"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1260","title":"병무안내"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2380","title":"증명서 발급"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"https://mportal.cau.ac.kr/main.do","target":"_blank","title":"중앙대포탈 새창 열림"}
+{"class":"pageLink","href":"https://mportal.cau.ac.kr/main.do","target":"_blank","title":"중앙대포탈 새창 열림"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2010","target":"_self","title":"유연학기제"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"https://mportal.cau.ac.kr/system/share/plf/index.do","target":"_blank","title":"공유대학 플랫폼(학점교류) 새창 열림"}
+{"class":" pageLink","href":"https://mportal.cau.ac.kr/system/share/plf/index.do","target":"_blank","title":"공유대학 플랫폼(학점교류) 새창 열림"}
+{"data-showyn":"Y","data-lvl":"1","name":"gnb_lvl1","data-linksubyn":"N","class":"child"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=170","title":"연구산학","class":""}
+{"class":"menuM"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"https://iacf.cau.ac.kr/page/main.php","target":"_blank","title":"산학협력단 새창 열림"}
+{"class":" pageLink","href":"https://iacf.cau.ac.kr/page/main.php","target":"_blank","title":"산학협력단 새창 열림"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"http://rsch.cau.ac.kr/","target":"_blank","title":"연구처 새창 열림"}
+{"class":" pageLink","href":"http://rsch.cau.ac.kr/","target":"_blank","title":"연구처 새창 열림"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"http://lincplus.cau.ac.kr/","target":"_blank","title":"LINC+사업단 새창 열림"}
+{"class":" pageLink","href":"http://lincplus.cau.ac.kr/","target":"_blank","title":"LINC+사업단 새창 열림"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"http://convergence.cau.ac.kr/","target":"_blank","title":"미래융합원 새창 열림"}
+{"class":" pageLink","href":"http://convergence.cau.ac.kr/","target":"_blank","title":"미래융합원 새창 열림"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1170","target":"_self","title":"연구기관"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1180","target":"_self","title":"연구현황"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2340","title":"연구발표현황 "}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1200","title":"연구과제 현황"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1210","title":"산학협력 및 기술이전"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1250","target":"_self","title":"연구성과"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2570","target":"_self","title":"CAU연구자"}
+{"data-showyn":"Y","data-lvl":"1","name":"gnb_lvl1","data-linksubyn":"Y","class":"child on"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=80","title":"대학생활","class":"on"}
+{"class":"menuM on"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1290","target":"_self","title":"국제교류"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1310","title":"교환·방문학생 파견"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1330","title":"교환학생수용"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"https://oia.cau.ac.kr/bbs/board.php?tbl=k_bbs31","target":"_blank","title":"공지사항 새창 열림"}
+{"class":"pageLink","href":"https://oia.cau.ac.kr/bbs/board.php?tbl=k_bbs31","target":"_blank","title":"공지사항 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"https://oia.cau.ac.kr/bbs/board.php?tbl=k_bbs41 ","target":"_blank","title":"단기과정프로그램 새창 열림"}
+{"class":"pageLink","href":"https://oia.cau.ac.kr/bbs/board.php?tbl=k_bbs41 ","target":"_blank","title":"단기과정프로그램 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"https://oia.cau.ac.kr/bbs/board.php?tbl=k_bbs71","target":"_blank","title":"외국인유학생 새창 열림"}
+{"class":"pageLink","href":"https://oia.cau.ac.kr/bbs/board.php?tbl=k_bbs71","target":"_blank","title":"외국인유학생 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"https://oia.cau.ac.kr/k_sub02/sub01.php","target":"_blank","title":"협정대학현황 새창 열림"}
+{"class":"pageLink","href":"https://oia.cau.ac.kr/k_sub02/sub01.php","target":"_blank","title":"협정대학현황 새창 열림"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1370","target":"_self","title":"한국어어학연수"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1380","target":"_self","title":"생활정보"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1390","title":"생활관"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"N","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1400","title":"복지시설"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1410","title":"근로장학생"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2620","target":"_self","title":"스포츠단 활동"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1420","target":"_self","title":"학생활동"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1430","title":"학생홍보대사(중앙사랑)"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1440","title":"학생군사교육단(ROTC)"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1450","title":"총학생회"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1470","title":"동아리연합회"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1480","title":"대학응원단(HURRAH-C)"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2660","target":"_self","title":"사회봉사"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=260","target":"_self","title":"학생지원"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1490","target":"_self","title":"CAU 스마트 학생증"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1500","title":"개요"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1510","title":"스마트학생증"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1520","title":"모바일학생증·신분증"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1530","title":"전자출결시스템"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1540","title":"도서관시스템"}
+{"data-lvl":"2","class":"child on","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"on","href":"/cms/FR_CON/index.do?MENU_ID=90","target":"_self","title":"CAU광장"}
+{"class":"menuS on"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":"on"}
+{"class":"on","href":"/cms/FR_CON/index.do?MENU_ID=100","title":"CAU Notice"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"http://news.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=10","target":"_blank","title":"CAU News 새창 열림"}
+{"class":"pageLink","href":"http://news.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=10","target":"_blank","title":"CAU News 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=720","title":"사이버감사실"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1560","title":"행정서비스"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"http://news.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=20","target":"_blank","title":"파워중앙인 새창 열림"}
+{"class":"pageLink","href":"http://news.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=20","target":"_blank","title":"파워중앙인 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"https://news.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=100","target":"_blank","title":"Campus Life 새창 열림"}
+{"class":"pageLink","href":"https://news.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=100","target":"_blank","title":"Campus Life 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=270","title":"CAU웹진"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"http://www.cauon.net/","target":"_blank","title":"CAU 미디어센터 새창 열림"}
+{"class":"pageLink","href":"http://www.cauon.net/","target":"_blank","title":"CAU 미디어센터 새창 열림"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2420","target":"_self","title":"코로나19 감염예방 수칙 및 대학 대응방안 안내"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2440","title":"대학 대처방안"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2450","title":"코로나19 실시간 상황판"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2460","title":"감염예방 행동수칙"}
+{"data-showyn":"Y","data-lvl":"1","name":"gnb_lvl1","data-linksubyn":"Y","class":""}
+{"href":"https://news.cau.ac.kr/","title":"CAU NEWS TODAY","class":""}
+{"style":"display:none","data-showyn":"N","data-lvl":"1","name":"gnb_lvl1","data-linksubyn":"Y","class":"child"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=700","title":"메뉴","class":""}
+{"class":"menuM"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2030","target":"_self","title":"개인정보처리방침"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2650","title":"2022년 5월 10일"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2560","title":"2022년 3월 28일"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2640","title":"2021년 5월 1일"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2470","title":"2020년 3월 1일"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2300","title":"2019년 6월 1일"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2040","title":"2019년 3월 19일"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2050","title":"2019년 2월 20일"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2060","title":"2017년 10월 1일"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2070","title":"2016년 5월 1일"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2080","title":"2015년 8월 1일"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2090","title":"2015년 4월 1일"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2100","title":"2014년 4월 1일"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2110","title":"2012년 3월 1일"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=730","target":"_self","title":"이메일수집거부"}
+{"style":"display:none","data-showyn":"N","data-lvl":"1","name":"gnb_lvl1","data-linksubyn":"Y","class":"child"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1920","title":"ETC","class":""}
+{"id":"mCSB_1_scrollbar_vertical","class":"mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical","style":"display: block;"}
+{"class":"mCSB_draggerContainer"}
+{"id":"mCSB_1_dragger_vertical","class":"mCSB_dragger","style":"position: absolute; min-height: 30px; display: block; height: 354px; max-height: 535px; top: 0px;"}
+{"class":"mCSB_dragger_bar","style":"line-height: 30px;"}
+{"class":"mCSB_draggerRail"}
+{"href":"javascript:void(0)","class":"mBtn_close"}
+{}
+{"class":"util"}
+{"href":"javascript:void(0)","class":"btn_topSearch"}
+{"class":"top_search"}
+{"class":"commonSearch"}
+{}
+{"id":"commonSearchForm","name":"commonSearchForm","method":"post"}
+{"class":"search_area"}
+{"type":"text","name":"searchKeyword","placeholder":"검색어를 입력하세요.","value":"","onkeypress":"if(event.keyCode == 13){fn_totalSearch();return false;}","title":"통합검색 검색어 입력"}
+{"class":"btn_commonSearch","type":"button","onclick":"fn_totalSearch();"}
+{}
+{"class":"hot_searchList"}
+{}
+{}
+{"href":"#","onclick":"fn_totalSearchPopular(this)"}
+{"href":"#","onclick":"fn_totalSearchPopular(this)"}
+{"href":"#","onclick":"fn_totalSearchPopular(this)"}
+{"href":"#","onclick":"fn_totalSearchPopular(this)"}
+{"href":"#","onclick":"fn_totalSearchPopular(this)"}
+{"href":"#","onclick":"fn_totalSearchPopular(this)"}
+{"href":"#","onclick":"fn_totalSearchPopular(this)"}
+{"href":"#","onclick":"fn_totalSearchPopular(this)"}
+{"href":"#","onclick":"fn_totalSearchPopular(this)"}
+{"href":"#","class":"btn_close"}
+{"href":"#;","class":"btn_topLang"}
+{"class":"top_lang"}
+{}
+{"href":"https://neweng.cau.ac.kr","target":"_blank","title":"영문홈페이지 새창 열기"}
+{}
+{"href":"http://newchn.cau.ac.kr","target":"_blank","title":"중문홈페이지 새창 열기"}
+{"href":"javascript:void(0)","class":"mBtn_menu"}
+{"href":"javascript:void(0)","class":"mBtn_close"}
+{"href":"javascript:void(0)","class":"mBtn_quick"}
+{"href":"#;","class":"btn_menuAll"}
+{}
+{"class":"view_func"}
+{"class":"funcBtn"}
+{"class":"btn_share"}
+{"class":"shareBox"}
+{}
+{}
+{"href":"javascript:shareSns('facebook');","class":"facebook"}
+{}
+{"href":"javascript:shareSns('kakao');","class":"Kakaostory"}
+{}
+{"href":"javascript:shareSns('twitter');","class":"twitter"}
+{}
+{"href":"#;","class":"url"}
+{}
+{"class":"visual_quick"}
+{"class":"visual_quickWrap"}
+{"class":"quick_list"}
+{"class":"quickFix"}
+{"href":"javascript:void(0)"}
+{"class":"quickDept"}
+{"href":"javascript:void(0)","style":"background-image:url(/cau2021/type/KOR_A/img/layout/visualQuick_home_white.png);"}
+{"class":"fastInfo"}
+{"class":"mGrp_tab"}
+{"class":"on"}
+{"type":"button","class":"mGrp_tit"}
+{"type":"button","class":"mGrp_close"}
+{}
+{"type":"button","class":"mGrp_tit"}
+{"type":"button","class":"mGrp_close"}
+{"class":"fastInfo_wrap"}
+{"class":"grp_quick"}
+{"class":"infoGrp"}
+{"class":"tit"}
+{"class":"list_ico"}
+{}
+{"style":"background-image:url('/attach/201810/1539152478473.png')","href":"/cms/FR_CON/index.do?MENU_ID=2380","target":"_blank","title":"증명서발급 새창열기"}
+{}
+{"style":"background-image:url('/attach/201810/1539152490671.png')","href":"http://cauid.cau.ac.kr/","target":"_blank","title":"전자출결 새창열기"}
+{}
+{"style":"background-image:url('/attach/201810/1539152490704.png')","href":"http://www.isic.co.kr/cau/cauIndex.jsp?t=1456892048910","target":"_blank","title":"국제학생증 새창열기"}
+{}
+{"style":"background-image:url('/attach/201810/1539152478473.png')","href":"https://mportal.cau.ac.kr/std/usk/sUskSif001/search.do","target":"_blank","title":"강의시간표 새창열기"}
+{"class":"infoGrp"}
+{"class":"tit"}
+{"class":"list_txt"}
+{}
+{"href":"https://mportal.cau.ac.kr/"}
+{}
+{"href":"https://gw.cau.ac.kr"}
+{}
+{"href":"https://mportal.cau.ac.kr/prof/ecs/pEcs004/index.do"}
+{}
+{"href":"/cms/FR_CON/index.do?MENU_ID=610"}
+{}
+{"href":"https://ctl.cau.ac.kr/"}
+{}
+{"href":"http://ice.cau.ac.kr/"}
+{}
+{"href":"https://abeek.cau.ac.kr/"}
+{}
+{"href":"https://swedu.cau.ac.kr"}
+{}
+{"href":"http://innovation.cau.ac.kr/"}
+{}
+{"href":"http://guidance.cau.ac.kr/"}
+{}
+{"href":"http://able.cau.ac.kr"}
+{}
+{"href":"https://humanrights.cau.ac.kr/"}
+{}
+{"href":"https://www.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=1500"}
+{}
+{"href":"http://admission.cau.ac.kr"}
+{}
+{"href":"http://oia.cau.ac.kr/k_main.php"}
+{}
+{"href":"https://cacel.cau.ac.kr/"}
+{}
+{"href":"https://caufund.cau.ac.kr"}
+{}
+{"href":"https://iacf.cau.ac.kr"}
+{}
+{"href":"https://lincplus.cau.ac.kr/"}
+{}
+{"href":"http://www.cauon.net"}
+{}
+{"href":"http://artcenter.cau.ac.kr"}
+{}
+{"href":"https://photo.cau.ac.kr/"}
+{}
+{"href":"https://mportal.cau.ac.kr/std/pis/sPisApp001/index.do"}
+{"class":"infoGrp"}
+{"class":"tit"}
+{"class":"list_txt"}
+{}
+{"href":"https://library.cau.ac.kr/#/"}
+{}
+{"href":"https://alibrary.cau.ac.kr/#/"}
+{"class":"grp_dept"}
+{"class":"infoGrp dept01"}
+{"class":"tit"}
+{"class":"grpBox","style":"height: 13px;"}
+{"class":"box_tit"}
+{"href":"http://human.cau.ac.kr/"}
+{"class":"list_txt"}
+{}
+{"href":"http://cauasia.cau.ac.kr/"}
+{}
+{"href":"http://english.cau.ac.kr/"}
+{}
+{"href":"http://history.cau.ac.kr/"}
+{}
+{"href":"http://spacl.dsso.kr/"}
+{}
+{"href":"http://caueurope.cau.ac.kr/"}
+{}
+{"href":"http://caukorean.cau.ac.kr"}
+{"class":"grpBox","style":"height: 13px;"}
+{"class":"box_tit"}
+{"href":"https://www.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=130&P_TAB_NO=3&TAB_NO=3"}
+{"class":"grpBox","style":"height: 13px;"}
+{"class":"box_tit"}
+{"href":"http://ge.cau.ac.kr/"}
+{"class":"grpBox","style":"height: 13px;"}
+{"class":"box_tit"}
+{"href":"http://coe.cau.ac.kr"}
+{"class":"list_txt"}
+{}
+{"href":"http://ame.cau.ac.kr/"}
+{}
+{"href":"http://infra.cau.ac.kr"}
+{}
+{"href":"http://archicau.com/wordpress/"}
+{}
+{"href":"http://chemeng.cau.ac.kr"}
+{}
+{"href":"http://ese.cau.ac.kr/wordpress/"}
+{}
+{"href":"http://me.cau.ac.kr/"}
+{"class":"grpBox","style":"height: 13px;"}
+{"class":"box_tit"}
+{"href":"http://cobiotech.cau.ac.kr/"}
+{"class":"list_txt"}
+{}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1020&CONTENTS_NO=1&P_TAB_NO=1&TAB_NO=0"}
+{}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1020&CONTENTS_NO=2&P_TAB_NO=2&TAB_NO=0"}
+{}
+{"href":"http://biotech.cau.ac.kr/"}
+{"class":"grpBox","style":"height: 13px;"}
+{"class":"box_tit"}
+{"href":"http://med.cau.ac.kr/"}
+{"class":"list_txt"}
+{}
+{"href":"http://med.cau.ac.kr/"}
+{"class":"grpBox","style":"height: 13px;"}
+{"class":"box_tit"}
+{"href":"http://society.cau.ac.kr/"}
+{"class":"list_txt"}
+{}
+{"href":"http://socialwelfare.cau.ac.kr/"}
+{}
+{"href":"http://planning.cau.ac.kr/"}
+{}
+{"href":"http://politics.cau.ac.kr/"}
+{}
+{"href":"http://sociology.cau.ac.kr/"}
+{}
+{"href":"http://cmc.cau.ac.kr/"}
+{}
+{"href":"http://lis.cau.ac.kr/"}
+{}
+{"href":"http://psyche.cau.ac.kr/"}
+{}
+{"href":"http://public.cau.ac.kr/"}
+{"class":"grpBox","style":"height: 13px;"}
+{"class":"box_tit"}
+{"href":"http://sw.cau.ac.kr"}
+{"class":"list_txt"}
+{}
+{"href":"http://cse.cau.ac.kr"}
+{}
+{"href":"http://ai.cau.ac.kr/"}
+{"class":"grpBox","style":"height: 13px;"}
+{"class":"box_tit"}
+{"href":"http://build.cau.ac.kr/nature/"}
+{"class":"list_txt"}
+{}
+{"href":"http://physics.cau.ac.kr"}
+{}
+{"href":"http://chem.cau.ac.kr/"}
+{}
+{"href":"http://bio.cau.ac.kr/"}
+{}
+{"href":"http://math.cau.ac.kr/"}
+{"class":"grpBox","style":"height: 13px;"}
+{"class":"box_tit"}
+{"href":"http://ict.cau.ac.kr"}
+{"class":"list_txt"}
+{}
+{"href":"http://e3home.cau.ac.kr/"}
+{}
+{"href":"http://ie.cau.ac.kr"}
+{"class":"grpBox","style":"height: 13px;"}
+{"class":"box_tit"}
+{"href":"http://sport.cau.ac.kr/"}
+{"class":"list_txt"}
+{}
+{"href":"http://sport.cau.ac.kr/"}
+{"class":"grpBox","style":"height: 13px;"}
+{"class":"box_tit"}
+{"href":"http://artech.cau.ac.kr/"}
+{"class":"list_txt"}
+{}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1700"}
+{"class":"grpBox","style":"height: 13px;"}
+{"class":"box_tit"}
+{"href":"http://arts.cau.ac.kr"}
+{"class":"list_txt"}
+{}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1090&CONTENTS_NO=2&P_TAB_NO=6&TAB_NO=0"}
+{}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1090&CONTENTS_NO=1&P_TAB_NO=1&TAB_NO=0"}
+{}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1090&CONTENTS_NO=2&P_TAB_NO=3&TAB_NO=0"}
+{}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1090&CONTENTS_NO=2&P_TAB_NO=4&TAB_NO=0"}
+{}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1090&CONTENTS_NO=2&P_TAB_NO=5&TAB_NO=0"}
+{}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1090&CONTENTS_NO=2&P_TAB_NO=7&TAB_NO=0"}
+{"class":"grpBox","style":"height: 13px;"}
+{"class":"box_tit"}
+{"href":"http://nursing.cau.ac.kr/"}
+{"class":"list_txt"}
+{}
+{"href":"http://nursing.cau.ac.kr/"}
+{"class":"grpBox","style":"height: 13px;"}
+{"class":"box_tit"}
+{"href":"http://pharm.cau.ac.kr"}
+{"class":"list_txt"}
+{}
+{"href":"http://pharm.cau.ac.kr"}
+{"class":"grpBox","style":"height: 13px;"}
+{"class":"box_tit"}
+{"href":"http://bne.cau.ac.kr/"}
+{"class":"list_txt"}
+{}
+{"href":"https://iadpr.org/index/index.php"}
+{}
+{"href":"http://econ.cau.ac.kr/"}
+{}
+{"href":"http://global.cau.ac.kr/"}
+{}
+{"href":"http://biz.cau.ac.kr/"}
+{}
+{"href":"http://stat.cau.ac.kr/"}
+{}
+{"href":"http://log.cau.ac.kr/"}
+{}
+{"href":"http://security.cau.ac.kr/"}
+{"class":"grpBox","style":"height: 30px;"}
+{"class":"box_tit"}
+{"href":"http://edu.cau.ac.kr/"}
+{"class":"list_txt"}
+{}
+{"href":"http://education.cau.ac.kr/"}
+{}
+{"href":"http://cauece.cau.ac.kr/"}
+{}
+{"href":"http://englishedu.cau.ac.kr/"}
+{}
+{"href":"http://caupe.cau.ac.kr/"}
+{"class":"infoGrp dept02"}
+{"class":"tit"}
+{"class":"grpBox"}
+{"class":"box_tit"}
+{"href":"#"}
+{"class":"list_txt"}
+{}
+{"href":"http://gsaim.cau.ac.kr"}
+{}
+{"href":"http://mba.cau.ac.kr"}
+{}
+{"href":"http://lawschool.cau.ac.kr"}
+{}
+{"href":"http://gsis.cau.ac.kr"}
+{"class":"grpBox"}
+{"class":"box_tit"}
+{"href":"#"}
+{"class":"list_txt"}
+{}
+{"href":"http://www.gsa.cau.ac.kr"}
+{}
+{"href":"http://gspa.cau.ac.kr"}
+{}
+{"href":"http://gsps.cau.ac.kr"}
+{}
+{"href":"http://www.caugsce.org"}
+{}
+{"href":"http://iem.cau.ac.kr/"}
+{}
+{"href":"http://gugak.cau.ac.kr"}
+{}
+{"href":"http://ghrd.cau.ac.kr/"}
+{}
+{"href":"http://gsn.cau.ac.kr/"}
+{}
+{"href":"http://causd.cau.ac.kr/"}
+{}
+{"href":"http://gss.cau.ac.kr"}
+{}
+{"href":"http://gse.cau.ac.kr/"}
+{}
+{"href":"http://shinbang.cau.ac.kr"}
+{"class":"grpBox"}
+{"class":"box_tit"}
+{"href":"http://graduate.cau.ac.kr/2018/ent01.php"}
+{"type":"button","class":"fastInfo_close"}
+{"href":"javascript:void(0)","class":"btn_chatbot","title":"새창"}
+{"src":"/cau2021/type/KOR_A/img/layout/mark_chatbot.png","alt":"챗봇 CHARLI"}
+{"id":"container"}
+{"class":"sVisual","style":"background-image: url(\"/cau/img/sVisual05.jpg\");"}
+{}
+{}
+{"class":"tit_nav"}
+{}
+{}
+{"id":"contents"}
+{"class":"depth3"}
+{"class":"nav_tit"}
+{}
+{}
+{"id":"snb","class":"nav_menu"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1290","target":"_self","title":"국제교류"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1310","title":"교환·방문학생 파견"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1330","title":"교환학생수용"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"https://oia.cau.ac.kr/bbs/board.php?tbl=k_bbs31","target":"_blank","title":"공지사항 새창 열림"}
+{"class":"pageLink","href":"https://oia.cau.ac.kr/bbs/board.php?tbl=k_bbs31","target":"_blank","title":"공지사항 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"https://oia.cau.ac.kr/bbs/board.php?tbl=k_bbs41 ","target":"_blank","title":"단기과정프로그램 새창 열림"}
+{"class":"pageLink","href":"https://oia.cau.ac.kr/bbs/board.php?tbl=k_bbs41 ","target":"_blank","title":"단기과정프로그램 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"https://oia.cau.ac.kr/bbs/board.php?tbl=k_bbs71","target":"_blank","title":"외국인유학생 새창 열림"}
+{"class":"pageLink","href":"https://oia.cau.ac.kr/bbs/board.php?tbl=k_bbs71","target":"_blank","title":"외국인유학생 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"https://oia.cau.ac.kr/k_sub02/sub01.php","target":"_blank","title":"협정대학현황 새창 열림"}
+{"class":"pageLink","href":"https://oia.cau.ac.kr/k_sub02/sub01.php","target":"_blank","title":"협정대학현황 새창 열림"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1370","target":"_self","title":"한국어어학연수"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1380","target":"_self","title":"생활정보"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1390","title":"생활관"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"N","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1400","title":"복지시설"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1410","title":"근로장학생"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2620","target":"_self","title":"스포츠단 활동"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1420","target":"_self","title":"학생활동"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1430","title":"학생홍보대사(중앙사랑)"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1440","title":"학생군사교육단(ROTC)"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1450","title":"총학생회"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1470","title":"동아리연합회"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1480","title":"대학응원단(HURRAH-C)"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2660","target":"_self","title":"사회봉사"}
+{"data-lvl":"2","class":"","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=260","target":"_self","title":"학생지원"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1490","target":"_self","title":"CAU 스마트 학생증"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1500","title":"개요"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1510","title":"스마트학생증"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1520","title":"모바일학생증·신분증"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1530","title":"전자출결시스템"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1540","title":"도서관시스템"}
+{"data-lvl":"2","class":"child on","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"on","href":"/cms/FR_CON/index.do?MENU_ID=90","target":"_self","title":"CAU광장"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":"on"}
+{"class":"on","href":"/cms/FR_CON/index.do?MENU_ID=100","title":"CAU Notice"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"http://news.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=10","target":"_blank","title":"CAU News 새창 열림"}
+{"class":"pageLink","href":"http://news.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=10","target":"_blank","title":"CAU News 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=720","title":"사이버감사실"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=1560","title":"행정서비스"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"http://news.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=20","target":"_blank","title":"파워중앙인 새창 열림"}
+{"class":"pageLink","href":"http://news.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=20","target":"_blank","title":"파워중앙인 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"https://news.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=100","target":"_blank","title":"Campus Life 새창 열림"}
+{"class":"pageLink","href":"https://news.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=100","target":"_blank","title":"Campus Life 새창 열림"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=270","title":"CAU웹진"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"http://www.cauon.net/","target":"_blank","title":"CAU 미디어센터 새창 열림"}
+{"class":"pageLink","href":"http://www.cauon.net/","target":"_blank","title":"CAU 미디어센터 새창 열림"}
+{"data-lvl":"2","class":"child","name":"gnb_lvl2","data-linksubyn":"Y"}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2420","target":"_self","title":"코로나19 감염예방 수칙 및 대학 대응방안 안내"}
+{"class":"menuS"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2440","title":"대학 대처방안"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2450","title":"코로나19 실시간 상황판"}
+{"data-lvl":"3","name":"gnb_lvl3","data-linksubyn":"Y","class":""}
+{"class":"","href":"/cms/FR_CON/index.do?MENU_ID=2460","title":"감염예방 행동수칙"}
+{"class":"view_func","id":"contFocus"}
+{"class":"zoom"}
+{}
+{"class":"funcBtn"}
+{"type":"button","class":"btn_zoomOut"}
+{"class":"funcBtn"}
+{"type":"button","class":"btn_zoomReset"}
+{"class":"funcBtn"}
+{"type":"button","class":"btn_zoomIn"}
+{"class":"funcBtn"}
+{"class":"btn_print","onclick":"fn_goPrint()"}
+{"class":"funcBtn"}
+{"class":"btn_share"}
+{"class":"shareBox"}
+{}
+{}
+{"href":"javascript:shareSns('facebook');","class":"facebook","title":"페이스북 연동 새창열기"}
+{}
+{"href":"javascript:shareSns('kakao');","class":"Kakaostory","title":"카카오스토리 연동 새창열기"}
+{}
+{"href":"javascript:shareSns('twitter');","class":"twitter","title":"트위터 연동 새창열기"}
+{}
+{"href":"#;","class":"url"}
+{}
+{"class":"list_tab_wrap"}
+{}
+{"class":"list_tab tab3 parentTab"}
+{}
+{"href":"/cms/FR_CON/index.do?MENU_ID=100&CONTENTS_NO=1&P_TAB_NO=1","class":"on","title":"전체:선택됨","data-contno":"1","data-subcnt":"0"}
+{}
+{"href":"/cms/FR_CON/index.do?MENU_ID=100&CONTENTS_NO=2&P_TAB_NO=2","class":"","title":"학사","data-contno":"2","data-subcnt":"0"}
+{}
+{"href":"/cms/FR_CON/index.do?MENU_ID=100&CONTENTS_NO=3&P_TAB_NO=3","class":"","title":"학점교류","data-contno":"3","data-subcnt":"0"}
+{}
+{"href":"/cms/FR_CON/index.do?MENU_ID=100&CONTENTS_NO=4&P_TAB_NO=4","class":"","title":"모집","data-contno":"4","data-subcnt":"0"}
+{}
+{"href":"/cms/FR_CON/index.do?MENU_ID=100&CONTENTS_NO=5&P_TAB_NO=5","class":"","title":"장학","data-contno":"5","data-subcnt":"0"}
+{}
+{"href":"/cms/FR_CON/index.do?MENU_ID=100&CONTENTS_NO=6&P_TAB_NO=6","class":"","title":"행사","data-contno":"6","data-subcnt":"0"}
+{}
+{"href":"/cms/FR_CON/index.do?MENU_ID=100&CONTENTS_NO=7&P_TAB_NO=7","class":"","title":"일반","data-contno":"7","data-subcnt":"0"}
+{"id":"sub_tab","style":"display:none;"}
+{"id":"sub_tab_list"}
+{}
+{}
+{"class":"board_area"}
+{"id":"sendForm","method":"get"}
+{"type":"hidden","name":"pageNo","id":"pageNo","value":"1"}
+{"type":"hidden","name":"pagePerCnt","value":"15"}
+{"type":"hidden","name":"MENU_ID","value":"100"}
+{"type":"hidden","name":"SITE_NO","value":"2"}
+{"type":"hidden","name":"BOARD_SEQ","value":"4"}
+{"type":"hidden","name":"S_CATE_SEQ","value":""}
+{"type":"hidden","name":"BOARD_TYPE","value":"C0301"}
+{"type":"hidden","name":"BOARD_CATEGORY_NO","value":""}
+{"type":"hidden","name":"P_TAB_NO","value":""}
+{"type":"hidden","name":"TAB_NO","value":""}
+{"class":"list_option sel03"}
+{"class":"listNum"}
+{"id":"rowCount"}
+{"class":"searchBox"}
+{"title":"검색옵션 선택 - 대분류","class":"inp_s","name":"P_CATE_SEQ","id":"category_1","onchange":"fn_setCategory(2,this.value,'')"}
+{"value":""}
+{"value":"26"}
+{"value":"21"}
+{"value":"16"}
+{"value":"11"}
+{"value":"6"}
+{"value":"1"}
+{"name":"CATE_SEQ","class":"inp_s","title":"검색옵션 선택 - 소분류","id":"category_2"}
+{"value":""}
+{"name":"SEARCH_FLD","class":"inp_s","title":"검색옵션 선택 - 구분"}
+{"value":"SUBJECT","selected":"selected"}
+{"value":"CONTENTS"}
+{"value":"SUB_CONTENS"}
+{"class":"search"}
+{"type":"text","class":"inp_t","name":"SEARCH","onfocus":"if(this.placeholder !='')this.placeholder='';","onkeypress":"if (event.keyCode==13){currentPage = 1;$('#sendForm [name=pageNo]').val(currentPage);fn_list();return false;}","placeholder":"검색어를 입력하세요.","title":"검색어 입력"}
+{"class":"btn_search","type":"button","title":"검색 실행"}
+{"class":"btn_rss","type":"button","title":"RSS 페이지 새창열기"}
+{"class":"lineList_ul  limitOff"}
+{"id":"tbody"}
+{"class":" typeNoti  typeFile  typeIco  ","id":"board_25516"}
+{"class":"mark_categ"}
+{"class":"txtL"}
+{"class":"mark_noti"}
+{"href":"javascript:fn_goDetail('25516','N','','N')"}
+{"class":"ico_new","alt":"New","src":"../../../../cau/img/board/ico_new.png"}
+{"class":"txtAdd"}
+{"class":"hasArea"}
+{"href":"javascript:fileDown(this,'25516')","class":"hasfile","data-bbsseq":"25516"}
+{"class":"hasfileNum"}
+{}
+{"class":"txtInfo"}
+{"class":"writer"}
+{"class":"date"}
+{"class":"view"}
+{"class":" typeNoti   typeIco  ","id":"board_25515"}
+{"class":"mark_categ"}
+{"class":"txtL"}
+{"class":"mark_noti"}
+{"href":"javascript:fn_goDetail('25515','N','','N')"}
+{"class":"ico_new","alt":"New","src":"../../../../cau/img/board/ico_new.png"}
+{"class":"txtInfo"}
+{"class":"writer"}
+{"class":"date"}
+{"class":"view"}
+{"class":" typeNoti  typeFile  typeIco  ","id":"board_25513"}
+{"class":"mark_categ"}
+{"class":"txtL"}
+{"class":"mark_noti"}
+{"href":"javascript:fn_goDetail('25513','N','','N')"}
+{"class":"ico_new","alt":"New","src":"../../../../cau/img/board/ico_new.png"}
+{"class":"txtAdd"}
+{"class":"hasArea"}
+{"href":"javascript:fileDown(this,'25513')","class":"hasfile","data-bbsseq":"25513"}
+{"class":"hasfileNum"}
+{}
+{"class":"txtInfo"}
+{"class":"writer"}
+{"class":"date"}
+{"class":"view"}
+{"class":" typeNoti  typeFile  typeIco  ","id":"board_25512"}
+{"class":"mark_categ"}
+{"class":"txtL"}
+{"class":"mark_noti"}
+{"href":"javascript:fn_goDetail('25512','N','','N')"}
+{"class":"ico_new","alt":"New","src":"../../../../cau/img/board/ico_new.png"}
+{"class":"txtAdd"}
+{"class":"hasArea"}
+{"href":"javascript:fileDown(this,'25512')","class":"hasfile","data-bbsseq":"25512"}
+{"class":"hasfileNum"}
+{}
+{"class":"txtInfo"}
+{"class":"writer"}
+{"class":"date"}
+{"class":"view"}
+{"class":" typeNoti  typeFile  typeIco  ","id":"board_25509"}
+{"class":"mark_categ"}
+{"class":"txtL"}
+{"class":"mark_noti"}
+{"href":"javascript:fn_goDetail('25509','N','','N')"}
+{"class":"ico_new","alt":"New","src":"../../../../cau/img/board/ico_new.png"}
+{"class":"txtAdd"}
+{"class":"hasArea"}
+{"href":"javascript:fileDown(this,'25509')","class":"hasfile","data-bbsseq":"25509"}
+{"class":"hasfileNum"}
+{}
+{"class":"txtInfo"}
+{"class":"writer"}
+{"class":"date"}
+{"class":"view"}
+{"class":" typeNoti  ","id":"board_25507"}
+{"class":"mark_categ"}
+{"class":"txtL"}
+{"class":"mark_noti"}
+{"href":"javascript:fn_goDetail('25507','N','','N')"}
+{"class":"txtInfo"}
+{"class":"writer"}
+{"class":"date"}
+{"class":"view"}
+{"class":" typeNoti  typeFile ","id":"board_25506"}
+{"class":"mark_categ"}
+{"class":"txtL"}
+{"class":"mark_noti"}
+{"href":"javascript:fn_goDetail('25506','N','','N')"}
+{"class":"txtAdd"}
+{"class":"hasArea"}
+{"href":"javascript:fileDown(this,'25506')","class":"hasfile","data-bbsseq":"25506"}
+{"class":"hasfileNum"}
+{}
+{"class":"txtInfo"}
+{"class":"writer"}
+{"class":"date"}
+{"class":"view"}
+{"class":" typeNoti  typeFile ","id":"board_25505"}
+{"class":"mark_categ"}
+{"class":"txtL"}
+{"class":"mark_noti"}
+{"href":"javascript:fn_goDetail('25505','N','','N')"}
+{"class":"txtAdd"}
+{"class":"hasArea"}
+{"href":"javascript:fileDown(this,'25505')","class":"hasfile","data-bbsseq":"25505"}
+{"class":"hasfileNum"}
+{}
+{"class":"txtInfo"}
+{"class":"writer"}
+{"class":"date"}
+{"class":"view"}
+{"class":" typeNoti  typeFile ","id":"board_25504"}
+{"class":"mark_categ"}
+{"class":"txtL"}
+{"class":"mark_noti"}
+{"href":"javascript:fn_goDetail('25504','N','','N')"}
+{"class":"txtAdd"}
+{"class":"hasArea"}
+{"href":"javascript:fileDown(this,'25504')","class":"hasfile","data-bbsseq":"25504"}
+{"class":"hasfileNum"}
+{}
+{"class":"txtInfo"}
+{"class":"writer"}
+{"class":"date"}
+{"class":"view"}
+{"class":" typeNoti  ","id":"board_25428"}
+{"class":"mark_categ"}
+{"class":"txtL"}
+{"class":"mark_noti"}
+{"href":"javascript:fn_goDetail('25428','N','','N')"}
+{"class":"txtInfo"}
+{"class":"writer"}
+{"class":"date"}
+{"class":"view"}
+{"class":" typeNoti  typeFile ","id":"board_25503"}
+{"class":"mark_categ"}
+{"class":"txtL"}
+{"class":"mark_noti"}
+{"href":"javascript:fn_goDetail('25503','N','','N')"}
+{"class":"txtAdd"}
+{"class":"hasArea"}
+{"href":"javascript:fileDown(this,'25503')","class":"hasfile","data-bbsseq":"25503"}
+{"class":"txtInfo"}
+{"class":"writer"}
+{"class":"date"}
+{"class":"view"}
+{"class":" typeNoti  typeFile ","id":"board_25502"}
+{"class":"mark_categ"}
+{"class":"txtL"}
+{"class":"mark_noti"}
+{"href":"javascript:fn_goDetail('25502','N','','N')"}
+{"class":"txtAdd"}
+{"class":"hasArea"}
+{"href":"javascript:fileDown(this,'25502')","class":"hasfile","data-bbsseq":"25502"}
+{"class":"hasfileNum"}
+{}
+{"class":"txtInfo"}
+{"class":"writer"}
+{"class":"date"}
+{"class":"view"}
+{"class":" typeNoti  typeFile ","id":"board_25499"}
+{"class":"mark_categ"}
+{"class":"txtL"}
+{"class":"mark_noti"}
+{"href":"javascript:fn_goDetail('25499','N','','N')"}
+{"class":"txtAdd"}
+{"class":"hasArea"}
+{"href":"javascript:fileDown(this,'25499')","class":"hasfile","data-bbsseq":"25499"}
+{"class":"hasfileNum"}
+{}
+{"class":"txtInfo"}
+{"class":"writer"}
+{"class":"date"}
+{"class":"view"}
+{"class":" typeNoti  typeFile ","id":"board_25495"}
+{"class":"mark_categ"}
+{"class":"txtL"}
+{"class":"mark_noti"}
+{"href":"javascript:fn_goDetail('25495','N','','N')"}
+{"class":"txtAdd"}
+{"class":"hasArea"}
+{"href":"javascript:fileDown(this,'25495')","class":"hasfile","data-bbsseq":"25495"}
+{"class":"txtInfo"}
+{"class":"writer"}
+{"class":"date"}
+{"class":"view"}
+{"class":" typeNoti  typeFile ","id":"board_25494"}
+{"class":"mark_categ"}
+{"class":"txtL"}
+{"class":"mark_noti"}
+{"href":"javascript:fn_goDetail('25494','N','','N')"}
+{"class":"txtAdd"}
+{"class":"hasArea"}
+{"href":"javascript:fileDown(this,'25494')","class":"hasfile","data-bbsseq":"25494"}
+{"class":"txtInfo"}
+{"class":"writer"}
+{"class":"date"}
+{"class":"view"}
+{"id":"p_pagingFH","class":"pagination"}
+{"href":"#page1","class":"btn_first","title":"첫 페이지로 이동"}
+{}
+{"href":"#page1","class":"btn_prev","title":"이전 5개 목록  페이지로 이동"}
+{}
+{"class":"paging"}
+{}
+{"href":"#page1","class":"on","title":"현재 페이지"}
+{}
+{"href":"#page2","title":"2번 페이지로 이동"}
+{}
+{"href":"#page3","title":"3번 페이지로 이동"}
+{}
+{"href":"#page4","title":"4번 페이지로 이동"}
+{}
+{"href":"#page5","title":"5번 페이지로 이동"}
+{"href":"#page6","class":"btn_next","title":"다음 5개 목록 페이지로 이동"}
+{}
+{"href":"#page140","class":"btn_end","title":"마지막 페이지로 이동"}
+{}
+{"class":"pop_wrap","id":"pop_check","style":"display: none;"}
+{"class":"pop_ct","id":"pop_pwCheck"}
+{}
+{}
+{"id":"pwdForm","method":"post"}
+{"type":"hidden","name":"MENU_ID","id":"MENU_ID","value":"100"}
+{"type":"hidden","name":"SITE_NO","value":"2"}
+{"type":"hidden","name":"BOARD_SEQ","value":"4"}
+{"type":"hidden","name":"CONTENTS_NO","value":"1"}
+{"type":"hidden","name":"BOARD_CATEGORY_NO","value":""}
+{"type":"hidden","name":"P_TAB_NO","value":""}
+{"type":"hidden","name":"TAB_NO","value":""}
+{"type":"hidden","name":"BBS_SEQ"}
+{}
+{}
+{"class":"inp_t","type":"password","name":"PASSWD","placeholder":"비밀번호 입력","title":"비밀번호 입력"}
+{"class":"btn_ok btn","type":"button"}
+{}
+{"class":"btn_close","type":"button","onclick":"fn_popClose()"}
+{"id":"noListTemplate","type":"text/x-jquery-tmpl"}
+{"id":"listTemplate","type":"text/x-jquery-tmpl"}
+{"class":"btn_sideTop","type":"button"}
+{"class":"quickMini"}
+{}
+{"class":"miniQuick"}
+{"href":"javascript:void(0)"}
+{}
+{"class":"miniChatbot"}
+{"href":"javascript:void(0)","title":"새창"}
+{}
+{"id":"footer"}
+{}
+{"class":"f_menu"}
+{"class":"point"}
+{"href":"https://www.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=2650","title":"개인정보처리방침 안내 페이지로 이동"}
+{}
+{"href":"https://www.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=720","title":"사이버감사실 페이지로 이동"}
+{}
+{"href":"https://www.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=730","title":"이메일수집거부 안내 페이지로 이동"}
+{}
+{"href":"https://www.cau.ac.kr/cms/FR_CON/BoardView.do?MENU_ID=100&CONTENTS_NO=7&SITE_NO=2&BOARD_SEQ=4&BOARD_CATEGORY_NO=1&BBS_SEQ=22091&pageNo=12&P_TAB_NO=7"}
+{}
+{"href":"http://www.academyinfo.go.kr/pubinfo/pubinfo1600/doInit.do?schlId=0000175","target":"_blank","title":"대학정보공시 새창 열기"}
+{}
+{"href":"https://www.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=1650","title":"예결산공고 페이지로 이동"}
+{}
+{"href":"https://www.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=1660","title":"입찰공고 페이지로 이동"}
+{}
+{"href":"https://www.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=1670","title":"채용공고 페이지로 이동"}
+{"class":"f_logo"}
+{}
+{"href":"https://www.nytimes.com","target":"_blank","title":"뉴욕타임스  홈페이지 새창 열기"}
+{"src":"/cau2021/type/KOR_A/img/layout/f_logo_cau.png","alt":"CAU 중앙대학교 Chung-Ang UNIVERSITY"}
+{}
+{"href":"https://www.nytimes.com","target":"_blank","title":"뉴욕타임스  홈페이지 새창 열기"}
+{"src":"/cau2021/type/KOR_A/img/layout/f_logo_tnyt.png","alt":"The New York Times"}
+{"class":"f_sns"}
+{}
+{"href":"https://www.facebook.com/chunganguniversity","\"":"","target":"_blank","title":"페이스북 새창 열기"}
+{"src":"/cau2021/type/KOR_A/img/layout/f_sns_facebook.png","alt":"Facebook"}
+{}
+{"href":"https://www.instagram.com/chunganguniv/","target":"_blank","title":"인스타그램 새창 열기"}
+{"src":"/cau2021/type/KOR_A/img/layout/f_sns_instagram.png","alt":"Instagram"}
+{}
+{"href":"https://www.youtube.com/user/ChungAngUniversity","target":"_blank","title":"유투브 새창 열기"}
+{"src":"/cau2021/type/KOR_A/img/layout/f_sns_youtube.png","alt":"YouTube"}
+{"class":"f_mark"}
+{}
+{"href":"http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110","target":"_blank","title":"새창"}
+{"src":"/cau2021/type/KOR_A/img/layout/f_mark_wa.png","alt":"과학기술정보통신부 WA(WEB ACCESSIBILITY)"}
+{}
+{"href":"javascript:void(0)","onclick":"mark_isms()","title":"새창"}
+{"src":"/cau2021/type/KOR_A/img/layout/f_mark_isms.png","alt":"정보보호 관리체계 인증 ISMS(Infomation Security management System)"}
+{}
+{}
+{}
+{}
+{}
+{"class":"copyright"}
+{}
+{"type":"text/javascript"}
+{"class":"pop_wrap","style":"display:none;"}
+{"class":"pop_ct","id":"pop_sitemap"}
+{}
+{"class":"sitemap_list"}
+{"id":"sitemap_gnb"}
+{"data-lvl":"1","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=10","title":"대학소개"}
+{"class":"menuM"}
+{"data-lvl":"2","class":"child","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=140","target":"_self","title":"학교법인"}
+{"class":"menuS"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1720","target":"_self","title":"이사장인사말"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=600","target":"_self","title":"역대이사장"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=180","target":"_self","title":"법인현황"}
+{"data-lvl":"2","class":"child","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=350","target":"_self","title":"총장실"}
+{"class":"menuS"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=360","target":"_self","title":"인사말"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=670","target":"_self","title":"약력"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1860","target":"_self","title":"주요활동"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=680","target":"_self","title":"역대총장"}
+{"data-lvl":"2","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1810","target":"_self","title":"CAU2030"}
+{"class":"menuS"}
+{"data-lvl":"2","class":"child","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=190","target":"_self","title":"이념 및 역사"}
+{"class":"menuS"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1620","target":"_self","title":"창학정신과 교훈"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1630","target":"_self","title":"교육이념/목적/목표"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=200","target":"_self","title":"중앙대 역사"}
+{"data-lvl":"2","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=2610","target":"_self","title":"안전·보건목표 및 방침"}
+{"class":"menuS"}
+{"data-lvl":"2","class":"child","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=210","target":"_self","title":"대학상징"}
+{"class":"menuS"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=220","target":"_self","title":"상징"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=230","target":"_self","title":"UI"}
+{"data-lvl":"2","class":"child","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=20","target":"_self","title":"대학현황"}
+{"class":"menuS"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=30","target":"_self","title":"대학규정/학칙"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"http://www.academyinfo.go.kr/pubinfo/pubinfo1600/doInit.do?schlId=0000175 ","target":"_blank","title":"대학정보공시"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=40","target":"_self","title":"요람"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=50","target":"_self","title":"통계연보"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=690","target":"_self","title":"대학자체평가 결과"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1650","target":"_self","title":"재정 정보"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1660","target":"_self","title":"입찰공고"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1670","target":"_self","title":"채용공고"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1680","target":"_self","title":"정보공개"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1690","target":"_self","title":"등록금 심의위원회"}
+{"data-lvl":"2","class":"child","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=60","target":"_self","title":"대학기관"}
+{"class":"menuS"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=70","target":"_self","title":"조직도"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=240","target":"_self","title":"기능형 부총장"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=250","target":"_self","title":"행정기관"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=740","target":"_self","title":"부속병원"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=750","target":"_self","title":"부설기관"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=760","target":"_self","title":"대학언론"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=770","target":"_self","title":"대학평의원회"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=780","target":"_self","title":"노동조합"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=2720","target":"_self","title":"교수노동조합"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=790","target":"_self","title":"교수협의회"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=2600","target":"_self","title":"대학교회"}
+{"data-lvl":"2","class":"child","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=280","target":"_self","title":"캠퍼스안내"}
+{"class":"menuS"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=610","target":"_self","title":"캠퍼스맵"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/vr2020/seoul/","target":"_blank","title":"캠퍼스VR투어"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=290","target":"_self","title":"찾아오시는길"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1730","target":"_self","title":"주차 안내"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1760","target":"_self","title":"통합상황실 안내"}
+{"data-lvl":"2","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=2710","target":"_self","title":"캠퍼스투어 신청"}
+{"class":"menuS"}
+{"data-lvl":"1","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=310","title":"입학"}
+{"class":"menuM"}
+{"data-lvl":"2","data-linksubyn":"Y"}
+{"href":"http://admission.cau.ac.kr","target":"_blank","title":"대학입학"}
+{"class":"menuS"}
+{"data-lvl":"2","data-linksubyn":"Y"}
+{"href":"https://oia.cau.ac.kr/k_intro.php","target":"_blank","title":"외국인입학"}
+{"class":"menuS"}
+{"data-lvl":"2","data-linksubyn":"Y"}
+{"href":"http://graduate.cau.ac.kr/2018/index.php","target":"_blank","title":"일반대학원입학"}
+{"class":"menuS"}
+{"data-lvl":"2","class":"child","data-linksubyn":"N"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=540","target":"_self","title":"전문대학원입학"}
+{"class":"menuS"}
+{"data-lvl":"3","data-linksubyn":"N"}
+{"href":"http://gsis.cau.ac.kr/gsis_index.html","target":"_blank","title":"국제대학원"}
+{"data-lvl":"3","data-linksubyn":"N"}
+{"href":"http://gsaim.cau.ac.kr/","target":"_blank","title":"첨단영상대학원"}
+{"data-lvl":"3","data-linksubyn":"N"}
+{"href":"http://mba.cau.ac.kr/main.php","target":"_blank","title":"경영전문대학원"}
+{"data-lvl":"3","data-linksubyn":"N"}
+{"href":"http://lawschool.cau.ac.kr/","target":"_blank","title":"법학전문대학원"}
+{"data-lvl":"2","class":"child","data-linksubyn":"N"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=370","target":"_self","title":"특수대학원입학"}
+{"class":"menuS"}
+{"data-lvl":"3","data-linksubyn":"N"}
+{"href":"http://causd.cau.ac.kr/","target":"_blank","title":"사회복지대학원"}
+{"data-lvl":"3","data-linksubyn":"N"}
+{"href":"http://gse.cau.ac.kr/","target":"_blank","title":"교육대학원"}
+{"data-lvl":"3","data-linksubyn":"N"}
+{"href":"http://shinbang.cau.ac.kr/index/","target":"_blank","title":"커뮤니케이션대학원"}
+{"data-lvl":"3","data-linksubyn":"N"}
+{"href":"http://www.caugsce.org/wordpress/","target":"_blank","title":"건설대학원"}
+{"data-lvl":"3","data-linksubyn":"N"}
+{"href":"http://gspa.cau.ac.kr/2018/","target":"_blank","title":"행정대학원"}
+{"data-lvl":"3","data-linksubyn":"N"}
+{"href":"http://iem.cau.ac.kr/","target":"_blank","title":"창업경영대학원"}
+{"data-lvl":"3","data-linksubyn":"N"}
+{"href":"http://www.gsa.cau.ac.kr/2017/index.php","target":"_blank","title":"예술대학원"}
+{"data-lvl":"3","data-linksubyn":"N"}
+{"href":"http://gugak.cau.ac.kr","target":"_blank","title":"국악교육대학원"}
+{"data-lvl":"3","data-linksubyn":"N"}
+{"href":"http://ghrd.cau.ac.kr/","target":"_blank","title":"글로벌인적자원개발대학원"}
+{"data-lvl":"3","data-linksubyn":"N"}
+{"href":"http://gsn.cau.ac.kr/","target":"_blank","title":"건강간호대학원"}
+{"data-lvl":"3","data-linksubyn":"N"}
+{"href":"http://gsps.cau.ac.kr/20141001/main/main.php","target":"_blank","title":"심리서비스대학원"}
+{"data-lvl":"3","data-linksubyn":"N"}
+{"href":"http://gss.cau.ac.kr/","target":"_blank","title":"보안대학원"}
+{"data-lvl":"1","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=160","title":"교육"}
+{"class":"menuM"}
+{"data-lvl":"2","class":"child","data-linksubyn":"N"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=800","target":"_self","title":"대학"}
+{"class":"menuS"}
+{"data-lvl":"3","class":"child","data-linksubyn":"N"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=810","target":"_self","title":"인문대학"}
+{"data-lvl":"3","class":"child","data-linksubyn":"N"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=830","target":"_self","title":"사회과학대학"}
+{"data-lvl":"3","class":"child","data-linksubyn":"N"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=840","target":"_self","title":"사범대학"}
+{"data-lvl":"3","class":"child","data-linksubyn":"N"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=850","target":"_self","title":"자연과학대학"}
+{"data-lvl":"3","class":"child","data-linksubyn":"N"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=860","target":"_self","title":"생명공학대학"}
+{"data-lvl":"3","class":"child","data-linksubyn":"N"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=870","target":"_self","title":"공과대학"}
+{"data-lvl":"3","class":"child","data-linksubyn":"N"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=880","target":"_self","title":"창의ICT공과대학"}
+{"data-lvl":"3","class":"child","data-linksubyn":"N"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=980","target":"_self","title":"소프트웨어대학"}
+{"data-lvl":"3","class":"child","data-linksubyn":"N"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=890","target":"_self","title":"경영경제대학"}
+{"data-lvl":"3","class":"child","data-linksubyn":"N"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=900","target":"_self","title":"의과대학"}
+{"data-lvl":"3","class":"child","data-linksubyn":"N"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=910","target":"_self","title":"약학대학"}
+{"data-lvl":"3","class":"child","data-linksubyn":"N"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=920","target":"_self","title":"적십자간호대학"}
+{"data-lvl":"3","class":"child","data-linksubyn":"N"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=930","target":"_self","title":"예술대학"}
+{"data-lvl":"3","class":"child","data-linksubyn":"N"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=940","target":"_self","title":"예술공학대학"}
+{"data-lvl":"3","class":"child","data-linksubyn":"N"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=950","target":"_self","title":"체육대학"}
+{"data-lvl":"3","data-linksubyn":"N"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=960","target":"_self","title":"다빈치교양대학"}
+{"data-lvl":"3","data-linksubyn":"N"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=2670","target":"_self","title":"다빈치가상대학"}
+{"data-lvl":"3","data-linksubyn":"N"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=970","target":"_self","title":"융합·연계·자기설계전공"}
+{"data-lvl":"2","class":"child","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1100","target":"_self","title":"대학원"}
+{"class":"menuS"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1110","target":"_self","title":"일반대학원"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1130","target":"_self","title":"전문대학원"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1150","target":"_self","title":"특수대학원"}
+{"data-lvl":"2","class":"child","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=110","target":"_self","title":"학사정보"}
+{"class":"menuS"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=130","target":"_self","title":"학사행정"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=590","target":"_self","title":"학사일정"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1230","target":"_self","title":"등록금"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1240","target":"_self","title":"장학안내"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1260","target":"_self","title":"병무안내"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=2380","target":"_self","title":"증명서 발급"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"https://mportal.cau.ac.kr/main.do","target":"_blank","title":"중앙대포탈"}
+{"data-lvl":"2","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=2010","target":"_self","title":"유연학기제"}
+{"class":"menuS"}
+{"data-lvl":"2","data-linksubyn":"Y"}
+{"href":"https://mportal.cau.ac.kr/system/share/plf/index.do","target":"_blank","title":"공유대학 플랫폼(학점교류)"}
+{"class":"menuS"}
+{"data-lvl":"1","data-linksubyn":"N"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=170","title":"연구산학"}
+{"class":"menuM"}
+{"data-lvl":"2","data-linksubyn":"Y"}
+{"href":"https://iacf.cau.ac.kr/page/main.php","target":"_blank","title":"산학협력단"}
+{"class":"menuS"}
+{"data-lvl":"2","data-linksubyn":"Y"}
+{"href":"http://rsch.cau.ac.kr/","target":"_blank","title":"연구처"}
+{"class":"menuS"}
+{"data-lvl":"2","data-linksubyn":"Y"}
+{"href":"http://lincplus.cau.ac.kr/","target":"_blank","title":"LINC+사업단"}
+{"class":"menuS"}
+{"data-lvl":"2","data-linksubyn":"Y"}
+{"href":"http://convergence.cau.ac.kr/","target":"_blank","title":"미래융합원"}
+{"class":"menuS"}
+{"data-lvl":"2","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1170","target":"_self","title":"연구기관"}
+{"class":"menuS"}
+{"data-lvl":"2","class":"child","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1180","target":"_self","title":"연구현황"}
+{"class":"menuS"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=2340","target":"_self","title":"연구발표현황 "}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1200","target":"_self","title":"연구과제 현황"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1210","target":"_self","title":"산학협력 및 기술이전"}
+{"data-lvl":"2","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1250","target":"_self","title":"연구성과"}
+{"class":"menuS"}
+{"data-lvl":"2","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=2570","target":"_self","title":"CAU연구자"}
+{"class":"menuS"}
+{"data-lvl":"1","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=80","title":"대학생활"}
+{"class":"menuM"}
+{"data-lvl":"2","class":"child","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1290","target":"_self","title":"국제교류"}
+{"class":"menuS"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1310","target":"_self","title":"교환·방문학생 파견"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1330","target":"_self","title":"교환학생수용"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"https://oia.cau.ac.kr/bbs/board.php?tbl=k_bbs31","target":"_blank","title":"공지사항"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"https://oia.cau.ac.kr/bbs/board.php?tbl=k_bbs41 ","target":"_blank","title":"단기과정프로그램"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"https://oia.cau.ac.kr/bbs/board.php?tbl=k_bbs71","target":"_blank","title":"외국인유학생"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"https://oia.cau.ac.kr/k_sub02/sub01.php","target":"_blank","title":"협정대학현황"}
+{"data-lvl":"2","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1370","target":"_self","title":"한국어어학연수"}
+{"class":"menuS"}
+{"data-lvl":"2","class":"child","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1380","target":"_self","title":"생활정보"}
+{"class":"menuS"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1390","target":"_self","title":"생활관"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1400","target":"_self","title":"복지시설"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1410","target":"_self","title":"근로장학생"}
+{"data-lvl":"2","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=2620","target":"_self","title":"스포츠단 활동"}
+{"class":"menuS"}
+{"data-lvl":"2","class":"child","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1420","target":"_self","title":"학생활동"}
+{"class":"menuS"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1430","target":"_self","title":"학생홍보대사(중앙사랑)"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1440","target":"_self","title":"학생군사교육단(ROTC)"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1450","target":"_self","title":"총학생회"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1470","target":"_self","title":"동아리연합회"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1480","target":"_self","title":"대학응원단(HURRAH-C)"}
+{"data-lvl":"2","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=2660","target":"_self","title":"사회봉사"}
+{"class":"menuS"}
+{"data-lvl":"2","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=260","target":"_self","title":"학생지원"}
+{"class":"menuS"}
+{"data-lvl":"2","class":"child","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1490","target":"_self","title":"CAU 스마트 학생증"}
+{"class":"menuS"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1500","target":"_self","title":"개요"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1510","target":"_self","title":"스마트학생증"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1520","target":"_self","title":"모바일학생증·신분증"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1530","target":"_self","title":"전자출결시스템"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1540","target":"_self","title":"도서관시스템"}
+{"data-lvl":"2","class":"child","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=90","target":"_self","title":"CAU광장"}
+{"class":"menuS"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=100","class":"on","target":"_self","title":"CAU Notice"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"http://news.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=10","target":"_blank","title":"CAU News"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=720","target":"_self","title":"사이버감사실"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=1560","target":"_self","title":"행정서비스"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"http://news.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=20","target":"_blank","title":"파워중앙인"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"https://news.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=100","target":"_blank","title":"Campus Life"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=270","target":"_self","title":"CAU웹진"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"http://www.cauon.net/","target":"_blank","title":"CAU 미디어센터"}
+{"data-lvl":"2","class":"child","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=2420","target":"_self","title":"코로나19 감염예방 수칙 및 대학 대응방안 안내"}
+{"class":"menuS"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=2440","target":"_self","title":"대학 대처방안"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=2450","target":"_self","title":"코로나19 실시간 상황판"}
+{"data-lvl":"3","data-linksubyn":"Y"}
+{"href":"/cms/FR_CON/index.do?MENU_ID=2460","target":"_self","title":"감염예방 행동수칙"}
+{"data-lvl":"1","data-linksubyn":"Y"}
+{"href":"https://news.cau.ac.kr/","title":"CAU NEWS TODAY"}
+{"class":"menuM"}
+{"class":"btn_close","type":"button","onclick":"$(this).parents('.pop_wrap').hide();"}
+{"class":"ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable","tabindex":"-1","role":"dialog","aria-describedby":"div_comm_progressbarDialog","aria-labelledby":"ui-id-1","style":"position: absolute; height: auto; width: 300px; top: 250px; left: 246px; display: none;"}
+{"class":"ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle"}
+{"id":"ui-id-1","class":"ui-dialog-title"}
+{"type":"button","class":"ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close","role":"button","title":"Close"}
+{"class":"ui-button-icon-primary ui-icon ui-icon-closethick"}
+{"class":"ui-button-text"}
+{"id":"div_comm_progressbarDialog","style":"width: auto; min-height: 0px; max-height: none; height: 41px;","class":"ui-dialog-content ui-widget-content"}
+{"id":"div_comm_progressbar","class":"ui-progressbar ui-widget ui-widget-content ui-corner-all ui-progressbar-indeterminate","role":"progressbar","aria-valuemin":"0"}
+{"class":"ui-progressbar-value ui-widget-header ui-corner-left","style":"width: 100%;"}
+{"class":"ui-progressbar-overlay"}
+{"class":"ui-resizable-handle ui-resizable-n","style":"z-index: 90;"}
+{"class":"ui-resizable-handle ui-resizable-e","style":"z-index: 90;"}
+{"class":"ui-resizable-handle ui-resizable-s","style":"z-index: 90;"}
+{"class":"ui-resizable-handle ui-resizable-w","style":"z-index: 90;"}
+{"class":"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se","style":"z-index: 90;"}
+{"class":"ui-resizable-handle ui-resizable-sw","style":"z-index: 90;"}
+{"class":"ui-resizable-handle ui-resizable-ne","style":"z-index: 90;"}
+{"class":"ui-resizable-handle ui-resizable-nw","style":"z-index: 90;"}

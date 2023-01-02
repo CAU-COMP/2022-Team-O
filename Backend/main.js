@@ -12,6 +12,30 @@ const server = http.createServer(app);
 const res_IndustSec = await crawlIndustSec("url"); // 이 반환값에 .title 또는 .url을 이용해 값에 접근할 수 있음
 const res_Software = await crawlSoftware("url");
 
+let arrayA = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+
+// 기존에 저장된 URL이나 title을 저장하는 배열은 항상 초기화될 수 있으므로 let 으로 선언해야함
+
+function compareTwoArrays(originalArray,newArray,len){ // 실제 사용시 len은 newArray.length로 대체
+    let found = 0;
+    for(let i = 0; i < len; i++){
+        for(let j = 0; j < len; j++){
+            if(originalArray[i] == newArray[j]){
+                found++;
+                // console.log(`${originalArray[i]} and ${newArray[j]} are the same`);
+            }
+        }
+    }
+    // 사실 새 공지라 해도 시간 순서대로 sort 되어 있을 것이기 때문에 이렇게 전수조사를 할 필요는 없는데,
+    // 코드의 간결함을 위해 일단은 이렇게 유지할 것.
+    return len - found; // 변경된 값의 개수
+} // 정상 작동 확인
+
+// console.log(compareTwoArrays(arrayA,res_IndustSec.url,res_IndustSec.url.length));
+// arrayA = [...res_IndustSec.url];
+// // 배열 복사 => 필요부분만 concat, push하면 더 효율적이겠지만,
+// // 코드의 간결성을 위해서 전체를 복사함.
+// console.log(arrayA);
 
 // 유저별 구독 정보 저장
 let userDataBase = [];

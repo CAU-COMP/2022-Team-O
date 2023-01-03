@@ -1,4 +1,4 @@
-function login(){
+/* function login(){
     var id=document.querySelector('#id');
     var pw=document.querySelector('#pw');
   
@@ -32,3 +32,40 @@ function create_id(){
         }
     }
 }
+
+function memory(){
+    const userName=document.getElementById('name');
+    const userMail=document.getElementById('eMail');
+    const softWareStat=document.getElementsByName("section")[0].checked;
+    const industSecStat=document.getElementById("section")[1].checked;
+    const CAUnoticeStat=document.getElementById("section")[2].checked;
+
+}
+*/
+
+document.getElementById('signUpButton').addEventListener('click', (event) => {
+    event.preventDefault()
+    const inputName = document.getElementById('name').value;
+    const email= document.getElementById('eMail').value;
+    const res_software=document.getElementById('cb1').checked.toString();
+    const res_industSec=document.getElementById('cb2').checked.toString();
+    const res_CAUnotice=document.getElementById('cb3').checked.toString();
+    const res_integEngineering=document.getElementById('cb4').checked.toString();
+
+    console.log(inputName, email, res_software, res_industSec, res_CAUnotice, res_integEngineering);
+    // console.log(typeof(inputName))
+    // console.log(typeof(res_software))
+    // alert(res_software);
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "caunotify.me/posttest", true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify({
+        "name": inputName,
+        "industSec": res_industSec,
+        "software": res_software,
+        "CAUnotice": res_CAUnotice,
+        "integrEngineering": res_integEngineering
+    }));
+})
+

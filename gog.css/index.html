@@ -47,28 +47,21 @@
         </ul>
     </nav>
     <h2>
-        
-        <li class="cau">
-            <img src="중앙대 사진.JPG" alt="가운데 사진">
-        </li>
-
-        <li class="log-in">
-            <script src="common.js"></script>
-            <div>
-                <label>아이디: <input id="id" type="text"></label>
-            </div>
-            <div>
-                <label>비밀번호: <input id="pw" type="text"></label>
-            </div>
-            
-            <div>
-                <a href="join.html"><input type="button" value="회원가입"></a>
-                <input type="button" value="로그인" onclick="login();">
-            </div>    
-        </li>
+        <form>
+            <fieldset style= width:10cm>
+                <legend>회원가입</legend>
+                <div>이름: <input id="name" type="text" placeholder="이름을 입력하세요" maxlength="10" /></div>
+                <div>이메일: <input id="eMail" type="text" placeholder="이메일을 입력하세요" maxlength="20" /></div>
+                <input type="checkbox" id="cb1" name="section_software" value="software"> 소프트웨어학부 게시판 <br>
+                <input type="checkbox" id="cb2" name="section_industSec" value="industSec"> 산업보안학과 게시판 <br>
+                <input type="checkbox" id="cb3" name="section_CAUnotice" value="CAUnotice">CAU NOTICE <br>
+                <input type="checkbox" id="cb4" name="section_integEngineering" value="integEngineering">융합공학부 게시판 <br>
+                <input type="submit" id="signUpButton" value="회원가입">
+            </fieldset>
+        </form>
     </h2>
-  
 
-
+    
+    <script src="common.js"></script> 
 </body>
-</html>
+</html> 

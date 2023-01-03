@@ -65,6 +65,7 @@ userDataBase.push({
     industSec: "true",
     software: "true",
     CAUnotice: "true",
+    integEngineering: "true",
     id: 0, // 이건 프런트에서 보내지 않아도 됨
 });
 // console.log(userDataBase);        
@@ -72,30 +73,31 @@ userDataBase.push({
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.post('/newuser', (req, res) => { // 정상작동 확인함
-    const requestBody = req.body;
-    if(requestBody.name != undefined){
-        if(requestBody.industSec != "true" && requestBody.industSec != "false") return res.end("wrong industSec"); // undefined 인 경우도 잡아냄
-        if(requestBody.software != "true" && requestBody.software != "false") return res.end("wrong software");
-        if(requestBody.CAUnotice != "true" && requestBody.CAUnotice != "false") return res.end("wrong CAUnotice");
-        if(requestBody.integEngineering != "true" && requestBody.integEngineering != "false") return res.end("wrong integEngineering");
-        // console.log(`<Received>\n\tName:${requestBody.name}\n\tindustSec:${requestBody.industSec}\n\tsoftware:${requestBody.software}\n\tCAUnotice:${requestBody.CAUnotice}`);
-        requestBody.id = lastIdNum; // key값 추가
-        lastIdNum++; // 다음 사용자를 위해 증감
-        userDataBase.push(requestBody); // DB array에 저장
-        console.log(userDataBase);
-        return res.end("HTTP 200 OK"); // 정상 작동 응답
-    } else {
-        console.log(`Bad Request`);
-        return res.end("HTTP 400 Bad Request");
-    }
+// app.post('/newuser', (req, res) => { // 정상작동 확인함
+//     const requestBody = req.body;
+//     if(requestBody.name != undefined){
+//         if(requestBody.industSec != "true" && requestBody.industSec != "false") return res.end("wrong industSec"); // undefined 인 경우도 잡아냄
+//         if(requestBody.software != "true" && requestBody.software != "false") return res.end("wrong software");
+//         if(requestBody.CAUnotice != "true" && requestBody.CAUnotice != "false") return res.end("wrong CAUnotice");
+//         if(requestBody.integEngineering != "true" && requestBody.integEngineering != "false") return res.end("wrong integEngineering");
+//         // console.log(`<Received>\n\tName:${requestBody.name}\n\tindustSec:${requestBody.industSec}\n\tsoftware:${requestBody.software}\n\tCAUnotice:${requestBody.CAUnotice}`);
+//         requestBody.id = lastIdNum; // key값 추가
+//         lastIdNum++; // 다음 사용자를 위해 증감
+//         userDataBase.push(requestBody); // DB array에 저장
+//         console.log(userDataBase);
+//         return res.end("HTTP 200 OK"); // 정상 작동 응답
+//     } else {
+//         console.log(`Bad Request`);
+//         return res.end("HTTP 400 Bad Request");
+//     }
 
-    // res.send(requestBody);
-    // console.log(req.body);
+//     // res.send(requestBody);
+//     // console.log(req.body);
     
-}); // 이런식으로
+// }); // 이런식으로
 
 app.post('/posttest', (req, res) => { // 정상작동 확인함
+    res.header("Access-Control-Allow-Origin", "*");
     const requestBody = req.body;
     if(requestBody.name != undefined){
         console.log(requestBody);

@@ -96,6 +96,11 @@ app.use(express.json());
     
 // }); // 이런식으로
 
+app.get('/', function(req, res) {
+    // url이 http://a.com/topic?id=1&name=siwa 일때
+    res.send(req.query.id+','+req.query.name); // 1,siwa 출력
+});
+
 app.post('/posttest', (req, res) => { // 정상작동 확인함
     res.header("Access-Control-Allow-Origin", "*");
     const requestBody = req.body;

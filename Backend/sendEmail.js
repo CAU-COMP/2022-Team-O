@@ -1,9 +1,21 @@
 import AWS from 'aws-sdk'
-import * as keys from "../../SES_Access_Key.json" assert { type: "json" };
+// import * as keys from "../../SES_Access_Key.json" assert { type: "json" };
+import fs from "fs"
+
+fs.readFile("../../SES_Access_Key.json", "utf-8", function (err, data) {
+  if (err) throw err;
+  // console.log(data);
+  const keys = JSON.parse(data);
+  // console.log(keys.accessKey);
+  // console.log(keys.secretAccessKey);
+});
+
+// console.log(keys.default.accessKey);
+// console.log(keys.default.secretAccessKey);
 
 const SES_CONFIG = {
-    accessKeyId: keys.default.accessKey,
-    secretAccessKey: keys.default.secretAccessKey,
+    accessKeyId: keys.accessKey,
+    secretAccessKey: keys.secretAccessKey,
     region: 'ap-northeast-1',
 };
 
@@ -53,4 +65,4 @@ let sendTemplateEmail = (recipientEmail) => {
 //     sendTemplateEmail,
 // };
 
-sendTemplateEmail();
+sendTemplateEmail("admin@caunotify.me");

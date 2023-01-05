@@ -1,8 +1,9 @@
 import AWS from 'aws-sdk'
+import * as keys from "../../SES_Access_Key.json" assert { type: "json" };
 
 const SES_CONFIG = {
-    accessKeyId: 'AKIAQTXUP5OPBE62L7I6',
-    secretAccessKey: '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',
+    accessKeyId: keys.default.accessKey,
+    secretAccessKey: keys.default.secretAccessKey,
     region: 'ap-northeast-1',
 };
 

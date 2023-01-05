@@ -3,7 +3,7 @@ import fetch from "node-fetch";
 import cheerio from "cheerio";
 // const cheerio = require('cheerio');
 import fs from "fs";
-import puppeteer from "puppeteer";
+import puppeteer from "puppeteer"; // Headless Chrome Crawler
 
 // package.json 에서 type을 module로 설정해 es6 module scope를 따름
 

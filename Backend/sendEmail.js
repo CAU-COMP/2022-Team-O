@@ -1,15 +1,27 @@
 import AWS from 'aws-sdk'
-import * as keys from "../../SES_Access_Key.json" assert { type: "json" };
+// import * as keys from "../../SES_Access_Key.json" assert { type: "json" };
+import fs from "fs"
+
+fs.readFile("../../SES_Access_Key.json", "utf-8", function (err, data) {
+  if (err) throw err;
+  // console.log(data);
+  const keys = JSON.parse(data);
+  // console.log(keys.accessKey);
+  // console.log(keys.secretAccessKey);
+});
+
+// console.log(keys.default.accessKey);
+// console.log(keys.default.secretAccessKey);
 
 const SES_CONFIG = {
-    accessKeyId: keys.default.accessKey,
-    secretAccessKey: keys.default.secretAccessKey,
+    accessKeyId: keys.accessKey,
+    secretAccessKey: keys.secretAccessKey,
     region: 'ap-northeast-1',
 };
 
 const AWS_SES = new AWS.SES(SES_CONFIG);
 
-let sendEmail = (recipientEmail, name) => {
+let sendEmail = (recipientEmail, recipientName) => {
     let params = {
       Source: 'mail@caunotify.me',
       Destination: {
@@ -27,7 +39,7 @@ let sendEmail = (recipientEmail, name) => {
         },
         Subject: {
           Charset: 'UTF-8',
-          Data: `Hello, ${name}!`,
+          Data: `Hello, ${recipientName}!`,
         }
       },
     };
@@ -48,7 +60,9 @@ let sendTemplateEmail = (recipientEmail) => {
     return AWS_SES.sendTemplatedEmail(params).promise();
 };
 
-export default {
-    sendEmail,
-    sendTemplateEmail,
-};
+// export default {
+//     sendEmail,
+//     sendTemplateEmail,
+// };
+
+sendTemplateEmail("admin@caunotify.me");

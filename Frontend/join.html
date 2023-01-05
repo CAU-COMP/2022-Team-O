@@ -5,20 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>중앙대 게시판 회원가입</title>
-    <script src="common.js"></script>
-    <link rel="stylesheet" href="style.css"> 
-    <style>
-        div {
-            padding: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1>CAU</h1>
     <nav>
         <ul>
             <li class="dropdown">
-                <div class="dropdown-menu">Menu1</div>
+                <div class="dropdown-menu" onclick="location.href='menuone.html';">Menu1</div>
                 <div class="dropdown-content">
                     <a href="#">Menu1-1</a>
                     <a href="#">Menu1-2</a>
@@ -27,7 +22,7 @@
                 </div>
             </li>
             <li class="dropdown">
-                <div class="dropdown-menu">Menu2</div>
+                <div class="dropdown-menu" onclick="location.href='menutwo.html';">Menu2</div>
                 <div class="dropdown-content">
                     <a href="#">Menu2-1</a>
                     <a href="#">Menu2-2</a>
@@ -36,7 +31,7 @@
                 </div>
             </li>
             <li class="dropdown">
-                <div class="dropdown-menu">Menu3</div>
+                <div class="dropdown-menu" onClick="location.href='menuthird.html';">Menu3</div>
                 <div class="dropdown-content">
                     <a href="#">Menu3-1</a>
                     <a href="#">Menu3-2</a>
@@ -51,25 +46,25 @@
 
         </ul>
     </nav>
-    <div>
-        <label>아이디: <input id="id" type="text"></label>
-    </div>
-    <div>
-        <label>비밀번호: <input id="pw" type="text"></label>
-    </div>
-    <div>
-        <label>비밀번호 확인: <input id="r_pw" type="text"></label>
-    </div>
+    <h2 class="joinForm">
+        <form>
+            <fieldset style= "width:10cm; margin: 0 auto;"> 
+                <legend>회원가입</legend>
+                <div>이름: <input id="name" type="text" placeholder="이름을 입력하세요" maxlength="10" /></div>
+                <div>이메일: <input id="eMail" type="text" placeholder="이메일을 입력하세요" maxlength="20" /></div>
+                <input type="checkbox" id="cb1" name="section_software" value="software"> 소프트웨어학부 게시판 <br>
+                <input type="checkbox" id="cb2" name="section_industSec" value="industSec"> 산업보안학과 게시판 <br>
+                <input type="checkbox" id="cb3" name="section_CAUnotice" value="CAUnotice">CAU NOTICE <br>
+                <input type="checkbox" id="cb4" name="section_integEngineering" value="integEngineering">융합공학부 게시판 <br>
+                <input type="checkbox" id="cb5" name="section_korean" value="korean">국어국문학과 게시판 <br>
+                <input type="checkbox" id="cb6" name="section_mechnicalEngineering" value="mechnicalEngineering">기계공학부 게시판 <br>
+                
+                <input type="submit" id="signUpButton" value="회원가입">
+            </fieldset>
+        </form>
+    </h2>
 
-    <div>
-        <style>
-            input{
-                color: blue;
-            
-            }
-        </style>
-        <input type="button" value="뒤로가기" onclick="back();">
-        <input type="button" value="계정 생성" onclick="create_id();">
-    </div>
+    
+    <script src="common.js"></script> 
 </body>
-</html>
+</html> 

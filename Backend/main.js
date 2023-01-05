@@ -5,6 +5,7 @@ import crawlIndustSec from "./url_scraper_indust_sec.js";
 import crawlSoftware from "./url_scraper_software.js";
 import crawlCAUnotice from "./url_scraper_cauNotice.js";
 import crawlIntegEngineering from "./url_scraper_integ_engineering.js";
+import crawlKorean from "./url_scraper_korean.js";
 import fs from "fs";
 
 const PORT = 80; // 아마존 EC2 업로드 시에는 HTTP용으로 80번으로 바꿀 예정
@@ -22,6 +23,7 @@ const res_IndustSec = await crawlIndustSec("url"); // 이 반환값에 .title �
 const res_Software = await crawlSoftware("url");
 const res_CAUnotice = await crawlCAUnotice("url");
 const res_IntegEngineering = await crawlIntegEngineering("url");
+const res_Korean = await crawlKorean("url");
 // console.log(res_IndustSec.url);
 
 // 기존에 저장된 URL이나 title을 저장하는 배열은 항상 초기화될 수 있으므로 let 으로 선언해야함
@@ -66,6 +68,7 @@ userDataBase.push({
     software: "true",
     CAUnotice: "true",
     integEngineering: "true",
+    Korean: "true",
     id: 0, // 이건 프런트에서 보내지 않아도 됨
 });
 // console.log(userDataBase);        
@@ -96,6 +99,11 @@ app.use(express.json());
     
 // }); // 이런식으로
 
+app.get('/', function(req, res) {
+    // url이 http://a.com/topic?id=1&name=siwa 일때
+    res.send(req.query.id+','+req.query.name); // 1,siwa 출력
+});
+
 app.post('/posttest', (req, res) => { // 정상작동 확인함
     res.header("Access-Control-Allow-Origin", "*");
     const requestBody = req.body;
@@ -105,6 +113,7 @@ app.post('/posttest', (req, res) => { // 정상작동 확인함
         if(requestBody.software != "true" && requestBody.software != "false") return res.end("wrong software");
         if(requestBody.CAUnotice != "true" && requestBody.CAUnotice != "false") return res.end("wrong CAUnotice");
         if(requestBody.integEngineering != "true" && requestBody.integEngineering != "false") return res.end("wrong integEngineering");
+        if(requestBody.Korean != "true" && requestBody.Korean != "false") return res.end("wrong Korean");
         // console.log(`<Received>\n\tName:${requestBody.name}\n\tindustSec:${requestBody.industSec}\n\tsoftware:${requestBody.software}\n\tCAUnotice:${requestBody.CAUnotice}`);
         requestBody.id = lastIdNum; // key값 추가
         lastIdNum++; // 다음 사용자를 위해 증감

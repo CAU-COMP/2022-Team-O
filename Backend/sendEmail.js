@@ -9,7 +9,7 @@ const SES_CONFIG = {
 
 const AWS_SES = new AWS.SES(SES_CONFIG);
 
-let sendEmail = (recipientEmail, name) => {
+let sendEmail = (recipientEmail, recipientName) => {
     let params = {
       Source: 'mail@caunotify.me',
       Destination: {
@@ -27,7 +27,7 @@ let sendEmail = (recipientEmail, name) => {
         },
         Subject: {
           Charset: 'UTF-8',
-          Data: `Hello, ${name}!`,
+          Data: `Hello, ${recipientName}!`,
         }
       },
     };
@@ -48,7 +48,9 @@ let sendTemplateEmail = (recipientEmail) => {
     return AWS_SES.sendTemplatedEmail(params).promise();
 };
 
-export default {
-    sendEmail,
-    sendTemplateEmail,
-};
+// export default {
+//     sendEmail,
+//     sendTemplateEmail,
+// };
+
+sendTemplateEmail();

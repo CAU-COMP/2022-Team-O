@@ -51,6 +51,8 @@ document.getElementById('signUpButton').addEventListener('click', (event) => {
     const res_industSec=document.getElementById('cb2').checked.toString();
     const res_CAUnotice=document.getElementById('cb3').checked.toString();
     const res_integEngineering=document.getElementById('cb4').checked.toString();
+    const res_korean=document.getElementById('cb5').checked.toString();
+    const res_mechnicalEngineering=document.getElementById('cb6').checked.toString();
 
     console.log(inputName, email, res_software, res_industSec, res_CAUnotice, res_integEngineering);
     // console.log(typeof(inputName))
@@ -65,7 +67,9 @@ document.getElementById('signUpButton').addEventListener('click', (event) => {
         "industSec": res_industSec,
         "software": res_software,
         "CAUnotice": res_CAUnotice,
-        "integrEngineering": res_integEngineering
+        "integrEngineering": res_integEngineering,
+        "korean":res_korean,
+        "mechnicalEngineering":res_mechnicalEngineering
     }));
 })
 

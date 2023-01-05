@@ -5,6 +5,13 @@ h1{
     color:rgba(38, 117, 236, 0.77);
 }
 
+h2{
+  background-image: url("슬라이드1.JPG");
+  width: 35cm;
+  background-size:auto;
+  height:10cm;
+  
+}
 
 .cau{
   margin-top: 10px;
@@ -30,6 +37,16 @@ h2 li{
   display:inline-block;  /*.찍는거는 class를 지정해서 꾸밀때, 그냥하는거는 그냥 하는거 ㅇㅇ*+ 이제 저기다가 좀더 꾸미는 것까지만 하기*/
 }
 
+h2 form{
+  text-align: left;
+}
+
+h2 form fieldset{
+  background-color: aliceblue;
+    /* margin-left: 14.5cm; 
+    margin-top: 2cm; */
+ 
+}
 
 .home{
   background-color: darkorange;

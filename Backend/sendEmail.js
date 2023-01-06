@@ -1,5 +1,5 @@
 import AWS from 'aws-sdk'
-// import * as keys from "../../SES_Access_Key.json" assert { type: "json" };
+// import * as keys from "../../SES_Access_Key.json" assert { type: "json" }
 import fs from "fs"
 
 let keys = '';
@@ -67,4 +67,4 @@ let sendTemplateEmail = (recipientEmail) => {
 //     sendTemplateEmail,
 // };
 
-sendTemplateEmail("na_sanghyun@naver.com");
+sendEmail("na_sanghyun@naver.com","NaSangHyun");

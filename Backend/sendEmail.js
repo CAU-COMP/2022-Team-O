@@ -30,20 +30,16 @@ let sendEmail = (recipientEmail, bodyContent, mailTitle) => { // Title 에 수신자
         ],
       },
       ReplyToAddresses: [],
-      Message: { /* required */
-        Body: { /* required */
+      Message: {
+        Body: {
           Html: {
           Charset: "UTF-8",
-          Data: "HTML_FORMAT_BODY"
+          Data: bodyContent
           },
-          Text: {
-          Charset: "UTF-8",
-          Data: "TEXT_FORMAT_BODY"
-          }
         },
         Subject: {
-          Charset: 'UTF-8',
-          Data: 'Test email'
+          Charset: "UTF-8",
+          Data: mailTitle
         }
       },
     };
@@ -59,13 +55,25 @@ let sendTemplateEmail = (recipientEmail) => {
           recipientEmail
         ]
       },
-      "TemplateData": "{ \"name\":\"John Doe\"}"
+      "TemplateData": "{ \"name\":\"John Doe\"}",
+      "ReplyToAddresses": [
+        "admin@caunotify.me"
+      ]
     };
     return AWS_SES.sendTemplatedEmail(params).promise();
 };
 
 
-sendEmail("na_sanghyun@naver.com","NaSangHyun","MailTitle");
+// Handle promise's fulfilled/rejected states
+sendTemplateEmail.then(
+  function(data) {
+    console.log(data);
+  }).catch(
+    function(err) {
+    console.error(err, err.stack);
+  });
+
+// sendTemplateEmail("na_sanghyun@naver.com");
 
 export default {
     sendEmail,

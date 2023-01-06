@@ -131,9 +131,9 @@ app.post('/posttest', (req, res) => { // 정상작동 확인함
         if(requestBody.MechEngineering != "true" && requestBody.MechEngineering != "false") return res.end("wrong MechEngineering");
         if(requestBody.Psychology != "true" && requestBody.Psychology != "false") return res.end("wrong Psychology");
         if(requestBody.Business != "true" && requestBody.Business != "false") return res.end("wrong Business");
-        if(requestBody.ElecEngineering "true" && requestBody.ElecEngineering != "false") return res.end("wrong ElecEngineering");
-        if(requestBody.English "true" && requestBody.English != "false") return res.end("wrong English");
-        if(requestBody.EnerEngineering "true" && requestBody.EnerEngineering != "false") return res.end("wrong EnerEngineering");
+        if(requestBody.ElecEngineering != "true" && requestBody.ElecEngineering != "false") return res.end("wrong ElecEngineering");
+        if(requestBody.English != "true" && requestBody.English != "false") return res.end("wrong English");
+        if(requestBody.EnerEngineering != "true" && requestBody.EnerEngineering != "false") return res.end("wrong EnerEngineering");
         // console.log(`<Received>\n\tName:${requestBody.name}\n\tindustSec:${requestBody.industSec}\n\tsoftware:${requestBody.software}\n\tCAUnotice:${requestBody.CAUnotice}`);
         requestBody.id = lastIdNum; // key값 추가
         lastIdNum++; // 다음 사용자를 위해 증감

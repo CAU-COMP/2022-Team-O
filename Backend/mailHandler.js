@@ -4,7 +4,8 @@ function mailHandler(){
     const bodyContent = [
         "This is Body Content"
     ];
-    sendEmail("na_sanghyun@naver.com","NaSangHyun","MailTitle")
+    // params : recipientEmail, bodyContent, mailTitle
+    sendEmail("na_sanghyun@naver.com",bodyContent,"MailTitle")
     .then(
         function(data) {
           console.log(data);
@@ -12,6 +13,6 @@ function mailHandler(){
     .catch(
           function(err) {
           console.error(err, err.stack);
-        }); // params : recipientEmail, bodyContent, mailTitle
+        }); 
 }
 mailHandler();

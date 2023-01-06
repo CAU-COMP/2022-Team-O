@@ -1,4 +1,4 @@
-import * as sender from "./sendEmail"
+import * as sender from "./sendEmail.js"
 
 function mailHandler(){
     const bodyContent = [

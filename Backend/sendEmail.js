@@ -21,7 +21,7 @@ const SES_CONFIG = {
 
 const AWS_SES = new AWS.SES(SES_CONFIG);
 
-function sendEmail(recipientEmail, bodyContent, mailTitle){ // Title 에 수신자 이름 포함할 것
+export function sendEmail(recipientEmail, bodyContent, mailTitle){ // Title 에 수신자 이름 포함할 것
     let params = {
       Source: "mail@caunotify.me",
       Destination: {
@@ -47,7 +47,7 @@ function sendEmail(recipientEmail, bodyContent, mailTitle){ // Title 에 수신자 �
     return AWS_SES.sendEmail(params).promise();
 };
 
-function sendTemplateEmail(recipientEmail){
+export function sendTemplateEmail(recipientEmail){
     let params = {
       "Source": "mail@caunotify.me",
       "Template": "ExampleTemplate",
@@ -74,7 +74,7 @@ function sendTemplateEmail(recipientEmail){
 
 // sendTemplateEmail("na_sanghyun@naver.com");
 
-export default {
-    sendEmail,
-    sendTemplateEmail,
-};
+// export default {
+//     sendEmail,
+//     sendTemplateEmail,
+// };

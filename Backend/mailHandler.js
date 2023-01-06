@@ -1,10 +1,10 @@
-import * as sender from "./sendEmail.js"
+import {sendEmail, sendTemplateEmail} from "./sendEmail.js"
 
 function mailHandler(){
     const bodyContent = [
         "This is Body Content"
     ];
-    sender.sendEmail("na_sanghyun@naver.com","NaSangHyun","MailTitle")
+    sendEmail("na_sanghyun@naver.com","NaSangHyun","MailTitle")
     .then(
         function(data) {
           console.log(data);

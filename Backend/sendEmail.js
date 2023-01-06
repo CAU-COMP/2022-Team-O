@@ -2,10 +2,12 @@ import AWS from 'aws-sdk'
 // import * as keys from "../../SES_Access_Key.json" assert { type: "json" };
 import fs from "fs"
 
+let keys = '';
+
 fs.readFile("../../SES_Access_Key.json", "utf-8", function (err, data) {
   if (err) throw err;
   // console.log(data);
-  const keys = JSON.parse(data);
+  keys = JSON.parse(data);
   // console.log(keys.accessKey);
   // console.log(keys.secretAccessKey);
 });
@@ -48,14 +50,14 @@ let sendEmail = (recipientEmail, recipientName) => {
 
 let sendTemplateEmail = (recipientEmail) => {
     let params = {
-      Source: 'mail@caunotify.me',
-      Template: 'Template',
-      Destination: {
-        ToAddresses: [ 
+      "Source": "mail@caunotify.me",
+      "Template": "ExampleTemplate",
+      "Destination": {
+        "ToAddresses": [ 
           recipientEmail
         ]
       },
-      TemplateData: '{ \'name\':\'John Doe\'}'
+      "TemplateData": "{ \"name\":\"John Doe\"}"
     };
     return AWS_SES.sendTemplatedEmail(params).promise();
 };
@@ -65,4 +67,4 @@ let sendTemplateEmail = (recipientEmail) => {
 //     sendTemplateEmail,
 // };
 
-sendTemplateEmail("admin@caunotify.me");
+sendTemplateEmail("na_sanghyun@naver.com");

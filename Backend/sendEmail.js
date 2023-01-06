@@ -64,13 +64,13 @@ let sendTemplateEmail = (recipientEmail) => {
 
 
 // Handle promise's fulfilled/rejected states
-sendTemplateEmail("na_sanghyun@naver.com").then(
-  function(data) {
-    console.log(data);
-  }).catch(
-    function(err) {
-    console.error(err, err.stack);
-  });
+// sendEmail_("na_sanghyun@naver.com").then(
+//   function(data) {
+//     console.log(data);
+//   }).catch(
+//     function(err) {
+//     console.error(err, err.stack);
+//   });
 
 // sendTemplateEmail("na_sanghyun@naver.com");
 

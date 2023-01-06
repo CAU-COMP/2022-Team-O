@@ -28,6 +28,7 @@ let sendEmail = (recipientEmail, bodyContent, mailTitle) => { // Title 에 수신자
         ToAddresses: [
           recipientEmail
         ],
+      
       },
       ReplyToAddresses: [],
       Message: {
@@ -51,9 +52,7 @@ let sendTemplateEmail = (recipientEmail) => {
       "Source": "mail@caunotify.me",
       "Template": "ExampleTemplate",
       "Destination": {
-        "ToAddresses": [ 
-          recipientEmail
-        ]
+            "ToAddresses": [recipientEmail]
       },
       "TemplateData": "{ \"name\":\"John Doe\"}",
       "ReplyToAddresses": [
@@ -65,7 +64,7 @@ let sendTemplateEmail = (recipientEmail) => {
 
 
 // Handle promise's fulfilled/rejected states
-sendTemplateEmail.then(
+sendTemplateEmail("na_sanghyun@naver.com").then(
   function(data) {
     console.log(data);
   }).catch(

@@ -27,6 +27,7 @@ nav ul{
   margin: 0;
   padding: 0;
 }
+
 nav ul li{
   display: inline-block;
 }
@@ -135,7 +136,11 @@ h2 form fieldset{
   font-size: 16px;
   cursor: pointer;
 }
-
+.dropdown-menu:hover:not(.home){
+  background-color: darkorange;
+  color: white;
+}
+/* 
 .dropdown-content{
   position: absolute;
   background-color:rgb(98, 171, 239);
@@ -153,13 +158,10 @@ h2 form fieldset{
   display: none;
 }
 
-.dropdown-menu:hover:not(.home){
-  background-color: darkorange;
-  color: white;
-}
+
 
 .dropdown:hover .dropdown-content{
   display: block;
 }
 
-.dropdown-content a:hover{background-color: aliceblue;}
+.dropdown-content a:hover{background-color: aliceblue;} */

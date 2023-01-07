@@ -1,9 +1,9 @@
 import fs from "fs";
-import crawlIndustSec from "./url_scraper_indust_sec.js";
-import crawlSoftware from "./url_scraper_software.js";
-import crawlCAUnotice from "./url_scraper_cauNotice.js";
-import crawlIntegEngineering from "./url_scraper_integ_engineering.js";
-import crawlKorean from "./url_scraper_korean.js";
+import crawlIndustSec from "./crawlers/url_scraper_indust_sec.js";
+import crawlSoftware from "./crawlers/url_scraper_software.js";
+import crawlCAUnotice from "./crawlers/url_scraper_cauNotice.js";
+import crawlIntegEngineering from "./crawlers/url_scraper_integ_engineering.js";
+import crawlKorean from "./crawlers/url_scraper_korean.js";
 import { compareTwoArrays } from "./compare.js"
 import { mailHandler } from "./mailHandler.js";
 import KRname from "./name_en2kr.js"

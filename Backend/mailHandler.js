@@ -15,6 +15,9 @@ function mailHandler(recipientName, recipientEmail, data){
     const numberOfMajors = Object.keys(data).length;
     let updatedContent = '';
     let numberOfUpdates = 0; // = 각 학과별 key의 개수 확인
+
+    const unsubscribeUrl = "exampleURL";
+
     for(let i=0;i<numberOfMajors;i++){
       updatedContent.concat(`<h2>${data[i].majorName} 게시판:</h2>`);
       numberOfUpdates = Object.keys(data[i]).length;

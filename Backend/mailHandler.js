@@ -20,7 +20,7 @@ function mailHandler(recipientName, recipientEmail, data){
 
     for(let i=0;i<numberOfMajors;i++){
       updatedContent.concat(`<h2>${data[i].majorName} 게시판:</h2>`);
-      numberOfUpdates = Object.keys(data[i]).length;
+      numberOfUpdates = Object.keys(data[i].url).length;
       for(let j=0;j<numberOfUpdates;j++){
         updatedContent = updatedContent.concat(`<a href="${data[i].url[j]}">&#128204;${data[i].title[j]}<br></a>`);
       }

@@ -18,10 +18,10 @@ function mailHandler(recipientName, recipientEmail, data){
 
     const unsubscribeUrl = "exampleURL";
 
-    for(let i=0;i<numberOfMajors;i++){
-      updatedContent.concat(`<h2>${data[i].majorName} 게시판:</h2>`);
+    for(let i=0;i<numberOfMajors;i++){ // 각 게시판
+      updatedContent = updatedContent.concat(`<h2>${data[i].majorName} 게시판:</h2>`);
       numberOfUpdates = Object.keys(data[i].url).length;
-      for(let j=0;j<numberOfUpdates;j++){
+      for(let j=0;j<numberOfUpdates;j++){ // 게시판 별 각 업데이트
         updatedContent = updatedContent.concat(`<a href="${data[i].url[j]}">&#128204;${data[i].title[j]}<br></a>`);
       }
     }

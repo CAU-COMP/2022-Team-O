@@ -6,10 +6,7 @@ import crawlIntegEngineering from "./url_scraper_integ_engineering.js";
 import crawlKorean from "./url_scraper_korean.js";
 import { compareTwoArrays } from "./compare.js"
 import { mailHandler } from "./mailHandler.js";
-
-// 새 게시판 추가될 때 마다 수정할 것
-const numberOfMajors = 5;
-
+import KRname from "./name_en2kr.js"
 
 // refresh 함수에서는
 // 크롤러 실행 -> 기존 목록과 대조 -> 변화 있으면 sendMail() 후 원래 목록 대체, 없으면 행동하지 않음 -> 다음 크롤러 실행.
@@ -57,9 +54,10 @@ export async function refresh(nextIdNum){
             tempUrls.push(dataObject.url[i]);
             tempTitles.push(dataObject.title[i]);
         }
-        console.log(tempUrls);
-        console.log(tempTitles);
+        // console.log(tempUrls);
+        // console.log(tempTitles);
         updatedContentStorage[majorName] = {
+            majorName: KRname(majorName),
             url: tempUrls,
             title: tempTitles
         };
@@ -74,11 +72,21 @@ export async function refresh(nextIdNum){
     // ********************************************************************
     // *** 4. 각 유저의 구독정보 확인 후 해당되는 게시글을 추가해 메일 전송 ***
     // ********************************************************************
+    let dataToSend = [];
+    const userDataBase = JSON.parse(fs.readFileSync("./Backend/userDB_log/userDB.json","utf8"),"utf8");
     for(let i=0;i<nextIdNum;i++){
-
+        // console.log(userDataBase[i]);
+        if(userDataBase[i].industSec == "true" && updatedContentStorage.industSec != undefined) dataToSend.push(updatedContentStorage.industSec);
+        if(userDataBase[i].software == "true" && updatedContentStorage.software != undefined) dataToSend.push(updatedContentStorage.software);
+        if(userDataBase[i].CAUnotice == "true" && updatedContentStorage.CAUnotice != undefined) dataToSend.push(updatedContentStorage.CAUnotice);
+        if(userDataBase[i].integEngineering == "true" && updatedContentStorage.integEngineering != undefined) dataToSend.push(updatedContentStorage.integEngineering);
+        if(userDataBase[i].korean == "true" && updatedContentStorage.korean != undefined) dataToSend.push(updatedContentStorage.korean);
+        console.log("dataToSend:");
+        console.log(dataToSend);
+        mailHandler(userDataBase[i].name, userDataBase[i].email, dataToSend);
     }
 }
-refresh();
+// refresh(1);
 
 
 

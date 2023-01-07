@@ -47,29 +47,29 @@ document.getElementById('signUpButton').addEventListener('click', (event) => {
     event.preventDefault()
     const inputName = document.getElementById('name').value;
     const email= document.getElementById('eMail').value;
-    const res_software=document.getElementById('cb1').checked.toString();
-    const res_industSec=document.getElementById('cb2').checked.toString();
-    const res_CAUnotice=document.getElementById('cb3').checked.toString();
-    const res_integEngineering=document.getElementById('cb4').checked.toString();
-    const res_korean=document.getElementById('cb5').checked.toString();
-    const res_mechnicalEngineering=document.getElementById('cb6').checked.toString();
+    const res_software=document.getElementById('cbSoft').checked.toString();
+    const res_industSec=document.getElementById('cbIndust').checked.toString();
+    const res_CAUnotice=document.getElementById('cbCAUnotice').checked.toString();
+    const res_integEngineering=document.getElementById('cbinteger').checked.toString();
+    const res_korean=document.getElementById('cbKorean').checked.toString();
+    const res_mechnicalEngineering=document.getElementById('cbMechnical').checked.toString();
 
-    console.log(inputName, email, res_software, res_industSec, res_CAUnotice, res_integEngineering);
+    console.log(inputName, email, res_CAUnotice, res_mechnicalEngineering, res_korean, res_industSec, res_software, res_integEngineering);
     // console.log(typeof(inputName))
     // console.log(typeof(res_software))
     // alert(res_software);
 
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "caunotify.me/posttest", true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.send(JSON.stringify({
-        "name": inputName,
-        "industSec": res_industSec,
-        "software": res_software,
-        "CAUnotice": res_CAUnotice,
-        "integrEngineering": res_integEngineering,
-        "korean":res_korean,
-        "mechnicalEngineering":res_mechnicalEngineering
-    }));
+    // var xhr = new XMLHttpRequest();
+    // xhr.open("POST", "caunotify.me/posttest", true);
+    // xhr.setRequestHeader('Content-Type', 'application/json');
+    // xhr.send(JSON.stringify({
+    //     "name": inputName,
+    //     "industSec": res_industSec,
+    //     "software": res_software,
+    //     "CAUnotice": res_CAUnotice,
+    //     "integrEngineering": res_integEngineering,
+    //     "korean":res_korean,
+    //     "mechnicalEngineering":res_mechnicalEngineering
+    // }));
 })
 

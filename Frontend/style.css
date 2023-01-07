@@ -140,6 +140,8 @@ h2 form fieldset{
   background-color: darkorange;
   color: white;
 }
+
+
 /* 
 .dropdown-content{
   position: absolute;
@@ -165,3 +167,62 @@ h2 form fieldset{
 }
 
 .dropdown-content a:hover{background-color: aliceblue;} */
+
+
+.Acontainer{
+  /*flex하면은 div가 자신이 가진 크기만큼만 할당됨, align은 가로를 맞추는거고 justify는 세로를 맞춤*/
+  display: flex; 
+  align-items: center;
+  max-width: 100%;
+  margin: auto;
+}
+
+.team .img{
+  height: 300px;
+}
+
+.team .img img{
+  height: 100%;
+  width: auto;
+  margin-left: 40%;
+}
+
+.team .text{
+  text-align: left;
+  color:#444; 
+  padding-left: 250px;
+}
+
+
+.service .text p{
+  word-wrap: break-word;
+  word-break:keep-all;
+  font-size: 15px;
+}
+
+.cap{
+  background-color: #ddd;
+}
+
+.cap .img{
+  height: 300px;
+}
+
+.cap .img img{
+  height: 100%;
+  width: auto;
+  margin-left: 50px;
+}
+
+.cap .text{
+  text-align: left;
+  color:#444; 
+  padding-left: 50px;
+}
+
+
+.guide .text p{
+  word-wrap: break-word;
+  word-break:keep-all;
+  font-size: 15px;
+}

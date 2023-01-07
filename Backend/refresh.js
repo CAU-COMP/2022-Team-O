@@ -31,7 +31,7 @@ export async function refresh(nextIdNum){
     // *****************************************************************
     let storeDifferences = [];
     function readFileAndCompareWithOriginal(majorName,dataObject){
-        const rawData = fs.readFileSync(`./Backend/compare_list/${majorName}.json`,"utf8");
+        const rawData = fs.readFileSync(`./compare_list/${majorName}.json`,"utf8");
         const oldContent = JSON.parse(rawData);
         return compareTwoArrays(dataObject.url, oldContent.url);
     }
@@ -73,7 +73,7 @@ export async function refresh(nextIdNum){
     // *** 4. 각 유저의 구독정보 확인 후 해당되는 게시글을 추가해 메일 전송 ***
     // ********************************************************************
     let dataToSend = [];
-    const userDataBase = JSON.parse(fs.readFileSync("./Backend/userDB_log/userDB.json","utf8"),"utf8");
+    const userDataBase = JSON.parse(fs.readFileSync("./userDB_log/userDB.json","utf8"),"utf8");
     for(let i=0;i<nextIdNum;i++){
         // console.log(userDataBase[i]);
         if(userDataBase[i].industSec == "true" && updatedContentStorage.industSec != undefined) dataToSend.push(updatedContentStorage.industSec);
@@ -96,30 +96,30 @@ export async function refresh(nextIdNum){
 
 async function updateFiles(){
     const new_industSec = await crawlIndustSec("url"); // 이 반환값에 .title 또는 .url을 이용해 값에 접근할 수 있음
-    fs.writeFile("./Backend/compare_list/industSec.json", JSON.stringify(new_industSec), "utf8", (err) => {
+    fs.writeFile("./compare_list/industSec.json", JSON.stringify(new_industSec), "utf8", (err) => {
         if(err) console.log(err);
         else console.log("industSec.json written successfully\n");
     });
 
     const new_software = await crawlSoftware("url");
-    fs.writeFile("./Backend/compare_list/software.json", JSON.stringify(new_software), "utf8", (err) => {
+    fs.writeFile("./compare_list/software.json", JSON.stringify(new_software), "utf8", (err) => {
         if(err) console.log(err);
         else console.log("software.json written successfully\n");
     });
     const new_CAUnotice = await crawlCAUnotice("url");
-    fs.writeFile("./Backend/compare_list/CAUnotice.json", JSON.stringify(new_CAUnotice), "utf8", (err) => {
+    fs.writeFile("./compare_list/CAUnotice.json", JSON.stringify(new_CAUnotice), "utf8", (err) => {
         if(err) console.log(err);
         else console.log("CAUnotice.json written successfully\n");
     });
 
     const new_integEngineering = await crawlIntegEngineering("url");
-    fs.writeFile("./Backend/compare_list/integEngineering.json", JSON.stringify(new_integEngineering), "utf8", (err) => {
+    fs.writeFile("./compare_list/integEngineering.json", JSON.stringify(new_integEngineering), "utf8", (err) => {
         if(err) console.log(err);
         else console.log("integEngineering.json written successfully\n");
     });
 
     const new_korean = await crawlKorean("url");
-    fs.writeFile("./Backend/compare_list/korean.json", JSON.stringify(new_korean), "utf8", (err) => {
+    fs.writeFile("./compare_list/korean.json", JSON.stringify(new_korean), "utf8", (err) => {
         if(err) console.log(err);
         else console.log("korean.json written successfully\n");
     });

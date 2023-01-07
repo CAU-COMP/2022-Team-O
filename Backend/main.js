@@ -17,8 +17,8 @@ const refreshTimeInMinutes = 10; // 10분에 한번씩 refresh() 실행
 // 기존에 저장된 URL이나 title을 저장하는 배열은 항상 초기화될 수 있으므로 let 으로 선언해야함
 
 // 유저별 구독 정보 저장
-let nextIdNum = parseInt(fs.readFileSync("./Backend/userDB_log/nextIdNum.txt","utf8")); // 유저 DB에 사람이 추가될때마다 +1, ID를 지속적으로 부여
-let userDBjsonFile = fs.readFileSync("./Backend/userDB_log/userDB.json","utf8");
+let nextIdNum = parseInt(fs.readFileSync("./userDB_log/nextIdNum.txt","utf8")); // 유저 DB에 사람이 추가될때마다 +1, ID를 지속적으로 부여
+let userDBjsonFile = fs.readFileSync("./userDB_log/userDB.json","utf8");
 let userDataBase = JSON.parse(userDBjsonFile,"utf8");
 
 // let userDataBase = [];
@@ -61,10 +61,10 @@ app.post('/newuser', (req, res) => { // 정상작동 확인함
 
         // 가끔 id가 string으로 저장되는 오류가 있어서 코드 추가
 
-        fs.writeFileSync(`./Backend/userDB_log/nextIdNum.txt`, nextIdNum.toString(), "utf8");
+        fs.writeFileSync(`./userDB_log/nextIdNum.txt`, nextIdNum.toString(), "utf8");
         userDataBase.push(requestBody); // DB array에 저장
         // console.log(userDataBase);
-        fs.writeFileSync(`./Backend/userDB_log/userDB.json`, JSON.stringify(userDataBase), { encoding: "utf8", flag: "w" });
+        fs.writeFileSync(`./userDB_log/userDB.json`, JSON.stringify(userDataBase), { encoding: "utf8", flag: "w" });
         return res.end("HTTP 200 OK"); // 정상 작동 응답
     } else {
         console.log(`Bad Request`);

@@ -16,12 +16,12 @@ fs.readFile("../../SES_Access_Key.json", "utf-8", function (err, data) {
 const SES_CONFIG = {
     accessKeyId: keys.accessKey,
     secretAccessKey: keys.secretAccessKey,
-    region: 'ap-northeast-1',
-};
+    region: 'ap-northeast-2', 
+};// ap-northeast-1 ì€ ë„ì¿„ë¼ì„œ ë°”ê¾¸ê¸´ í–ˆëŠ”ë° ì•ˆë˜ë©´ ì›ë˜ëŒ€ë¡œ ë°”ê¿€ê²ƒ.
 
 const AWS_SES = new AWS.SES(SES_CONFIG);
 
-export function sendEmail(recipientEmail, bodyContent, mailTitle){ // Title ¿¡ ¼ö½ÅÀÚ ÀÌ¸§ Æ÷ÇÔÇÒ °Í
+export function sendEmail(recipientEmail, bodyContent, mailTitle){ // Title ì— ìˆ˜ì‹ ì ì´ë¦„ í¬í•¨í•  ê²ƒ
     let params = {
       Source: "mail@caunotify.me",
       Destination: {

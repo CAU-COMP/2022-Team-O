@@ -1,9 +1,9 @@
 import http from "http";
 import express from "express";
 import bodyParser from "body-parser";
-import { mailHandler } from "./mailHandler.js"
 import fs from "fs"
-import moment from "moment"
+import { refresh } from "./refresh.js"
+import { REFUSED } from "dns";
 
 const PORT = 80; // 아마존 EC2 업로드 시에는 HTTP용으로 80번으로 바꿀 예정
 
@@ -76,6 +76,11 @@ app.post('/newuser', (req, res) => { // 정상작동 확인함
     
 }); // 이런식으로
 // 프런트에 요청: https://kasterra.github.io/handle-POST-data-in-express/
+
+app.post('/refresh', (req, res) => {
+    refresh(nextIdNum);
+    return res.end("Refreshed")
+});
 
 server.listen(PORT, function(){ 
     console.log(`Server is running at port ${PORT}`);

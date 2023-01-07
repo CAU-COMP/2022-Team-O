@@ -1,9 +1,1 @@
-{
-    "name": "dummy",
-    "industSec": "true",
-    "software": "true",
-    "CAUnotice": "true",
-    "integEngineering": "true",
-    "Korean": "true",
-    "id": 0
-}
+[{"name":"dummy","email":"mail@caunotify.me","industSec":"true","software":"true","CAUnotice":"true","integEngineering":"true","Korean":"true","id":0}]

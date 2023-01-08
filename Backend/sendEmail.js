@@ -16,7 +16,7 @@ fs.readFile("../../SES_Access_Key.json", "utf-8", function (err, data) {
 const SES_CONFIG = {
     accessKeyId: keys.accessKey,
     secretAccessKey: keys.secretAccessKey,
-    region: 'ap-northeast-2', 
+    region: 'ap-northeast-1', 
 };// ap-northeast-1 은 도쿄라서 바꾸긴 했는데 안되면 원래대로 바꿀것.
 
 const AWS_SES = new AWS.SES(SES_CONFIG);

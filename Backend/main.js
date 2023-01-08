@@ -56,6 +56,9 @@ app.use('/public', express.static(path.join(__dirname, 'Frontend', 'public')));
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, 'Frontend', 'main.html'));
 });
+app.get('/main.html', function(req, res) {
+    res.sendFile(path.join(__dirname, 'Frontend', 'main.html'));
+});
 app.get('/about.html', function(req, res) {
     res.sendFile(path.join(__dirname, 'Frontend', 'about.html'));
 });
@@ -67,6 +70,13 @@ app.get('/success.html', function(req, res) {
 });
 app.get('/fail.html', function(req, res) {
     res.sendFile(path.join(__dirname, 'Frontend', 'fail.html'));
+});
+
+app.post('/posttest', (req, res) => { // 정상작동 확인함
+    res.header("Access-Control-Allow-Origin", "*");
+    let requestBody = req.body;
+    console.log(requestBody);
+    return res.end("recieved");
 });
 
 app.post('/newuser', (req, res) => { // 정상작동 확인함

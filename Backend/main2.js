@@ -3,6 +3,7 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 let __dirname = path.dirname(__filename);
+__dirname = path.join(__dirname, "..");
 /*while(1){
     let len = __dirname.length;
     let lastChar = len-1;

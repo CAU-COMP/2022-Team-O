@@ -12,8 +12,9 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
-const tempDirname = path.dirname(__filename);
-const __dirname = path.join(tempDirname, '..');
+// const tempDirname = path.dirname(__filename);
+// const __dirname = path.join(tempDirname, '..');
+const __dirname = path.dirname(__filename);
 
 const PORT = 80; // 아마존 EC2 업로드 시에는 HTTP용으로 80번으로 바꿀 예정
 

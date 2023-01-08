@@ -51,6 +51,7 @@ let userDataBase = JSON.parse(userDBjsonFile,"utf8");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'Frontend', 'public')));
+app.use('/public', express.static(path.join(__dirname, 'Frontend', 'public')));
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, 'Frontend', 'main.html'));

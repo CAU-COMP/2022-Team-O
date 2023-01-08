@@ -121,12 +121,12 @@ export async function refresh(nextIdNum){
         if(userDataBase[i].elecEngineering == "true" && updatedContentStorage.elecEngineering != undefined) dataToSend.push(updatedContentStorage.elecEngineering);
         if(userDataBase[i].english == "true" && updatedContentStorage.english != undefined) dataToSend.push(updatedContentStorage.english);
         if(userDataBase[i].enerEngineering == "true" && updatedContentStorage.enerEngineering != undefined) dataToSend.push(updatedContentStorage.enerEngineering);
-        console.log("dataToSend:");
+        console.log(`dataToSend[${moment().format('YYYYMMDD, h:mm:ss a')}]:`);
         console.log(dataToSend);
         mailHandler(userDataBase[i].name, userDataBase[i].email, dataToSend);
     }
 }
-refresh(1);
+// refresh(1);
 
 
 // **** 추가할 코드 생성기 ****

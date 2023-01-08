@@ -12,9 +12,9 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 // const tempDirname = path.dirname(__filename);
 // const __dirname = path.join(tempDirname, '..');
-const __dirname = path.dirname(__filename);
 // console.log(`Directory is ${__dirname}`);
 
 const PORT = 80; // 아마존 EC2 업로드 시에는 HTTP용으로 80번으로 바꿀 예정
@@ -130,10 +130,10 @@ app.post('/newuser', (req, res) => { // 정상작동 확인함
 
         // 가끔 id가 string으로 저장되는 오류가 있어서 코드 추가
 
-        fs.writeFileSync(path.join(__dirname, 'Frontend', 'nextIdNum.txt'), nextIdNum.toString(), "utf8");
+        fs.writeFileSync(path.join(__dirname, 'userDB_log', 'nextIdNum.txt'), nextIdNum.toString(), "utf8");
         userDataBase.push(requestBody); // DB array에 저장
         // console.log(userDataBase);
-        fs.writeFileSync(path.join(__dirname, 'Frontend', 'userDB.json'), JSON.stringify(userDataBase), { encoding: "utf8", flag: "w" });
+        fs.writeFileSync(path.join(__dirname, 'userDB_log', 'userDB.json'), JSON.stringify(userDataBase), { encoding: "utf8", flag: "w" });
         return res.sendFile(path.join(__dirname, 'Frontend', 'success.html'));
     } else {
         return res.sendFile(path.join(__dirname, 'Frontend', 'fail.html'));

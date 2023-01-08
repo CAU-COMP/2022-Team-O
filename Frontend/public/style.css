@@ -1,0 +1,236 @@
+h1{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 0px;
+    font-size: 30px;
+    color:rgba(38, 117, 236, 0.77);
+}
+
+.joinForm{
+  width: 90%;
+  background-size:100%;
+  height:20cm;
+  margin: 0 auto;
+  margin-top:2cm;
+}
+
+.contents{
+  /* height: 100vh;
+  width: 100vw; */
+  margin-top: 0px;
+  background-image: url('backgr.jpg');
+  background-repeat : no-repeat;
+  display:flex;
+  background-size : cover;
+}
+
+.log-in{
+  padding: 15px;
+}
+
+nav ul{
+  width: 100%;
+  background-color: rgba(38, 117, 236, 0.77);
+  list-style-type:decimal-leading-zero;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+
+h2 form{
+  text-align: left;
+}
+
+h2 form fieldset{
+  background-color: aliceblue;
+  width: 10cm;
+  border: 0.1cm solid gray;
+  
+}
+
+.service{
+  background-color: #ddd;
+}
+
+.container{
+  /*flex하면은 div가 자신이 가진 크기만큼만 할당됨, align은 가로를 맞추는거고 justify는 세로를 맞춤*/
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  max-width: 100%;
+  margin: auto;
+}
+
+.service .img{
+  height: 300px;
+}
+
+.service .img img{
+  height: 100%;
+  width: auto;
+  margin-left: 5%;
+}
+
+.service .text{
+  text-align: end;
+  color:#444; 
+  padding-left: 100px;
+}
+
+.service .text h2{
+  letter-spacing: 0.1cm;
+}
+
+.service .text p{
+  word-wrap: break-word;
+  word-break:keep-all;
+  font-size: 15px;
+}
+
+
+
+.guide .img{
+  height: 300px;
+}
+
+.guide .img img{
+  height: 100%;
+  width: auto;
+  margin-right: 100px;
+}
+
+.guide .text{
+  text-align: left;
+  color:#444; 
+  padding-left: 100px;
+}
+
+.guide .text h2{
+  letter-spacing: 0.1cm;
+}
+
+.guide .text p{
+  word-wrap: break-word;
+  word-break:keep-all;
+  font-size: 15px;
+}
+
+.home{
+  background-color: darkorange;
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+  float: right;
+}
+
+.home a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 16px 16px;
+}
+
+.dropdown{
+  position: relative;
+}
+
+.dropdown-menu{
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.dropdown-menu:hover:not(.home){
+  background-color: darkorange;
+  color: white;
+}
+
+
+/* 
+.dropdown-content{
+  position: absolute;
+  background-color:rgb(98, 171, 239);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+}
+.dropdown-content a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display:block;
+}
+
+.dropdown-content{
+  display: none;
+}
+
+
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown-content a:hover{background-color: aliceblue;} */
+
+
+.Acontainer{
+  /*flex하면은 div가 자신이 가진 크기만큼만 할당됨, align은 가로를 맞추는거고 justify는 세로를 맞춤*/
+  display: flex; 
+  align-items: center;
+  max-width: 100%;
+  margin: auto;
+}
+
+.team .img{
+  height: 300px;
+}
+
+.team .img img{
+  height: 100%;
+  width: auto;
+  margin-left: 40%;
+}
+
+.team .text{
+  text-align: left;
+  color:#444; 
+  padding-left: 250px;
+}
+
+
+.service .text p{
+  word-wrap: break-word;
+  word-break:keep-all;
+  font-size: 15px;
+}
+
+.cap{
+  background-color: #ddd;
+}
+
+.cap .img{
+  height: 300px;
+}
+
+.cap .img img{
+  height: 100%;
+  width: auto;
+  margin-left: 50px;
+}
+
+.cap .text{
+  text-align: left;
+  color:#444; 
+  padding-left: 50px;
+}
+
+
+.guide .text p{
+  word-wrap: break-word;
+  word-break:keep-all;
+  font-size: 15px;
+}

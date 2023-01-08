@@ -15,7 +15,7 @@ const __filename = fileURLToPath(import.meta.url);
 // const tempDirname = path.dirname(__filename);
 // const __dirname = path.join(tempDirname, '..');
 const __dirname = path.dirname(__filename);
-console.log(__dirname);
+console.log(`Directory is ${__dirname}`);
 
 const PORT = 80; // 아마존 EC2 업로드 시에는 HTTP용으로 80번으로 바꿀 예정
 
@@ -29,8 +29,8 @@ const refreshTimeInMinutes = 30; // 30분에 한번씩 refresh() 실행
 // 기존에 저장된 URL이나 title을 저장하는 배열은 항상 초기화될 수 있으므로 let 으로 선언해야함
 
 // 유저별 구독 정보 저장
-let nextIdNum = parseInt(fs.readFileSync("./userDB_log/nextIdNum.txt","utf8")); // 유저 DB에 사람이 추가될때마다 +1, ID를 지속적으로 부여
-let userDBjsonFile = fs.readFileSync("./userDB_log/userDB.json","utf8");
+let nextIdNum = parseInt(fs.readFileSync(path.join(__dirname, 'userDB_log', 'nextIdNum.txt'),"utf8")); // 유저 DB에 사람이 추가될때마다 +1, ID를 지속적으로 부여
+let userDBjsonFile = fs.readFileSync(path.join(__dirname, 'userDB_log', 'userDB.json'),"utf8");
 let userDataBase = JSON.parse(userDBjsonFile,"utf8");
 
 // let userDataBase = [];

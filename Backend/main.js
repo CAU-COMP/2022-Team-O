@@ -153,6 +153,5 @@ app.post('/refresh', (req, res) => {
 server.listen(PORT, function(){ 
     console.log(`Server is running at port ${PORT}`);
 });
-setInterval(() => {console.log("not dead")}, 5*1000);
 setInterval(() => {refresh(nextIdNum); console.log("refreshed on interval")}, refreshTimeInMinutes*60*1000);
 // console.log("refreshed") 가 아니라, refresh() 를 실행시켜야 함.

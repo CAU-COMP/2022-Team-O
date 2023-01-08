@@ -34,7 +34,7 @@ export function mailHandler(recipientName, recipientEmail, data){
     // params : recipientEmail, bodyContent, mailTitle
     sendEmail(recipientEmail, bodyContent,`${recipientName}님 새 공지가 게시되었습니다`)
     .then(
-        function(data,recipientEmail){
+        function(data){
           // console.log(data);
           console.log(`Sent successfully to ${recipientEmail}`);
         })

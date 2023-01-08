@@ -45,7 +45,8 @@ app.use(express.json());
 
 app.get('/', function(req, res) {
     // url이 http://a.com/topic?id=1&name=siwa 일때
-    res.send(req.query.id+','+req.query.name); // 1,siwa 출력
+    res.sendFile("../Frontend/mail.html");
+    // res.send(req.query.id+','+req.query.name); // 1,siwa 출력
 });
 
 app.post('/newuser', (req, res) => { // 정상작동 확인함

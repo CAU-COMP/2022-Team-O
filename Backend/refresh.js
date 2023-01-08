@@ -64,19 +64,23 @@ export async function refresh(nextIdNum){
     storeDifferences.elecEngineering = readFileAndCompareWithOriginal("elecEngineering",new_elecEngineering);
     storeDifferences.english = readFileAndCompareWithOriginal("english",new_english);
     storeDifferences.enerEngineering = readFileAndCompareWithOriginal("enerEngineering",new_enerEngineering);
-
+    // storeDiffences.${majorName} = [ 추가된 공지 위치, 추가된 공지 위치 2 ];
     
     // ****************************************************
     // *** 3. 변경 개수를 기반으로 실제 추가된 내용을 저장 ***
     // ****************************************************
     let updatedContentStorage = [];
-    function addURLsAndTitlesToStorage(majorName,dataObject,numberOfDifferences){
+    function addURLsAndTitlesToStorage(majorName,dataObject,storeDiff){
+        const numberOfDifferences = storeDiff.length;
         if(numberOfDifferences == 0) return;
         let tempUrls = [];
         let tempTitles = [];
+        // 예를 들어 n개의 공지([0]~[n-1]) 중 0번 공지랑 3번 공지가 바뀌었다:
+        // [0]: 0, [1]: 3
+        // 접근: storeDiff[]
         for(let i=0;i<numberOfDifferences;i++){
-            tempUrls.push(dataObject.url[i]);
-            tempTitles.push(dataObject.title[i]);
+            tempUrls.push(dataObject.url[storeDiff[i]]);
+            tempTitles.push(dataObject.title[storeDiff[i]]);
         }
         // console.log(tempUrls);
         // console.log(tempTitles);
@@ -122,7 +126,7 @@ export async function refresh(nextIdNum){
         mailHandler(userDataBase[i].name, userDataBase[i].email, dataToSend);
     }
 }
-// refresh(1);
+refresh(1);
 
 
 // **** 추가할 코드 생성기 ****

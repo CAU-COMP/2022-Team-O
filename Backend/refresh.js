@@ -4,6 +4,12 @@ import crawlSoftware from "./crawlers/url_scraper_software.js";
 import crawlCAUnotice from "./crawlers/url_scraper_cauNotice.js";
 import crawlIntegEngineering from "./crawlers/url_scraper_integ_engineering.js";
 import crawlKorean from "./crawlers/url_scraper_korean.js";
+import crawlMechEngineering from "./crawlers/url_scraper_mech_engineering.js";
+import crawlPsychology from "./crawlers/url_scraper_psychology.js";
+import crawlBusiness from "./crawlers/url_scraper_business.js";
+import crawlElecEngineering from "./crawlers/url_scraper_elec_engineering.js";
+import crawlEnglish from "./crawlers/url_scraper_English.js";
+import crawlEnerEngineering from "./crawlers/url_scraper_ener_engineering.js";
 import { compareTwoArrays } from "./compare.js"
 import { mailHandler } from "./mailHandler.js";
 import KRname from "./name_en2kr.js"
@@ -24,6 +30,18 @@ export async function refresh(nextIdNum){
     console.log("integEngineering loaded");
     const new_korean = await crawlKorean("url");
     console.log("korean loaded");
+    const new_mechEngineering = await crawlMechEngineering("url");
+    console.log("mechEngineering loaded");
+    const new_psychology = await crawlPsychology("url");
+    console.log("psychology loaded");
+    const new_business = await crawlBusiness("url");
+    console.log("business loaded");
+    const new_elecEngineering = await crawlElecEngineering("url");
+    console.log("elecEngineering loaded");
+    const new_english = await crawlEnglish("url");
+    console.log("english loaded");
+    const new_enerEngineering = await crawlEnerEngineering("url");
+    console.log("enerEngineering loaded");
     
     
     // *****************************************************************
@@ -40,6 +58,12 @@ export async function refresh(nextIdNum){
     storeDifferences.CAUnotice = readFileAndCompareWithOriginal("CAUnotice",new_CAUnotice);
     storeDifferences.integEngineering = readFileAndCompareWithOriginal("integEngineering",new_integEngineering);
     storeDifferences.korean = readFileAndCompareWithOriginal("korean",new_korean);
+    storeDifferences.mechEngineering = readFileAndCompareWithOriginal("mechEngineering",new_mechEngineering);
+    storeDifferences.psychology = readFileAndCompareWithOriginal("psychology",new_psychology);
+    storeDifferences.business = readFileAndCompareWithOriginal("business",new_business);
+    storeDifferences.elecEngineering = readFileAndCompareWithOriginal("elecEngineering",new_elecEngineering);
+    storeDifferences.english = readFileAndCompareWithOriginal("english",new_english);
+    storeDifferences.enerEngineering = readFileAndCompareWithOriginal("enerEngineering",new_enerEngineering);
 
     
     // ****************************************************
@@ -67,6 +91,12 @@ export async function refresh(nextIdNum){
     addURLsAndTitlesToStorage("CAUnotice",new_CAUnotice,storeDifferences.CAUnotice);
     addURLsAndTitlesToStorage("integEngineering",new_integEngineering,storeDifferences.integEngineering);
     addURLsAndTitlesToStorage("korean",new_korean,storeDifferences.korean);
+    addURLsAndTitlesToStorage("mechEngineering",new_mechEngineering,storeDifferences.mechEngineering);
+    addURLsAndTitlesToStorage("psychology",new_psychology,storeDifferences.psychology);
+    addURLsAndTitlesToStorage("business",new_business,storeDifferences.business);
+    addURLsAndTitlesToStorage("elecEngineering",new_elecEngineering,storeDifferences.elecEngineering);
+    addURLsAndTitlesToStorage("english",new_english,storeDifferences.english);
+    addURLsAndTitlesToStorage("enerEngineering",new_enerEngineering,storeDifferences.enerEngineering);
     
 
     // ********************************************************************
@@ -81,6 +111,12 @@ export async function refresh(nextIdNum){
         if(userDataBase[i].CAUnotice == "true" && updatedContentStorage.CAUnotice != undefined) dataToSend.push(updatedContentStorage.CAUnotice);
         if(userDataBase[i].integEngineering == "true" && updatedContentStorage.integEngineering != undefined) dataToSend.push(updatedContentStorage.integEngineering);
         if(userDataBase[i].korean == "true" && updatedContentStorage.korean != undefined) dataToSend.push(updatedContentStorage.korean);
+        if(userDataBase[i].mechEngineering == "true" && updatedContentStorage.mechEngineering != undefined) dataToSend.push(updatedContentStorage.mechEngineering);
+        if(userDataBase[i].psychology == "true" && updatedContentStorage.psychology != undefined) dataToSend.push(updatedContentStorage.psychology);
+        if(userDataBase[i].business == "true" && updatedContentStorage.business != undefined) dataToSend.push(updatedContentStorage.business);
+        if(userDataBase[i].elecEngineering == "true" && updatedContentStorage.elecEngineering != undefined) dataToSend.push(updatedContentStorage.elecEngineering);
+        if(userDataBase[i].english == "true" && updatedContentStorage.english != undefined) dataToSend.push(updatedContentStorage.english);
+        if(userDataBase[i].enerEngineering == "true" && updatedContentStorage.enerEngineering != undefined) dataToSend.push(updatedContentStorage.enerEngineering);
         console.log("dataToSend:");
         console.log(dataToSend);
         mailHandler(userDataBase[i].name, userDataBase[i].email, dataToSend);
@@ -88,6 +124,23 @@ export async function refresh(nextIdNum){
 }
 // refresh(1);
 
+
+// **** 추가할 코드 생성기 ****
+// const major = [
+//     "mechEngineering",
+//     "psychology",
+//     "business",
+//     "elecEngineering",
+//     "english",
+//     "enerEngineering"
+// ];
+
+// for(let i=0;i<6;i++){ // enerEngineering => 대소문자주의
+//     addURLsAndTitlesToStorage("${major[i]}",new_${major[i]},storeDifferences.${major[i]});
+// }
+// for(let i=0;i<6;i++){ // enerEngineering => 대소문자주의
+//     console.log(`if(userDataBase[i].${major[i]} == "true" && updatedContentStorage.${major[i]} != undefined) dataToSend.push(updatedContentStorage.${major[i]});`);
+// }
 
 
 // 기존 목록의 파일들(json)을 만들고,
@@ -123,8 +176,44 @@ async function updateFiles(){
         if(err) console.log(err);
         else console.log("korean.json written successfully\n");
     });
+
+    const new_mechEngineering = await crawlMechEngineering("url");
+    fs.writeFile("./compare_list/mechEngineering.json", JSON.stringify(new_mechEngineering), "utf8", (err) => {
+        if(err) console.log(err);
+        else console.log("mechEngineering.json written successfully\n");
+    });
+
+    const new_psychology = await crawlPsychology("url");
+    fs.writeFile("./compare_list/psychology.json", JSON.stringify(new_psychology), "utf8", (err) => {
+        if(err) console.log(err);
+        else console.log("psychology.json written successfully\n");
+    });
+
+    const new_business = await crawlBusiness("url");
+    fs.writeFile("./compare_list/business.json", JSON.stringify(new_business), "utf8", (err) => {
+        if(err) console.log(err);
+        else console.log("business.json written successfully\n");
+    });
+
+    const new_elecEngineering = await crawlElecEngineering("url");
+    fs.writeFile("./compare_list/elecEngineering.json", JSON.stringify(new_elecEngineering), "utf8", (err) => {
+        if(err) console.log(err);
+        else console.log("elecEngineering.json written successfully\n");
+    });
+
+    const new_english = await crawlEnglish("url");
+    fs.writeFile("./compare_list/english.json", JSON.stringify(new_english), "utf8", (err) => {
+        if(err) console.log(err);
+        else console.log("english.json written successfully\n");
+    });
+    
+    const new_enerEngineering = await crawlEnerEngineering("url");
+    fs.writeFile("./compare_list/enerEngineering.json", JSON.stringify(new_enerEngineering), "utf8", (err) => {
+        if(err) console.log(err);
+        else console.log("enerEngineering.json written successfully\n");
+    });
 }
-// updateFiles();
+updateFiles();
 
 // const new_industSec = await crawlIndustSec("url"); // 이 반환값에 .title 또는 .url을 이용해 값에 접근할 수 있음
 // fs.writeFileSync("industSec.json", JSON.stringify(new_industSec), "utf8");

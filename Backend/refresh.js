@@ -56,7 +56,7 @@ export async function refresh(nextIdNum){
     // *****************************************************************
     let storeDifferences = [];
     function readFileAndCompareWithOriginal(majorName,dataObject){
-        const rawData = fs.readFileSync(`./compare_list/${majorName}.json`,"utf8");
+        const rawData = fs.readFileSync(path.join(__dirname, 'compare_list', `${majorName}.json`),"utf8")
         const oldContent = JSON.parse(rawData);
         console.log(`${majorName}:`);
         console.log(oldContent);

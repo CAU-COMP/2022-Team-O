@@ -1,5 +1,5 @@
 import {sendEmail, sendTemplateEmail} from "./sendEmail.js"
-import moment from 'moment';
+
 
 export function mailHandler(recipientName, recipientEmail, data){
     // 수신자주소, 바디내용, 메일 제목을 받음

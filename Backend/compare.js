@@ -19,5 +19,5 @@ export function compareTwoArrays(newArray, originalArray){ // 실제 사용시 l
     }
     // 사실 새 공지라 해도 시간 순서대로 sort 되어 있을 것이기 때문에 이렇게 전수조사를 할 필요는 없는데,
     // 코드의 간결함을 위해 일단은 이렇게 유지할 것.
-    return diff; // 변경된 값의 개수
+    return diff; // 변경된 값의 개수 // new 기준의 번호임
 } // 정상 작동 확인

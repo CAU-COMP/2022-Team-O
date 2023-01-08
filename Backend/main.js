@@ -56,16 +56,16 @@ app.use('/public', express.static(path.join(__dirname, 'Frontend', 'public')));
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, 'Frontend', 'main.html'));
 });
-app.get('/about', function(req, res) {
+app.get('/about.html', function(req, res) {
     res.sendFile(path.join(__dirname, 'Frontend', 'about.html'));
 });
-app.get('/join', function(req, res) {
+app.get('/join.html', function(req, res) {
     res.sendFile(path.join(__dirname, 'Frontend', 'join.html'));
 });
-app.get('/success', function(req, res) {
+app.get('/success.html', function(req, res) {
     res.sendFile(path.join(__dirname, 'Frontend', 'success.html'));
 });
-app.get('/fail', function(req, res) {
+app.get('/fail.html', function(req, res) {
     res.sendFile(path.join(__dirname, 'Frontend', 'fail.html'));
 });
 

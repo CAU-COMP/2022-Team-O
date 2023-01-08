@@ -141,7 +141,9 @@ export async function refresh(nextIdNum){
     }
 
     console.log("storeDifferences.CAUnotice: " + storeDifferences.CAUnotice);
-    console.log("updatedContentStorage.CAUnotice: " + updatedContentStorage.CAUnotice);
+    console.log("storeDifferences.mechEngineering: " + storeDifferences.mechEngineering);
+    // updatedContentStorage.CAUnotice
+    console.log(updatedContentStorage.CAUnotice);
 
     // ********************************************
     // *** 5. 변경 사항이 있었던 게시판들은 초기화 ***

@@ -27,6 +27,10 @@ h1{
   padding: 15px;
 }
 
+legend{
+  background-color: white;
+}
+
 nav ul{
   width: 100%;
   background-color: rgba(38, 117, 236, 0.77);

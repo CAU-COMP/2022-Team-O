@@ -80,7 +80,6 @@ app.post('/posttest', (req, res) => { // 정상작동 확인함
         console.log(requestBody);
         if(requestBody.email.includes("@") == false) {res.end("wrong email"); return res.sendFile(path.join(__dirname, 'Frontend', 'fail.html'));};
         if(requestBody.industSec != "true") requestBody.industSec = "false"; // undefined 인 경우도 잡아냄
-        if(requestBody.industSec != "true") requestBody.industSec = "false";
         if(requestBody.software != "true") requestBody.software = "false";
         if(requestBody.CAUnotice != "true") requestBody.CAUnotice = "false";
         if(requestBody.integEngineering != "true") requestBody.integEngineering = "false";

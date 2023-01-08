@@ -57,8 +57,8 @@ const crawlElecEngineering = async({ url }) =>{
             }
         }
     });
-    console.log(url_list);
-    console.log(title_list);
+    // console.log(url_list);
+    // console.log(title_list);
     
     return {
         url: url_list,
@@ -66,9 +66,9 @@ const crawlElecEngineering = async({ url }) =>{
     }
 };
 
-crawlElecEngineering({
-    url: "url",
-}); // 테스트용
+// crawlElecEngineering({
+//     url: "url",
+// }); // 테스트용
 
 export default crawlElecEngineering
 

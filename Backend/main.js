@@ -1,16 +1,20 @@
+// 새 게시판 추가시:
+// main.js 에서 post요청 기대값에 추가
+// refresh.js 에서 추가
+// 프런트에 알림
+
 import http from "http";
 import express from "express";
 import bodyParser from "body-parser";
 import fs from "fs"
 import { refresh } from "./refresh.js"
-import { REFUSED } from "dns";
 
 const PORT = 80; // 아마존 EC2 업로드 시에는 HTTP용으로 80번으로 바꿀 예정
 
 const app = express();
 const server = http.createServer(app);
 
-const refreshTimeInMinutes = 10; // 10분에 한번씩 refresh() 실행
+const refreshTimeInMinutes = 30; // 30분에 한번씩 refresh() 실행
 
 // console.log(res_IndustSec.url);
 
@@ -29,7 +33,7 @@ let userDataBase = JSON.parse(userDBjsonFile,"utf8");
 //     console.log(`${i}th`)
 //     console.log(userDataBase)
 // }
-// fs.writeFileSync("./Backend/userDB_log/userDB_temp.json", JSON.stringify(userDataBase), "utf8");
+// fs.writeFileSync("./userDB_log/userDB_temp.json", JSON.stringify(userDataBase), "utf8");
 
 
 // userDB 백업하는 코드 필요함
@@ -54,7 +58,13 @@ app.post('/newuser', (req, res) => { // 정상작동 확인함
         if(requestBody.software != "true" && requestBody.software != "false") return res.end("wrong software");
         if(requestBody.CAUnotice != "true" && requestBody.CAUnotice != "false") return res.end("wrong CAUnotice");
         if(requestBody.integEngineering != "true" && requestBody.integEngineering != "false") return res.end("wrong integEngineering");
-        if(requestBody.Korean != "true" && requestBody.Korean != "false") return res.end("wrong Korean");
+        if(requestBody.korean != "true" && requestBody.korean != "false") return res.end("wrong korean");
+        if(requestBody.mechEngineering != "true" && requestBody.mechEngineering != "false") return res.end("wrong mechEngineering");
+        if(requestBody.psychology != "true" && requestBody.psychology != "false") return res.end("wrong psychology");
+        if(requestBody.business != "true" && requestBody.business != "false") return res.end("wrong business");
+        if(requestBody.elecEngineering != "true" && requestBody.elecEngineering != "false") return res.end("wrong elecEngineering");
+        if(requestBody.english != "true" && requestBody.english != "false") return res.end("wrong english");
+        if(requestBody.enerEngineering != "true" && requestBody.enerEngineering != "false") return res.end("wrong enerEngineering");
         // console.log(`<Received>\n\tName:${requestBody.name}\n\tindustSec:${requestBody.industSec}\n\tsoftware:${requestBody.software}\n\tCAUnotice:${requestBody.CAUnotice}`);
         requestBody.id = nextIdNum; // key값 추가
         nextIdNum++; // 다음 사용자를 위해 증감
@@ -86,5 +96,5 @@ server.listen(PORT, function(){
     console.log(`Server is running at port ${PORT}`);
 });
 
-// setInterval(() => console.log("refreshed"), refreshTimeInMinutes*60*1000);
+setInterval(() => refresh(nextIdNum), refreshTimeInMinutes*60*1000);
 // console.log("refreshed") 가 아니라, refresh() 를 실행시켜야 함.

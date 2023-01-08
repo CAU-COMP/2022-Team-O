@@ -66,9 +66,9 @@ const crawlKorean = async({ url }) =>{
     }
 };
 
-crawlKorean({
-    url: "url",
-}); // 테스트용
+// crawlKorean({
+//     url: "url",
+// }); // 테스트용
 
 export default crawlKorean
 

@@ -45,8 +45,8 @@ const crawlIndustSec = async({ url }) =>{
     // console.log(url_list);
     // console.log(title_list);
     return {
-        "url": url_list,
-        "title": title_list
+        url: url_list,
+        title: title_list
     }
 };
 

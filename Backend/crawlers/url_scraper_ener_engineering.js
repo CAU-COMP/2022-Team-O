@@ -37,8 +37,8 @@ const crawlEnerEngineering = async({ url }) =>{
         }
         // console.log(element.attribs);
     });
-     console.log(url_list);
-    console.log(title_list);
+    //  console.log(url_list);
+    // console.log(title_list);
     
     return {
         url: url_list,
@@ -46,9 +46,9 @@ const crawlEnerEngineering = async({ url }) =>{
     }
 };
 
- crawlEnerEngineering({
-     url: "http://ese.cau.ac.kr/wordpress/?cat=11p",
-}); // 테스트용
+//  crawlEnerEngineering({
+//      url: "http://ese.cau.ac.kr/wordpress/?cat=11p",
+// }); // 테스트용
 
 export default crawlEnerEngineering
 

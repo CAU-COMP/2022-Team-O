@@ -8,6 +8,7 @@ const KRname = function func(input){
     if(input == "psychology") return "심리학과";
     if(input == "business") return "경영학부";
     if(input == "elecEngineering") return "전기전자공학부";
+    if(input == "english") return "영어영문학과";
     if(input == "enerEngineering") return "에너지시스템공학부";
 }
 

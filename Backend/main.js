@@ -14,7 +14,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 let __dirname = path.dirname(__filename);
 
-console.log(`OLD: ${__dirname}`);
+
 while(1){
     let len = __dirname.length;
     let lastChar = len-1;
@@ -26,7 +26,6 @@ while(1){
         break;
     }
 }
-console.log(`NEW: ${__dirname}`);
 
 const PORT = 80; // 아마존 EC2 업로드 시에는 HTTP용으로 80번으로 바꿀 예정
 

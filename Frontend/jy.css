@@ -1,0 +1,55 @@
+nav ul{
+    width: 100%;
+    background-color: rgba(38, 117, 236, 0.77);
+    list-style-type:decimal-leading-zero;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li{
+    display: inline-block;
+  }
+
+  
+.log-in{
+    padding: 15px;
+  }
+
+  h1{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 0px;
+    font-size: 30px;
+    color:rgba(38, 117, 236, 0.77);
+}
+
+
+.home{
+    background-color: darkorange;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    float: right;
+  }
+  
+  .home a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 16px 16px;
+  }
+  
+  .dropdown{
+    position: relative;
+  }
+  
+  .dropdown-menu{
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .dropdown-menu:hover:not(.home){
+    background-color: darkorange;
+    color: white;
+  }

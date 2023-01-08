@@ -76,7 +76,38 @@ app.post('/posttest', (req, res) => { // 정상작동 확인함
     res.header("Access-Control-Allow-Origin", "*");
     let requestBody = req.body;
     console.log(requestBody);
-    return res.end("recieved");
+    if(requestBody.name != undefined){
+        console.log(requestBody);
+        if(requestBody.email.includes("@") == false) {res.end("wrong email"); return res.sendFile(path.join(__dirname, 'Frontend', 'fail.html'));};
+        if(requestBody.industSec != "true") requestBody.industSec = "false"; // undefined 인 경우도 잡아냄
+        if(requestBody.industSec != "true") requestBody.industSec = "false";
+        if(requestBody.software != "true") requestBody.software = "false";
+        if(requestBody.CAUnotice != "true") requestBody.CAUnotice = "false";
+        if(requestBody.integEngineering != "true") requestBody.integEngineering = "false";
+        if(requestBody.korean != "true") requestBody.korean = "false";
+        if(requestBody.mechEngineering != "true") requestBody.mechEngineering = "false";
+        if(requestBody.psychology != "true") requestBody.psychology = "false";
+        if(requestBody.business != "true") requestBody.business = "false";
+        if(requestBody.elecEngineering != "true") requestBody.elecEngineering = "false";
+        if(requestBody.english != "true") requestBody.english = "false";
+        if(requestBody.enerEngineering != "true") requestBody.enerEngineering = "false";
+        // console.log(`<Received>\n\tName:${requestBody.name}\n\tindustSec:${requestBody.industSec}\n\tsoftware:${requestBody.software}\n\tCAUnotice:${requestBody.CAUnotice}`);
+        requestBody.id = nextIdNum; // key값 추가
+        nextIdNum++; // 다음 사용자를 위해 증감
+
+        // 가끔 id가 string으로 저장되는 오류가 있어서 코드 추가
+
+        fs.writeFileSync(path.join(__dirname, 'Frontend', 'nextIdNum.txt'), nextIdNum.toString(), "utf8");
+        userDataBase.push(requestBody); // DB array에 저장
+        // console.log(userDataBase);
+        fs.writeFileSync(path.join(__dirname, 'Frontend', 'userDB.json'), JSON.stringify(userDataBase), { encoding: "utf8", flag: "w" });
+        res.end("HTTP 200 OK"); // 정상 작동 응답
+        return res.sendFile(path.join(__dirname, 'Frontend', 'success.html'));
+    } else {
+        console.log(`Bad Request`);
+        return res.sendFile(path.join(__dirname, 'Frontend', 'fail.html'));
+    }
+    // return res.sendFile(path.join(__dirname, 'Frontend', 'success.html'));
 });
 
 app.post('/newuser', (req, res) => { // 정상작동 확인함

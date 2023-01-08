@@ -17,11 +17,10 @@ h1{
 .contents{
   /* height: 100vh;
   width: 100vw; */
-
   margin-top: 0px;
   background-image: url('backgr.jpg');
   background-repeat : no-repeat;
-  display:block;
+  display:flex;
   background-size : cover;
 }
 

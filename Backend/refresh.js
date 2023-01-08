@@ -213,7 +213,7 @@ async function updateFiles(){
         else console.log("enerEngineering.json written successfully\n");
     });
 }
-updateFiles();
+// updateFiles();
 
 // const new_industSec = await crawlIndustSec("url"); // 이 반환값에 .title 또는 .url을 이용해 값에 접근할 수 있음
 // fs.writeFileSync("industSec.json", JSON.stringify(new_industSec), "utf8");

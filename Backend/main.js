@@ -12,20 +12,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
-let __dirname = path.dirname(__filename);
-
-
-while(1){
-    let len = __dirname.length;
-    let lastChar = len-1;
-    if(__dirname[lastChar] != "\\"){
-        __dirname = __dirname.slice(0,lastChar);
-    }
-    else{
-        __dirname = __dirname.slice(0,lastChar);
-        break;
-    }
-}
+const __dirname = path.dirname(__filename);
 
 const PORT = 80; // 아마존 EC2 업로드 시에는 HTTP용으로 80번으로 바꿀 예정
 
@@ -60,10 +47,10 @@ let userDataBase = JSON.parse(userDBjsonFile,"utf8");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static(path.join(__dirname, '..', 'Frontend', 'public')));
 
 app.get('/', function(req, res) {
-    // url이 http://a.com/topic?id=1&name=siwa 일때
-    res.sendFile(`/home/ec2-user/2022-Team-O/Frontend/main.html`);
+    res.sendFile(path.join(__dirname, '..', 'Frontend', 'main.html'));
     // res.sendFile(`./Frontend/main.html`);
     // res.send(req.query.id+','+req.query.name); // 1,siwa 출력
 });

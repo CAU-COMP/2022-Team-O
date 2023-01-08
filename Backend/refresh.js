@@ -1,6 +1,8 @@
 import fs from "fs";
 import { compareTwoArrays } from "./compare.js"
 import { mailHandler } from "./mailHandler.js";
+import path from 'path';
+import { fileURLToPath } from 'url';
 import KRname from "./name_en2kr.js"
 import crawlIndustSec from "./crawlers/url_scraper_indust_sec.js";
 import crawlSoftware from "./crawlers/url_scraper_software.js";
@@ -13,6 +15,9 @@ import crawlBusiness from "./crawlers/url_scraper_business.js";
 import crawlElecEngineering from "./crawlers/url_scraper_elec_engineering.js";
 import crawlEnglish from "./crawlers/url_scraper_English.js";
 import crawlEnerEngineering from "./crawlers/url_scraper_ener_engineering.js";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // refresh 함수에서는
 // 크롤러 실행 -> 기존 목록과 대조 -> 변화 있으면 sendMail() 후 원래 목록 대체, 없으면 행동하지 않음 -> 다음 크롤러 실행.
@@ -107,24 +112,109 @@ export async function refresh(nextIdNum){
     // *** 4. 각 유저의 구독정보 확인 후 해당되는 게시글을 추가해 메일 전송 ***
     // ********************************************************************
     let dataToSend = [];
+    let sendOrNot = 0;
     const userDataBase = JSON.parse(fs.readFileSync("./userDB_log/userDB.json","utf8"),"utf8");
     for(let i=0;i<nextIdNum;i++){
         // console.log(userDataBase[i]);
-        if(userDataBase[i].industSec == "true" && updatedContentStorage.industSec != undefined) dataToSend.push(updatedContentStorage.industSec);
-        if(userDataBase[i].software == "true" && updatedContentStorage.software != undefined) dataToSend.push(updatedContentStorage.software);
-        if(userDataBase[i].CAUnotice == "true" && updatedContentStorage.CAUnotice != undefined) dataToSend.push(updatedContentStorage.CAUnotice);
-        if(userDataBase[i].integEngineering == "true" && updatedContentStorage.integEngineering != undefined) dataToSend.push(updatedContentStorage.integEngineering);
-        if(userDataBase[i].korean == "true" && updatedContentStorage.korean != undefined) dataToSend.push(updatedContentStorage.korean);
-        if(userDataBase[i].mechEngineering == "true" && updatedContentStorage.mechEngineering != undefined) dataToSend.push(updatedContentStorage.mechEngineering);
-        if(userDataBase[i].psychology == "true" && updatedContentStorage.psychology != undefined) dataToSend.push(updatedContentStorage.psychology);
-        if(userDataBase[i].business == "true" && updatedContentStorage.business != undefined) dataToSend.push(updatedContentStorage.business);
-        if(userDataBase[i].elecEngineering == "true" && updatedContentStorage.elecEngineering != undefined) dataToSend.push(updatedContentStorage.elecEngineering);
-        if(userDataBase[i].english == "true" && updatedContentStorage.english != undefined) dataToSend.push(updatedContentStorage.english);
-        if(userDataBase[i].enerEngineering == "true" && updatedContentStorage.enerEngineering != undefined) dataToSend.push(updatedContentStorage.enerEngineering);
-        console.log(`dataToSend[${moment().format('YYYYMMDD, h:mm:ss a')}]:`);
-        console.log(dataToSend);
-        mailHandler(userDataBase[i].name, userDataBase[i].email, dataToSend);
+        if(userDataBase[i].industSec == "true" && updatedContentStorage.industSec != undefined) {dataToSend.push(updatedContentStorage.industSec); sendOrNot++;}
+        if(userDataBase[i].software == "true" && updatedContentStorage.software != undefined) {dataToSend.push(updatedContentStorage.software); sendOrNot++;}
+        if(userDataBase[i].CAUnotice == "true" && updatedContentStorage.CAUnotice != undefined) {dataToSend.push(updatedContentStorage.CAUnotice); sendOrNot++;}
+        if(userDataBase[i].integEngineering == "true" && updatedContentStorage.integEngineering != undefined) {dataToSend.push(updatedContentStorage.integEngineering); sendOrNot++;}
+        if(userDataBase[i].korean == "true" && updatedContentStorage.korean != undefined) {dataToSend.push(updatedContentStorage.korean); sendOrNot++;}
+        if(userDataBase[i].mechEngineering == "true" && updatedContentStorage.mechEngineering != undefined) {dataToSend.push(updatedContentStorage.mechEngineering); sendOrNot++;}
+        if(userDataBase[i].psychology == "true" && updatedContentStorage.psychology != undefined) {dataToSend.push(updatedContentStorage.psychology); sendOrNot++;}
+        if(userDataBase[i].business == "true" && updatedContentStorage.business != undefined) {dataToSend.push(updatedContentStorage.business); sendOrNot++;}
+        if(userDataBase[i].elecEngineering == "true" && updatedContentStorage.elecEngineering != undefined) {dataToSend.push(updatedContentStorage.elecEngineering); sendOrNot++;}
+        if(userDataBase[i].english == "true" && updatedContentStorage.english != undefined) {dataToSend.push(updatedContentStorage.english); sendOrNot++;}
+        if(userDataBase[i].enerEngineering == "true" && updatedContentStorage.enerEngineering != undefined) {dataToSend.push(updatedContentStorage.enerEngineering); sendOrNot++;}
+        if(sendOrNot != 0){
+            console.log(`dataToSend[${moment().format('YYYYMMDD, h:mm:ss a')}]:`);
+            console.log(dataToSend);
+            mailHandler(userDataBase[i].name, userDataBase[i].email, dataToSend);
+            sendOrNot = 0;
+            dataToSend = [];
+        }
     }
+    // ********************************************
+    // *** 5. 변경 사항이 있었던 게시판들은 초기화 ***
+    // ********************************************
+    if(storeDifferences.industSec != undefined && storeDifferences.industSec != 0){
+        let industSecObject = new_industSec.url;
+        industSecObject = industSecObject.push(new_industSec.title);
+        fs.writeFile(path.join(__dirname, 'compare_list', 'industSec.json'), JSON.stringify(industSecObject), (err) => {
+                if(err){console.log(err);}
+                else {console.log("industSec updated successfully");}});
+        }
+    if(storeDifferences.software != undefined && storeDifferences.software != 0){
+        let softwareObject = new_software.url;
+        softwareObject = softwareObject.push(new_software.title);
+        fs.writeFile(path.join(__dirname, 'compare_list', 'software.json'), JSON.stringify(softwareObject), (err) => {
+                if(err){console.log(err);}
+                else {console.log("software updated successfully");}});
+        }
+    if(storeDifferences.CAUnotice != undefined && storeDifferences.CAUnotice != 0){
+        let CAUnoticeObject = new_CAUnotice.url;
+        CAUnoticeObject = CAUnoticeObject.push(new_CAUnotice.title);
+        fs.writeFile(path.join(__dirname, 'compare_list', 'CAUnotice.json'), JSON.stringify(CAUnoticeObject), (err) => {
+                if(err){console.log(err);}
+                else {console.log("CAUnotice updated successfully");}});
+        }
+    if(storeDifferences.integEngineering != undefined && storeDifferences.integEngineering != 0){
+        let integEngineeringObject = new_integEngineering.url;
+        integEngineeringObject = integEngineeringObject.push(new_integEngineering.title);
+        fs.writeFile(path.join(__dirname, 'compare_list', 'integEngineering.json'), JSON.stringify(integEngineeringObject), (err) => {
+                if(err){console.log(err);}
+                else {console.log("integEngineering updated successfully");}});
+        }
+    if(storeDifferences.korean != undefined && storeDifferences.korean != 0){
+        let koreanObject = new_korean.url;
+        koreanObject = koreanObject.push(new_korean.title);
+        fs.writeFile(path.join(__dirname, 'compare_list', 'korean.json'), JSON.stringify(koreanObject), (err) => {
+                if(err){console.log(err);}
+                else {console.log("korean updated successfully");}});
+        }
+    if(storeDifferences.mechEngineering != undefined && storeDifferences.mechEngineering != 0){
+        let mechEngineeringObject = new_mechEngineering.url;
+        mechEngineeringObject = mechEngineeringObject.push(new_mechEngineering.title);
+        fs.writeFile(path.join(__dirname, 'compare_list', 'mechEngineering.json'), JSON.stringify(mechEngineeringObject), (err) => {
+                if(err){console.log(err);}
+                else {console.log("mechEngineering updated successfully");}});
+        }
+    if(storeDifferences.psychology != undefined && storeDifferences.psychology != 0){
+        let psychologyObject = new_psychology.url;
+        psychologyObject = psychologyObject.push(new_psychology.title);
+        fs.writeFile(path.join(__dirname, 'compare_list', 'psychology.json'), JSON.stringify(psychologyObject), (err) => {
+                if(err){console.log(err);}
+                else {console.log("psychology updated successfully");}});
+        }
+    if(storeDifferences.business != undefined && storeDifferences.business != 0){
+        let businessObject = new_business.url;
+        businessObject = businessObject.push(new_business.title);
+        fs.writeFile(path.join(__dirname, 'compare_list', 'business.json'), JSON.stringify(businessObject), (err) => {
+                if(err){console.log(err);}
+                else {console.log("business updated successfully");}});
+        }
+    if(storeDifferences.elecEngineering != undefined && storeDifferences.elecEngineering != 0){
+        let elecEngineeringObject = new_elecEngineering.url;
+        elecEngineeringObject = elecEngineeringObject.push(new_elecEngineering.title);
+        fs.writeFile(path.join(__dirname, 'compare_list', 'elecEngineering.json'), JSON.stringify(elecEngineeringObject), (err) => {
+                if(err){console.log(err);}
+                else {console.log("elecEngineering updated successfully");}});
+        }
+    if(storeDifferences.english != undefined && storeDifferences.english != 0){
+        let englishObject = new_english.url;
+        englishObject = englishObject.push(new_english.title);
+        fs.writeFile(path.join(__dirname, 'compare_list', 'english.json'), JSON.stringify(englishObject), (err) => {
+                if(err){console.log(err);}
+                else {console.log("english updated successfully");}});
+        }
+    if(storeDifferences.enerEngineering != undefined && storeDifferences.enerEngineering != 0){
+        let enerEngineeringObject = new_enerEngineering.url;
+        enerEngineeringObject = enerEngineeringObject.push(new_enerEngineering.title);
+        fs.writeFile(path.join(__dirname, 'compare_list', 'enerEngineering.json'), JSON.stringify(enerEngineeringObject), (err) => {
+                if(err){console.log(err);}
+                else {console.log("enerEngineering updated successfully");}});
+        }
 }
 // refresh(1);
 

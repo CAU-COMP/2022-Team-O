@@ -53,8 +53,14 @@ document.getElementById('signUpButton').addEventListener('click', (event) => {
     const res_integEngineering=document.getElementById('cbinteger').checked.toString();
     const res_korean=document.getElementById('cbKorean').checked.toString();
     const res_mechnicalEngineering=document.getElementById('cbMechnical').checked.toString();
+    const res_psychology=document.getElementById('cbPsychology').checked.toString();
+    const res_business=document.getElementById('cbBusiness').checked.toString();
+    const res_elecEngineering=document.getElementById('cbElecEngineering').checked.toString();
+    const res_english=document.getElementById('cbElecEngineering').checked.toString();
+    const res_enerEngineering=document.getElementById('cbEnerEngineering').checked.toString();
+    
 
-    console.log(inputName, email, res_CAUnotice, res_mechnicalEngineering, res_korean, res_industSec, res_software, res_integEngineering);
+    console.log(inputName, email, res_CAUnotice, res_mechnicalEngineering, res_korean, res_business, res_industSec, res_psychology, res_software, res_enerEngineering, res_integEngineering, res_english, res_elecEngineering);
     // console.log(typeof(inputName))
     // console.log(typeof(res_software))
     // alert(res_software);

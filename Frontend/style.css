@@ -149,6 +149,9 @@ h2 form fieldset{
   color: white;
 }
 
+legend{
+  background-color: white; 
+}
 
 /* 
 .dropdown-content{

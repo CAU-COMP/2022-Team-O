@@ -14,7 +14,7 @@ const PORT = 80; // 아마존 EC2 업로드 시에는 HTTP용으로 80번으로 
 const app = express();
 const server = http.createServer(app);
 
-const refreshTimeInMinutes = 10; // 10분에 한번씩 refresh() 실행
+const refreshTimeInMinutes = 30; // 30분에 한번씩 refresh() 실행
 
 // console.log(res_IndustSec.url);
 
@@ -96,5 +96,5 @@ server.listen(PORT, function(){
     console.log(`Server is running at port ${PORT}`);
 });
 
-// setInterval(() => console.log("refreshed"), refreshTimeInMinutes*60*1000);
+setInterval(() => refresh(nextIdNum), refreshTimeInMinutes*60*1000);
 // console.log("refreshed") 가 아니라, refresh() 를 실행시켜야 함.

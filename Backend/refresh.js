@@ -146,7 +146,7 @@ export async function refresh(nextIdNum){
     // ********************************************
     // *** 5. 변경 사항이 있었던 게시판들은 초기화 ***
     // ********************************************
-    if(storeDifferences.industSec != undefined && storeDifferences.industSec != 0){
+    if(storeDifferences.industSec != undefined){
         let industSecObject = {
             url: new_industSec.url,
             title: new_industSec.title};
@@ -154,7 +154,7 @@ export async function refresh(nextIdNum){
                 if(err){console.log(err);}
                 else {console.log("industSec updated successfully");}});
         }
-    if(storeDifferences.software != undefined && storeDifferences.software != 0){
+    if(storeDifferences.software != undefined){
         let softwareObject = {
             url: new_software.url,
             title: new_software.title};
@@ -162,7 +162,7 @@ export async function refresh(nextIdNum){
                 if(err){console.log(err);}
                 else {console.log("software updated successfully");}});
         }
-    if(storeDifferences.CAUnotice != undefined && storeDifferences.CAUnotice != 0){
+    if(storeDifferences.CAUnotice != undefined){
         let CAUnoticeObject = {
             url: new_CAUnotice.url,
             title: new_CAUnotice.title};
@@ -170,7 +170,7 @@ export async function refresh(nextIdNum){
                 if(err){console.log(err);}
                 else {console.log("CAUnotice updated successfully");}});
         }
-    if(storeDifferences.integEngineering != undefined && storeDifferences.integEngineering != 0){
+    if(storeDifferences.integEngineering != undefined){
         let integEngineeringObject = {
             url: new_integEngineering.url,
             title: new_integEngineering.title};
@@ -178,7 +178,7 @@ export async function refresh(nextIdNum){
                 if(err){console.log(err);}
                 else {console.log("integEngineering updated successfully");}});
         }
-    if(storeDifferences.korean != undefined && storeDifferences.korean != 0){
+    if(storeDifferences.korean != undefined){
         let koreanObject = {
             url: new_korean.url,
             title: new_korean.title};
@@ -186,7 +186,7 @@ export async function refresh(nextIdNum){
                 if(err){console.log(err);}
                 else {console.log("korean updated successfully");}});
         }
-    if(storeDifferences.mechEngineering != undefined && storeDifferences.mechEngineering != 0){
+    if(storeDifferences.mechEngineering != undefined){
         let mechEngineeringObject = {
             url: new_mechEngineering.url,
             title: new_mechEngineering.title};
@@ -194,7 +194,7 @@ export async function refresh(nextIdNum){
                 if(err){console.log(err);}
                 else {console.log("mechEngineering updated successfully");}});
         }
-    if(storeDifferences.psychology != undefined && storeDifferences.psychology != 0){
+    if(storeDifferences.psychology != undefined){
         let psychologyObject = {
             url: new_psychology.url,
             title: new_psychology.title};
@@ -202,7 +202,7 @@ export async function refresh(nextIdNum){
                 if(err){console.log(err);}
                 else {console.log("psychology updated successfully");}});
         }
-    if(storeDifferences.business != undefined && storeDifferences.business != 0){
+    if(storeDifferences.business != undefined){
         let businessObject = {
             url: new_business.url,
             title: new_business.title};
@@ -210,7 +210,7 @@ export async function refresh(nextIdNum){
                 if(err){console.log(err);}
                 else {console.log("business updated successfully");}});
         }
-    if(storeDifferences.elecEngineering != undefined && storeDifferences.elecEngineering != 0){
+    if(storeDifferences.elecEngineering != undefined){
         let elecEngineeringObject = {
             url: new_elecEngineering.url,
             title: new_elecEngineering.title};
@@ -218,7 +218,7 @@ export async function refresh(nextIdNum){
                 if(err){console.log(err);}
                 else {console.log("elecEngineering updated successfully");}});
         }
-    if(storeDifferences.english != undefined && storeDifferences.english != 0){
+    if(storeDifferences.english != undefined){
         let englishObject = {
             url: new_english.url,
             title: new_english.title};
@@ -226,7 +226,7 @@ export async function refresh(nextIdNum){
                 if(err){console.log(err);}
                 else {console.log("english updated successfully");}});
         }
-    if(storeDifferences.enerEngineering != undefined && storeDifferences.enerEngineering != 0){
+    if(storeDifferences.enerEngineering != undefined){
         let enerEngineeringObject = {
             url: new_enerEngineering.url,
             title: new_enerEngineering.title};

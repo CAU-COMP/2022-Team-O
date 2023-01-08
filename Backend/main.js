@@ -49,22 +49,22 @@ let userDataBase = JSON.parse(userDBjsonFile,"utf8");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static(__dirname + "/Backend/Frontend/public"));
+app.use(express.static(__dirname + "/Frontend/public"));
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, 'Backend', 'Frontend', 'main.html'));
+    res.sendFile(path.join(__dirname, 'Frontend', 'main.html'));
 });
 app.get('/about', function(req, res) {
-    res.sendFile(path.join(__dirname, 'Backend', 'Frontend', 'about.html'));
+    res.sendFile(path.join(__dirname, 'Frontend', 'about.html'));
 });
 app.get('/join', function(req, res) {
-    res.sendFile(path.join(__dirname, 'Backend', 'Frontend', 'join.html'));
+    res.sendFile(path.join(__dirname, 'Frontend', 'join.html'));
 });
 app.get('/success', function(req, res) {
-    res.sendFile(path.join(__dirname, 'Backend', 'Frontend', 'success.html'));
+    res.sendFile(path.join(__dirname, 'Frontend', 'success.html'));
 });
 app.get('/fail', function(req, res) {
-    res.sendFile(path.join(__dirname, 'Backend', 'Frontend', 'fail.html'));
+    res.sendFile(path.join(__dirname, 'Frontend', 'fail.html'));
 });
 
 app.post('/newuser', (req, res) => { // 정상작동 확인함

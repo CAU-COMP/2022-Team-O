@@ -29,7 +29,7 @@ let userDataBase = JSON.parse(userDBjsonFile,"utf8");
 //     console.log(`${i}th`)
 //     console.log(userDataBase)
 // }
-// fs.writeFileSync("./Backend/userDB_log/userDB_temp.json", JSON.stringify(userDataBase), "utf8");
+// fs.writeFileSync("./userDB_log/userDB_temp.json", JSON.stringify(userDataBase), "utf8");
 
 
 // userDB 백업하는 코드 필요함

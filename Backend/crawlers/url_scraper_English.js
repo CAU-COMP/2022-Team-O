@@ -35,8 +35,8 @@ const crawlEnglish = async({ url }) =>{
             }
         }
     });
-   console.log(url_list);
-   console.log(title_list);
+//    console.log(url_list);
+//    console.log(title_list);
     
     return {
         url: url_list,
@@ -44,9 +44,9 @@ const crawlEnglish = async({ url }) =>{
     }
 };
 
- crawlEnglish({
-     url: "url",
- }); // 테스트용
+//  crawlEnglish({
+//      url: "url",
+//  }); // 테스트용
 
 export default crawlEnglish
 

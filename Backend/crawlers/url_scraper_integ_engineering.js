@@ -66,9 +66,9 @@ const crawlIntegEngineering = async({ url }) =>{
     }
 };
 
-crawlIntegEngineering({
-    url: "url",
-}); // 테스트용
+// crawlIntegEngineering({
+//     url: "url",
+// }); // 테스트용
 
 export default crawlIntegEngineering
 

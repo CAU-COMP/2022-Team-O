@@ -63,7 +63,8 @@ app.use(express.json());
 
 app.get('/', function(req, res) {
     // url이 http://a.com/topic?id=1&name=siwa 일때
-    res.sendFile(__dirname + "\\Frontend\\main.html");
+    res.sendFile(`/home/ec2-user/2022-Team-O/Frontend/main.html`);
+    // res.sendFile(`./Frontend/main.html`);
     // res.send(req.query.id+','+req.query.name); // 1,siwa 출력
 });
 

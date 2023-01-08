@@ -95,12 +95,8 @@ app.post('/posttest', (req, res) => { // 정상작동 확인함
         requestBody.id = nextIdNum; // key값 추가
         nextIdNum++; // 다음 사용자를 위해 증감
 
-        // 가끔 id가 string으로 저장되는 오류가 있어서 코드 추가
+        console.log(requestBody);
 
-        fs.writeFileSync(path.join(__dirname, 'Frontend', 'nextIdNum.txt'), nextIdNum.toString(), "utf8");
-        userDataBase.push(requestBody); // DB array에 저장
-        // console.log(userDataBase);
-        fs.writeFileSync(path.join(__dirname, 'Frontend', 'userDB.json'), JSON.stringify(userDataBase), { encoding: "utf8", flag: "w" });
         res.end("HTTP 200 OK"); // 정상 작동 응답
         return res.sendFile(path.join(__dirname, 'Frontend', 'success.html'));
     } else {

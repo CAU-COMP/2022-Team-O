@@ -53,8 +53,18 @@ app.use(express.static(__dirname + "/public"));
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '..', 'Frontend', 'main.html'));
-    // res.sendFile(`./Frontend/main.html`);
-    // res.send(req.query.id+','+req.query.name); // 1,siwa 출력
+});
+app.get('/about', function(req, res) {
+    res.sendFile(path.join(__dirname, '..', 'Frontend', 'about.html'));
+});
+app.get('/join', function(req, res) {
+    res.sendFile(path.join(__dirname, '..', 'Frontend', 'join.html'));
+});
+app.get('/success', function(req, res) {
+    res.sendFile(path.join(__dirname, '..', 'Frontend', 'success.html'));
+});
+app.get('/fail', function(req, res) {
+    res.sendFile(path.join(__dirname, '..', 'Frontend', 'fail.html'));
 });
 
 app.post('/newuser', (req, res) => { // 정상작동 확인함

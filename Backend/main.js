@@ -85,17 +85,18 @@ app.post('/newuser', (req, res) => { // 정상작동 확인함
     if(requestBody.name != undefined){
         console.log(requestBody);
         if(requestBody.email.includes("@") == false) return res.end("wrong email");;
-        if(requestBody.industSec != "true" && requestBody.industSec != "false") return res.end("wrong industSec"); // undefined 인 경우도 잡아냄
-        if(requestBody.software != "true" && requestBody.software != "false") return res.end("wrong software");
-        if(requestBody.CAUnotice != "true" && requestBody.CAUnotice != "false") return res.end("wrong CAUnotice");
-        if(requestBody.integEngineering != "true" && requestBody.integEngineering != "false") return res.end("wrong integEngineering");
-        if(requestBody.korean != "true" && requestBody.korean != "false") return res.end("wrong korean");
-        if(requestBody.mechEngineering != "true" && requestBody.mechEngineering != "false") return res.end("wrong mechEngineering");
-        if(requestBody.psychology != "true" && requestBody.psychology != "false") return res.end("wrong psychology");
-        if(requestBody.business != "true" && requestBody.business != "false") return res.end("wrong business");
-        if(requestBody.elecEngineering != "true" && requestBody.elecEngineering != "false") return res.end("wrong elecEngineering");
-        if(requestBody.english != "true" && requestBody.english != "false") return res.end("wrong english");
-        if(requestBody.enerEngineering != "true" && requestBody.enerEngineering != "false") return res.end("wrong enerEngineering");
+        if(requestBody.industSec != "true") requestBody.industSec = "false"; // undefined 인 경우도 잡아냄
+        if(requestBody.industSec != "true") requestBody.industSec = "false";
+        if(requestBody.software != "true") requestBody.software = "false";
+        if(requestBody.CAUnotice != "true") requestBody.CAUnotice = "false";
+        if(requestBody.integEngineering != "true") requestBody.integEngineering = "false";
+        if(requestBody.korean != "true") requestBody.korean = "false";
+        if(requestBody.mechEngineering != "true") requestBody.mechEngineering = "false";
+        if(requestBody.psychology != "true") requestBody.psychology = "false";
+        if(requestBody.business != "true") requestBody.business = "false";
+        if(requestBody.elecEngineering != "true") requestBody.elecEngineering = "false";
+        if(requestBody.english != "true") requestBody.english = "false";
+        if(requestBody.enerEngineering != "true") requestBody.enerEngineering = "false";
         // console.log(`<Received>\n\tName:${requestBody.name}\n\tindustSec:${requestBody.industSec}\n\tsoftware:${requestBody.software}\n\tCAUnotice:${requestBody.CAUnotice}`);
         requestBody.id = nextIdNum; // key값 추가
         nextIdNum++; // 다음 사용자를 위해 증감

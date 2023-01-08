@@ -143,81 +143,92 @@ export async function refresh(nextIdNum){
     // *** 5. 변경 사항이 있었던 게시판들은 초기화 ***
     // ********************************************
     if(storeDifferences.industSec != undefined && storeDifferences.industSec != 0){
-        let industSecObject = new_industSec.url;
-        industSecObject = industSecObject.push(new_industSec.title);
+        let industSecObject = {
+            url: new_industSec.url,
+            title: new_industSec.title};
         fs.writeFile(path.join(__dirname, 'compare_list', 'industSec.json'), JSON.stringify(industSecObject), (err) => {
                 if(err){console.log(err);}
-                else {console.log("industSec updated successfully");}});
+                else {console.log("File updated successfully");}});
         }
     if(storeDifferences.software != undefined && storeDifferences.software != 0){
-        let softwareObject = new_software.url;
-        softwareObject = softwareObject.push(new_software.title);
+        let softwareObject = {
+            url: new_software.url,
+            title: new_software.title};
         fs.writeFile(path.join(__dirname, 'compare_list', 'software.json'), JSON.stringify(softwareObject), (err) => {
                 if(err){console.log(err);}
-                else {console.log("software updated successfully");}});
+                else {console.log("File updated successfully");}});
         }
     if(storeDifferences.CAUnotice != undefined && storeDifferences.CAUnotice != 0){
-        let CAUnoticeObject = new_CAUnotice.url;
-        CAUnoticeObject = CAUnoticeObject.push(new_CAUnotice.title);
+        let CAUnoticeObject = {
+            url: new_CAUnotice.url,
+            title: new_CAUnotice.title};
         fs.writeFile(path.join(__dirname, 'compare_list', 'CAUnotice.json'), JSON.stringify(CAUnoticeObject), (err) => {
                 if(err){console.log(err);}
-                else {console.log("CAUnotice updated successfully");}});
+                else {console.log("File updated successfully");}});
         }
     if(storeDifferences.integEngineering != undefined && storeDifferences.integEngineering != 0){
-        let integEngineeringObject = new_integEngineering.url;
-        integEngineeringObject = integEngineeringObject.push(new_integEngineering.title);
+        let integEngineeringObject = {
+            url: new_integEngineering.url,
+            title: new_integEngineering.title};
         fs.writeFile(path.join(__dirname, 'compare_list', 'integEngineering.json'), JSON.stringify(integEngineeringObject), (err) => {
                 if(err){console.log(err);}
-                else {console.log("integEngineering updated successfully");}});
+                else {console.log("File updated successfully");}});
         }
     if(storeDifferences.korean != undefined && storeDifferences.korean != 0){
-        let koreanObject = new_korean.url;
-        koreanObject = koreanObject.push(new_korean.title);
+        let koreanObject = {
+            url: new_korean.url,
+            title: new_korean.title};
         fs.writeFile(path.join(__dirname, 'compare_list', 'korean.json'), JSON.stringify(koreanObject), (err) => {
                 if(err){console.log(err);}
-                else {console.log("korean updated successfully");}});
+                else {console.log("File updated successfully");}});
         }
     if(storeDifferences.mechEngineering != undefined && storeDifferences.mechEngineering != 0){
-        let mechEngineeringObject = new_mechEngineering.url;
-        mechEngineeringObject = mechEngineeringObject.push(new_mechEngineering.title);
+        let mechEngineeringObject = {
+            url: new_mechEngineering.url,
+            title: new_mechEngineering.title};
         fs.writeFile(path.join(__dirname, 'compare_list', 'mechEngineering.json'), JSON.stringify(mechEngineeringObject), (err) => {
                 if(err){console.log(err);}
-                else {console.log("mechEngineering updated successfully");}});
+                else {console.log("File updated successfully");}});
         }
     if(storeDifferences.psychology != undefined && storeDifferences.psychology != 0){
-        let psychologyObject = new_psychology.url;
-        psychologyObject = psychologyObject.push(new_psychology.title);
+        let psychologyObject = {
+            url: new_psychology.url,
+            title: new_psychology.title};
         fs.writeFile(path.join(__dirname, 'compare_list', 'psychology.json'), JSON.stringify(psychologyObject), (err) => {
                 if(err){console.log(err);}
-                else {console.log("psychology updated successfully");}});
+                else {console.log("File updated successfully");}});
         }
     if(storeDifferences.business != undefined && storeDifferences.business != 0){
-        let businessObject = new_business.url;
-        businessObject = businessObject.push(new_business.title);
+        let businessObject = {
+            url: new_business.url,
+            title: new_business.title};
         fs.writeFile(path.join(__dirname, 'compare_list', 'business.json'), JSON.stringify(businessObject), (err) => {
                 if(err){console.log(err);}
-                else {console.log("business updated successfully");}});
+                else {console.log("File updated successfully");}});
         }
     if(storeDifferences.elecEngineering != undefined && storeDifferences.elecEngineering != 0){
-        let elecEngineeringObject = new_elecEngineering.url;
-        elecEngineeringObject = elecEngineeringObject.push(new_elecEngineering.title);
+        let elecEngineeringObject = {
+            url: new_elecEngineering.url,
+            title: new_elecEngineering.title};
         fs.writeFile(path.join(__dirname, 'compare_list', 'elecEngineering.json'), JSON.stringify(elecEngineeringObject), (err) => {
                 if(err){console.log(err);}
-                else {console.log("elecEngineering updated successfully");}});
+                else {console.log("File updated successfully");}});
         }
     if(storeDifferences.english != undefined && storeDifferences.english != 0){
-        let englishObject = new_english.url;
-        englishObject = englishObject.push(new_english.title);
+        let englishObject = {
+            url: new_english.url,
+            title: new_english.title};
         fs.writeFile(path.join(__dirname, 'compare_list', 'english.json'), JSON.stringify(englishObject), (err) => {
                 if(err){console.log(err);}
-                else {console.log("english updated successfully");}});
+                else {console.log("File updated successfully");}});
         }
     if(storeDifferences.enerEngineering != undefined && storeDifferences.enerEngineering != 0){
-        let enerEngineeringObject = new_enerEngineering.url;
-        enerEngineeringObject = enerEngineeringObject.push(new_enerEngineering.title);
+        let enerEngineeringObject = {
+            url: new_enerEngineering.url,
+            title: new_enerEngineering.title};
         fs.writeFile(path.join(__dirname, 'compare_list', 'enerEngineering.json'), JSON.stringify(enerEngineeringObject), (err) => {
                 if(err){console.log(err);}
-                else {console.log("enerEngineering updated successfully");}});
+                else {console.log("File updated successfully");}});
         }
 }
 // refresh(1);
@@ -245,7 +256,7 @@ export async function refresh(nextIdNum){
 // 기존 목록에서 긁어온 목록과 지금의 목록을 대조하고,
 // 결과값 리턴
 
-async function updateFiles(){
+export async function updateFiles(){
     const new_industSec = await crawlIndustSec("url"); // 이 반환값에 .title 또는 .url을 이용해 값에 접근할 수 있음
     fs.writeFile("./compare_list/industSec.json", JSON.stringify(new_industSec), "utf8", (err) => {
         if(err) console.log(err);

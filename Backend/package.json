@@ -19,6 +19,7 @@
     "fetch": "^1.1.0",
     "http": "^0.0.1-security",
     "iconv-lite": "^0.6.3",
+    "moment": "^2.29.4",
     "nodemon": "^2.0.20",
     "pretty": "^2.0.0",
     "puppeteer": "^19.4.1",

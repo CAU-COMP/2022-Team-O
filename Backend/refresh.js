@@ -58,7 +58,8 @@ export async function refresh(nextIdNum){
     function readFileAndCompareWithOriginal(majorName,dataObject){
         const rawData = fs.readFileSync(`./compare_list/${majorName}.json`,"utf8");
         const oldContent = JSON.parse(rawData);
-        console.log(`${majorName}: ${oldContent}`);
+        console.log(`${majorName}:`);
+        console.log(oldContent);
         return compareTwoArrays(dataObject.url, oldContent.url);
     }
     storeDifferences.industSec = readFileAndCompareWithOriginal("industSec",new_industSec);

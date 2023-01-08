@@ -8,6 +8,25 @@ import express from "express";
 import bodyParser from "body-parser";
 import fs from "fs"
 import { refresh } from "./refresh.js"
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+let __dirname = path.dirname(__filename);
+
+console.log(`OLD: ${__dirname}`);
+while(1){
+    let len = __dirname.length;
+    let lastChar = len-1;
+    if(__dirname[lastChar] != "\\"){
+        __dirname = __dirname.slice(0,lastChar);
+    }
+    else{
+        __dirname = __dirname.slice(0,lastChar);
+        break;
+    }
+}
+console.log(`NEW: ${__dirname}`);
 
 const PORT = 80; // 아마존 EC2 업로드 시에는 HTTP용으로 80번으로 바꿀 예정
 
@@ -45,7 +64,7 @@ app.use(express.json());
 
 app.get('/', function(req, res) {
     // url이 http://a.com/topic?id=1&name=siwa 일때
-    res.sendFile("../Frontend/mail.html");
+    res.sendFile(__dirname + "\\Frontend\\main.html");
     // res.send(req.query.id+','+req.query.name); // 1,siwa 출력
 });
 

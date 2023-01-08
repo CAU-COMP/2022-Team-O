@@ -7,8 +7,8 @@ import puppeteer from "puppeteer";
 
 // package.json 에서 type을 module로 설정해 es6 module scope를 따름
 
-const crawlCAUnotice = async({ url }) =>{
-    url = "https://www.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=100";
+const crawlKorean = async({ url }) =>{
+    url = "https://caukorean.cau.ac.kr/cm/cm_1.php?p_idx=";
     let url_list = [];
     let title_list = [];
 
@@ -48,17 +48,17 @@ const crawlCAUnotice = async({ url }) =>{
     //    fs.writeFileSync('pup.json', "  ", 'utf8');
     //    fs.appendFileSync('pup.json', `${data}\n`);
         if(element.attribs.href != undefined){
-            if(element.attribs.href.startsWith("javascript:fn_goDetail")){ // 24 29
-                console.log(element.attribs.href);
-                const trimmedLink = element.attribs.href.slice(24,29);
-                url_list.push(`https://www.cau.ac.kr/cms/FR_CON/BoardView.do?MENU_ID=100&CONTENTS_NO=1&SITE_NO=2&P_TAB_NO=&TAB_NO=&BOARD_SEQ=4&BOARD_CATEGORY_NO=&BBS_SEQ=${trimmedLink}`);
+            if(element.attribs.href.startsWith("javascript:view")){ // 24 29
+                // console.log(element.attribs.href);
+                const trimmedLink = element.attribs.href.slice(17,20);
+                url_list.push(`https://caukorean.cau.ac.kr/cm/cm_1.php?p_idx=${trimmedLink}&s_scroll=&s_key=&p_page=&code=&PageId=&p_mode=view`);
                 const title = $(element).text().trim();
                 title_list.push(title);
             }
         }
     });
-    console.log(url_list);
-    console.log(title_list);
+    // console.log(url_list);
+    // console.log(title_list);
     
     return {
         url: url_list,
@@ -66,10 +66,10 @@ const crawlCAUnotice = async({ url }) =>{
     }
 };
 
-crawlCAUnotice({
+crawlKorean({
     url: "url",
 }); // 테스트용
 
-export default crawlCAUnotice
+export default crawlKorean
 
 // 비동기식이기 때문에 url_list의 console.log는 crawl 함수 내에서 이루어져야함.

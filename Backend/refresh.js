@@ -1,4 +1,7 @@
 import fs from "fs";
+import { compareTwoArrays } from "./compare.js"
+import { mailHandler } from "./mailHandler.js";
+import KRname from "./name_en2kr.js"
 import crawlIndustSec from "./crawlers/url_scraper_indust_sec.js";
 import crawlSoftware from "./crawlers/url_scraper_software.js";
 import crawlCAUnotice from "./crawlers/url_scraper_cauNotice.js";
@@ -10,9 +13,6 @@ import crawlBusiness from "./crawlers/url_scraper_business.js";
 import crawlElecEngineering from "./crawlers/url_scraper_elec_engineering.js";
 import crawlEnglish from "./crawlers/url_scraper_English.js";
 import crawlEnerEngineering from "./crawlers/url_scraper_ener_engineering.js";
-import { compareTwoArrays } from "./compare.js"
-import { mailHandler } from "./mailHandler.js";
-import KRname from "./name_en2kr.js"
 
 // refresh 함수에서는
 // 크롤러 실행 -> 기존 목록과 대조 -> 변화 있으면 sendMail() 후 원래 목록 대체, 없으면 행동하지 않음 -> 다음 크롤러 실행.

@@ -15,7 +15,7 @@ const __filename = fileURLToPath(import.meta.url);
 // const tempDirname = path.dirname(__filename);
 // const __dirname = path.join(tempDirname, '..');
 const __dirname = path.dirname(__filename);
-console.log(`Directory is ${__dirname}`);
+// console.log(`Directory is ${__dirname}`);
 
 const PORT = 80; // 아마존 EC2 업로드 시에는 HTTP용으로 80번으로 바꿀 예정
 
@@ -154,5 +154,5 @@ server.listen(PORT, function(){
     console.log(`Server is running at port ${PORT}`);
 });
 
-setInterval(() => refresh(nextIdNum), refreshTimeInMinutes*60*1000);
+setInterval(() => {refresh(nextIdNum); console.log("refreshed on interval")}, refreshTimeInMinutes*60*1000);
 // console.log("refreshed") 가 아니라, refresh() 를 실행시켜야 함.

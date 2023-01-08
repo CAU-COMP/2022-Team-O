@@ -2,7 +2,7 @@
 import AWS from 'aws-sdk'
 import fs from "fs"
 
-const keys = '';
+let keys = '';
 
 fs.readFile("../../SES_Access_Key.json", "utf-8", function (err, data) {
   if (err) throw err;

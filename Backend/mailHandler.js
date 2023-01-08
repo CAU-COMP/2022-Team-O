@@ -1,4 +1,5 @@
 import {sendEmail, sendTemplateEmail} from "./sendEmail.js"
+import moment from 'moment';
 
 export function mailHandler(recipientName, recipientEmail, data){
     // 수신자주소, 바디내용, 메일 제목을 받음
@@ -33,8 +34,9 @@ export function mailHandler(recipientName, recipientEmail, data){
     // params : recipientEmail, bodyContent, mailTitle
     sendEmail(recipientEmail, bodyContent,`${recipientName}님 새 공지가 게시되었습니다`)
     .then(
-        function(data) {
-          console.log(data);
+        function(data,recipientEmail){
+          // console.log(data);
+          console.log(`Sent successfully to ${recipientEmail}`);
         })
     .catch(
           function(err) {

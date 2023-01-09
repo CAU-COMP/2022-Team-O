@@ -133,7 +133,7 @@ export async function refresh(nextIdNum){
     addURLsAndTitlesToStorage("enerEngineering",new_enerEngineering,storeDifferences.enerEngineering);
     
     
-
+    if(updatedContentStorage.length == 0) console.log("*** No Updates!");
 
 
     // ********************************************************************

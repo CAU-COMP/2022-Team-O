@@ -15,6 +15,7 @@ const crawlIntegEngineering = async({ url }) =>{
     async function ssr(url) {
         const browser = await puppeteer.launch({headless: true});
         const page = await browser.newPage();
+        await page.setDefaultNavigationTimeout(0); // 1
         await page.goto(url, {waitUntil: 'networkidle0'});
         const html = await page.content(); // serialized HTML of page DOM.
         await browser.close();
@@ -22,7 +23,7 @@ const crawlIntegEngineering = async({ url }) =>{
     }
 
 
-    const response = await fetch(url);
+    // const response = await fetch(url);
     const body = await ssr(url);
     const $ = cheerio.load(body, { decodeEntities: false }) // 읽어들인 html을 조작 가능하게끔
     

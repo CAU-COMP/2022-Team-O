@@ -100,7 +100,7 @@ export async function refresh(nextIdNum){
         // url 내의 공지들을 서로 체크하여 중복되는 공지가 있다면 삭제한다
         let duplicates = [];
         for(let i=0;i<numberOfDifferences;i++){
-            for(let j=i;j<numberOfDifferences;j++){
+            for(let j=i+1;j<numberOfDifferences;j++){
                 if(tempUrls[i] == tempUrls[j]){
                     duplicates.push(j);
                 }

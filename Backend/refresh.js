@@ -140,8 +140,8 @@ export async function refresh(nextIdNum){
         }
     }
 
-    console.log("storeDifferences.CAUnotice: " + storeDifferences.CAUnotice);
-    console.log("storeDifferences.mechEngineering: " + storeDifferences.mechEngineering);
+    // console.log("storeDifferences.CAUnotice: " + storeDifferences.CAUnotice);
+    // console.log("storeDifferences.mechEngineering: " + storeDifferences.mechEngineering);
     // updatedContentStorage.CAUnotice
     console.log(updatedContentStorage.CAUnotice);
 

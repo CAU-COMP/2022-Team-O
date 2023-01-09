@@ -98,6 +98,26 @@ export async function refresh(nextIdNum){
             url: tempUrls,
             title: tempTitles
         };
+
+        // **************************
+        // *** 3.5. 중복 내용 삭제 ***
+        // **************************
+        // 일부 게시판들에서 공지와 일반게시글로 동시에 업로드 되는 공지는 크롤링이 두 번 되는 문제가 발생하므로
+        // url 내의 공지들을 서로 체크하여 중복되는 공지가 있다면 삭제한다
+
+        let duplicates = [];
+        for(let i=0;i<numberOfDifferences;i++){
+            for(let j=i;j<numberOfDifferences;j++){
+                if(updatedContentStorage.majorName.url[i] == updatedContentStorage.majorName.url[j]){
+                    duplicates.push(j);
+                }
+            }
+        }
+        const count = duplicates.length; // 중복 개수
+        for(let i=count-1;i>=0;i--){ // 앞부분부터 자르면 뒤의 원소들이 당겨지므로 뒤부터 자름
+            updatedContentStorage.majorName.url.splice(duplicates[i],1);
+            updatedContentStorage.majorName.title.splice(duplicates[i],1);
+        }
     }
     addURLsAndTitlesToStorage("industSec",new_industSec,storeDifferences.industSec);
     addURLsAndTitlesToStorage("software",new_software,storeDifferences.software);
@@ -111,6 +131,9 @@ export async function refresh(nextIdNum){
     addURLsAndTitlesToStorage("english",new_english,storeDifferences.english);
     addURLsAndTitlesToStorage("enerEngineering",new_enerEngineering,storeDifferences.enerEngineering);
     
+    
+
+
 
     // ********************************************************************
     // *** 4. 각 유저의 구독정보 확인 후 해당되는 게시글을 추가해 메일 전송 ***

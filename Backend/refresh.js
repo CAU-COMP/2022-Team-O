@@ -173,6 +173,8 @@ export async function refresh(nextIdNum){
     // *** 5. 변경 사항이 있었던 게시판들은 초기화 ***
     // ********************************************
     if(storeDifferences.industSec != undefined){
+        console.log(`storeDifferences.industSec:`)
+        console.log(storeDifferences.industSec)
         let industSecObject = {
             url: new_industSec.url,
             title: new_industSec.title};

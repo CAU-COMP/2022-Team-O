@@ -170,6 +170,8 @@ app.post('/complainthandling', (req, res) => {
     const requestBody = req.body;
     console.log(`complainthandling`);
     console.log(requestBody);
+    const id = requestBody.id;
+    console.log(id);
     return res.status(200).send("OK");
     // return res.end(JSON.stringify(requestBody,null,4));
 });

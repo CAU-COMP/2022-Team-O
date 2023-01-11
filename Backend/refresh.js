@@ -143,6 +143,7 @@ export async function refresh(nextIdNum){
     let sendOrNot = 0;
     const userDataBase = JSON.parse(fs.readFileSync("./userDB_log/userDB.json","utf8"),"utf8");
     for(let i=0;i<nextIdNum;i++){
+        if(userDataBase[i].subStatus == "false") continue;
         // console.log(userDataBase[i]);
         if(userDataBase[i].industSec == "true" && updatedContentStorage.industSec != undefined) {dataToSend.push(updatedContentStorage.industSec); sendOrNot++;}
         if(userDataBase[i].software == "true" && updatedContentStorage.software != undefined) {dataToSend.push(updatedContentStorage.software); sendOrNot++;}
@@ -158,7 +159,7 @@ export async function refresh(nextIdNum){
         if(sendOrNot != 0){
             console.log(`dataToSend[${moment().format('YYYYMMDD, h:mm:ss a')}]:`);
             console.log(dataToSend);
-            mailHandler(userDataBase[i].name, userDataBase[i].email, dataToSend);
+            mailHandler(userDataBase[i].name, userDataBase[i].email, dataToSend, i);
             sendOrNot = 0;
             dataToSend = [];
         }

@@ -172,7 +172,6 @@ app.post('/refresh', (req, res) => {
 app.post('/currentuserDB', (req, res) => {
     console.log("** Current UserDB Sent")
     console.log(`nextIdNum : ${nextIdNum}`);
-    updateDB();
     return res.end(JSON.stringify(userDataBase,null,4));
 });
 app.post('/delLastUser', (req, res) => {

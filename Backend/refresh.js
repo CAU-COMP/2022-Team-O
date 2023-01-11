@@ -180,7 +180,7 @@ export async function refresh(nextIdNum){
         let industSecObject = {
             url: new_industSec.url,
             title: new_industSec.title};
-        fs.writeFile(path.join(__dirname, 'compare_list', 'industSec.json'), JSON.stringify(industSecObject), (err) => {
+        fs.writeFile(path.join(__dirname, 'compare_list', 'industSec.json'), JSON.stringify(industSecObject,null,4), (err) => {
                 if(err){console.log(err);}
                 else {console.log("industSec updated successfully");}});
         }
@@ -188,7 +188,7 @@ export async function refresh(nextIdNum){
         let softwareObject = {
             url: new_software.url,
             title: new_software.title};
-        fs.writeFile(path.join(__dirname, 'compare_list', 'software.json'), JSON.stringify(softwareObject), (err) => {
+        fs.writeFile(path.join(__dirname, 'compare_list', 'software.json'), JSON.stringify(softwareObject,null,4), (err) => {
                 if(err){console.log(err);}
                 else {console.log("software updated successfully");}});
         }
@@ -196,7 +196,7 @@ export async function refresh(nextIdNum){
         let CAUnoticeObject = {
             url: new_CAUnotice.url,
             title: new_CAUnotice.title};
-        fs.writeFile(path.join(__dirname, 'compare_list', 'CAUnotice.json'), JSON.stringify(CAUnoticeObject), (err) => {
+        fs.writeFile(path.join(__dirname, 'compare_list', 'CAUnotice.json'), JSON.stringify(CAUnoticeObject,null,4), (err) => {
                 if(err){console.log(err);}
                 else {console.log("CAUnotice updated successfully");}});
         }
@@ -204,7 +204,7 @@ export async function refresh(nextIdNum){
         let integEngineeringObject = {
             url: new_integEngineering.url,
             title: new_integEngineering.title};
-        fs.writeFile(path.join(__dirname, 'compare_list', 'integEngineering.json'), JSON.stringify(integEngineeringObject), (err) => {
+        fs.writeFile(path.join(__dirname, 'compare_list', 'integEngineering.json'), JSON.stringify(integEngineeringObject,null,4), (err) => {
                 if(err){console.log(err);}
                 else {console.log("integEngineering updated successfully");}});
         }
@@ -212,7 +212,7 @@ export async function refresh(nextIdNum){
         let koreanObject = {
             url: new_korean.url,
             title: new_korean.title};
-        fs.writeFile(path.join(__dirname, 'compare_list', 'korean.json'), JSON.stringify(koreanObject), (err) => {
+        fs.writeFile(path.join(__dirname, 'compare_list', 'korean.json'), JSON.stringify(koreanObject,null,4), (err) => {
                 if(err){console.log(err);}
                 else {console.log("korean updated successfully");}});
         }
@@ -220,7 +220,7 @@ export async function refresh(nextIdNum){
         let mechEngineeringObject = {
             url: new_mechEngineering.url,
             title: new_mechEngineering.title};
-        fs.writeFile(path.join(__dirname, 'compare_list', 'mechEngineering.json'), JSON.stringify(mechEngineeringObject), (err) => {
+        fs.writeFile(path.join(__dirname, 'compare_list', 'mechEngineering.json'), JSON.stringify(mechEngineeringObject,null,4), (err) => {
                 if(err){console.log(err);}
                 else {console.log("mechEngineering updated successfully");}});
         }
@@ -228,7 +228,7 @@ export async function refresh(nextIdNum){
         let psychologyObject = {
             url: new_psychology.url,
             title: new_psychology.title};
-        fs.writeFile(path.join(__dirname, 'compare_list', 'psychology.json'), JSON.stringify(psychologyObject), (err) => {
+        fs.writeFile(path.join(__dirname, 'compare_list', 'psychology.json'), JSON.stringify(psychologyObject,null,4), (err) => {
                 if(err){console.log(err);}
                 else {console.log("psychology updated successfully");}});
         }
@@ -236,7 +236,7 @@ export async function refresh(nextIdNum){
         let businessObject = {
             url: new_business.url,
             title: new_business.title};
-        fs.writeFile(path.join(__dirname, 'compare_list', 'business.json'), JSON.stringify(businessObject), (err) => {
+        fs.writeFile(path.join(__dirname, 'compare_list', 'business.json'), JSON.stringify(businessObject,null,4), (err) => {
                 if(err){console.log(err);}
                 else {console.log("business updated successfully");}});
         }
@@ -244,7 +244,7 @@ export async function refresh(nextIdNum){
         let elecEngineeringObject = {
             url: new_elecEngineering.url,
             title: new_elecEngineering.title};
-        fs.writeFile(path.join(__dirname, 'compare_list', 'elecEngineering.json'), JSON.stringify(elecEngineeringObject), (err) => {
+        fs.writeFile(path.join(__dirname, 'compare_list', 'elecEngineering.json'), JSON.stringify(elecEngineeringObject,null,4), (err) => {
                 if(err){console.log(err);}
                 else {console.log("elecEngineering updated successfully");}});
         }
@@ -252,7 +252,7 @@ export async function refresh(nextIdNum){
         let englishObject = {
             url: new_english.url,
             title: new_english.title};
-        fs.writeFile(path.join(__dirname, 'compare_list', 'english.json'), JSON.stringify(englishObject), (err) => {
+        fs.writeFile(path.join(__dirname, 'compare_list', 'english.json'), JSON.stringify(englishObject,null,4), (err) => {
                 if(err){console.log(err);}
                 else {console.log("english updated successfully");}});
         }
@@ -260,7 +260,7 @@ export async function refresh(nextIdNum){
         let enerEngineeringObject = {
             url: new_enerEngineering.url,
             title: new_enerEngineering.title};
-        fs.writeFile(path.join(__dirname, 'compare_list', 'enerEngineering.json'), JSON.stringify(enerEngineeringObject), (err) => {
+        fs.writeFile(path.join(__dirname, 'compare_list', 'enerEngineering.json'), JSON.stringify(enerEngineeringObject,null,4), (err) => {
                 if(err){console.log(err);}
                 else {console.log("enerEngineering updated successfully");}});
         }
@@ -292,66 +292,66 @@ export async function refresh(nextIdNum){
 
 export async function updateFiles(){
     const new_industSec = await crawlIndustSec("url"); // 이 반환값에 .title 또는 .url을 이용해 값에 접근할 수 있음
-    fs.writeFile("./compare_list/industSec.json", JSON.stringify(new_industSec), "utf8", (err) => {
+    fs.writeFile("./compare_list/industSec.json", JSON.stringify(new_industSec,null,4), "utf8", (err) => {
         if(err) console.log(err);
         else console.log("industSec.json written successfully\n");
     });
 
     const new_software = await crawlSoftware("url");
-    fs.writeFile("./compare_list/software.json", JSON.stringify(new_software), "utf8", (err) => {
+    fs.writeFile("./compare_list/software.json", JSON.stringify(new_software,null,4), "utf8", (err) => {
         if(err) console.log(err);
         else console.log("software.json written successfully\n");
     });
     const new_CAUnotice = await crawlCAUnotice("url");
-    fs.writeFile("./compare_list/CAUnotice.json", JSON.stringify(new_CAUnotice), "utf8", (err) => {
+    fs.writeFile("./compare_list/CAUnotice.json", JSON.stringify(new_CAUnotice,null,4), "utf8", (err) => {
         if(err) console.log(err);
         else console.log("CAUnotice.json written successfully\n");
     });
 
     const new_integEngineering = await crawlIntegEngineering("url");
-    fs.writeFile("./compare_list/integEngineering.json", JSON.stringify(new_integEngineering), "utf8", (err) => {
+    fs.writeFile("./compare_list/integEngineering.json", JSON.stringify(new_integEngineering,null,4), "utf8", (err) => {
         if(err) console.log(err);
         else console.log("integEngineering.json written successfully\n");
     });
 
     const new_korean = await crawlKorean("url");
-    fs.writeFile("./compare_list/korean.json", JSON.stringify(new_korean), "utf8", (err) => {
+    fs.writeFile("./compare_list/korean.json", JSON.stringify(new_korean,null,4), "utf8", (err) => {
         if(err) console.log(err);
         else console.log("korean.json written successfully\n");
     });
 
     const new_mechEngineering = await crawlMechEngineering("url");
-    fs.writeFile("./compare_list/mechEngineering.json", JSON.stringify(new_mechEngineering), "utf8", (err) => {
+    fs.writeFile("./compare_list/mechEngineering.json", JSON.stringify(new_mechEngineering,null,4), "utf8", (err) => {
         if(err) console.log(err);
         else console.log("mechEngineering.json written successfully\n");
     });
 
     const new_psychology = await crawlPsychology("url");
-    fs.writeFile("./compare_list/psychology.json", JSON.stringify(new_psychology), "utf8", (err) => {
+    fs.writeFile("./compare_list/psychology.json", JSON.stringify(new_psychology,null,4), "utf8", (err) => {
         if(err) console.log(err);
         else console.log("psychology.json written successfully\n");
     });
 
     const new_business = await crawlBusiness("url");
-    fs.writeFile("./compare_list/business.json", JSON.stringify(new_business), "utf8", (err) => {
+    fs.writeFile("./compare_list/business.json", JSON.stringify(new_business,null,4), "utf8", (err) => {
         if(err) console.log(err);
         else console.log("business.json written successfully\n");
     });
 
     const new_elecEngineering = await crawlElecEngineering("url");
-    fs.writeFile("./compare_list/elecEngineering.json", JSON.stringify(new_elecEngineering), "utf8", (err) => {
+    fs.writeFile("./compare_list/elecEngineering.json", JSON.stringify(new_elecEngineering,null,4), "utf8", (err) => {
         if(err) console.log(err);
         else console.log("elecEngineering.json written successfully\n");
     });
 
     const new_english = await crawlEnglish("url");
-    fs.writeFile("./compare_list/english.json", JSON.stringify(new_english), "utf8", (err) => {
+    fs.writeFile("./compare_list/english.json", JSON.stringify(new_english,null,4), "utf8", (err) => {
         if(err) console.log(err);
         else console.log("english.json written successfully\n");
     });
     
     const new_enerEngineering = await crawlEnerEngineering("url");
-    fs.writeFile("./compare_list/enerEngineering.json", JSON.stringify(new_enerEngineering), "utf8", (err) => {
+    fs.writeFile("./compare_list/enerEngineering.json", JSON.stringify(new_enerEngineering,null,4), "utf8", (err) => {
         if(err) console.log(err);
         else console.log("enerEngineering.json written successfully\n");
     });

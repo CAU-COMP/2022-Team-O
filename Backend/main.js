@@ -14,8 +14,8 @@ import { decryptStringToInt } from "./encrypter.js"
 import moment from 'moment';
 
 function updateDB(){
-    fs.writeFileSync(path.join(__dirname, 'userDB_log', 'userDB.json'), JSON.stringify(userDataBase), { encoding: "utf8", flag: "w" });
-    fs.writeFileSync(`${__dirname}/userDB_log/log_${moment().format('YYMMDD_HH:mm:ss')}.json`, JSON.stringify(userDataBase), { encoding: "utf8", flag: "a" });
+    fs.writeFileSync(path.join(__dirname, 'userDB_log', 'userDB.json'), JSON.stringify(userDataBase,null,4), { encoding: "utf8", flag: "w" });
+    fs.writeFileSync(`${__dirname}/userDB_log/log_${moment().format('YYMMDD_HH:mm:ss')}.json`, JSON.stringify(userDataBase,null,4), { encoding: "utf8", flag: "a" });
     console.log("***DB updated");
 }
 
@@ -49,7 +49,7 @@ let userDataBase = JSON.parse(userDBjsonFile,"utf8");
 //     console.log(`${i}th`)
 //     console.log(userDataBase)
 // }
-// fs.writeFileSync("./userDB_log/userDB_temp.json", JSON.stringify(userDataBase), "utf8");
+// fs.writeFileSync("./userDB_log/userDB_temp.json", JSON.stringify(userDataBase,null,4), "utf8");
 
 
 // userDB 백업하는 코드 필요함
@@ -128,7 +128,7 @@ app.get('/unsubscribe', function(req, res) { // 구독해지 요청
 app.post('/newuser', (req, res) => { // 정상작동 확인함
     let requestBody = req.body;
     if(requestBody.name != undefined){
-        console.log(requestBody);
+        // console.log(requestBody);
         if(requestBody.email.includes("@") == false) return res.sendFile(path.join(__dirname, 'Frontend', 'fail.html'));
         if(requestBody.industSec != "true") requestBody.industSec = "false"; // undefined 인 경우도 잡아냄
         if(requestBody.software != "true") requestBody.software = "false";
@@ -173,7 +173,7 @@ app.post('/currentuserDB', (req, res) => {
     console.log("** Current UserDB Sent")
     console.log(`nextIdNum : ${nextIdNum}`);
     updateDB();
-    return res.end(JSON.stringify(userDataBase));
+    return res.end(JSON.stringify(userDataBase,null,4));
 });
 app.post('/delLastUser', (req, res) => {
     console.log("** Deleted last user");
@@ -181,7 +181,7 @@ app.post('/delLastUser', (req, res) => {
     console.log(`nextIdNum : ${nextIdNum}`);
     userDataBase.pop();
     updateDB();
-    return res.end(JSON.stringify(userDataBase));
+    return res.end(JSON.stringify(userDataBase,null,4));
 });
 
 server.listen(PORT, function(){ 

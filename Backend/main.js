@@ -124,6 +124,7 @@ app.post('/newuser', (req, res) => { // 정상작동 확인함
         if(requestBody.enerEngineering != "true") requestBody.enerEngineering = "false";
         // console.log(`<Received>\n\tName:${requestBody.name}\n\tindustSec:${requestBody.industSec}\n\tsoftware:${requestBody.software}\n\tCAUnotice:${requestBody.CAUnotice}`);
         requestBody.id = nextIdNum; // key값 추가
+        requestBody.subStatus = "true";
         nextIdNum++; // 다음 사용자를 위해 증감
 
         console.log(requestBody);

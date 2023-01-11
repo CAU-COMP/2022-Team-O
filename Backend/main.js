@@ -60,12 +60,12 @@ let userDataBase = JSON.parse(userDBjsonFile,"utf8");
 // userDB 백업하는 코드 필요함
 
 // console.log(userDataBase);        
-app.use(function(req, res, next) {
-    if (req.get('x-amz-sns-message-type')) { // 아마존 헤더이면 json이라 예측할 것
-        req.headers['content-type'] = 'application/json';
-    }
-    next();
-});
+// app.use(function(req, res, next) {
+//     if (req.get('x-amz-sns-message-type')) { // 아마존 헤더이면 json이라 예측할 것
+//         req.headers['content-type'] = 'application/json';
+//     }
+//     next();
+// });
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
@@ -183,5 +183,5 @@ server.listen(PORT, function(){
     console.log(`Server is running at port ${PORT}`);
 });
 
-setInterval(() => {refresh(nextIdNum); console.log("*** refreshed on interval")}, refreshTimeInMinutes*60*1000);
+setInterval(() => {refresh(nextIdNum); console.log("*** interval reached")}, refreshTimeInMinutes*60*1000);
 // console.log("refreshed") 가 아니라, refresh() 를 실행시켜야 함.

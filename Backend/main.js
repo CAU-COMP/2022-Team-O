@@ -176,34 +176,34 @@ app.post('/delLastUser', (req, res) => {
 app.post('/complainthandling', (req, res) => {
     const requestBody = req.body;
     if(requestBody.notificationType == "AmazonSnsSubscriptionSucceeded") return res.status(200).send("OK");
-    if(requestBody.notificationType == "Bounce"){
-        // 여기서 필요한 정보는: bounce한 사람 주소인데, 로그는 전체를 남겨두자
-        bounceDB.push(requestBody);
-        updateBounceDB();
+    else if(requestBody.notificationType == "Complaint"){
+        // 여기서 필요한 정보는: Complaint한 사람 주소인데, 로그는 전체를 남겨두자
+        complaintDB.push(requestBody);
+        updateComplaintDB();
         const userIdNum = findUserByEmail(requestBody.mail.destination.toString());
-        if(userIdNum == -1) return res.status(404).send("Not Found"); // bounce 요청이 왔는데 우리 DB에서는 못찾은 상황. 발생 가능성 매우 드묾.
+        if(userIdNum == -1) return res.status(404).send("Not Found"); // complaint notification이 왔는데 우리 DB에서는 못찾은 상황. 발생 가능성 매우 드묾.
         else{
             userDataBase[userIdNum].subStatus = "false";
             return res.status(200).send("OK");
         }
     }
-    else console.log(requestBody);
-    return res.status(200).send("OK");
+    else return res.status(404).send("Not Found");
 });
 app.post('/bouncehandling', (req, res) => {
     const requestBody = req.body;
     if(requestBody.notificationType == "AmazonSnsSubscriptionSucceeded") return res.status(200).send("OK");
-    if(requestBody.notificationType == "Bounce"){
+    else if(requestBody.notificationType == "Bounce"){
         // 여기서 필요한 정보는: bounce한 사람 주소인데, 로그는 전체를 남겨두자
         bounceDB.push(requestBody);
         updateBounceDB();
         const userIdNum = findUserByEmail(requestBody.mail.destination.toString());
-        if(userIdNum == -1) return res.status(404).send("Not Found"); // bounce 요청이 왔는데 우리 DB에서는 못찾은 상황. 발생 가능성 매우 드묾.
+        if(userIdNum == -1) return res.status(404).send("Not Found"); // bounce notification이 왔는데 우리 DB에서는 못찾은 상황. 발생 가능성 매우 드묾.
         else{
             userDataBase[userIdNum].subStatus = "false";
             return res.status(200).send("OK");
         }
     }
+    else return res.status(404).send("Not Found");
 });
 
 

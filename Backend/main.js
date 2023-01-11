@@ -18,11 +18,11 @@ function updateDB(src){
     fs.writeFileSync(`${__dirname}/userDB_log/log_${moment().format('YYMMDD_HH:mm:ss')}.json`, JSON.stringify(userDataBase,null,4), { encoding: "utf8", flag: "a" });
     console.log(`***DB updated by ${src}`);
 }
-function fileLog(content){
-    fs.writeFileSync(path.join(__dirname, 'userDB_log', 'userDB.json'), JSON.stringify(userDataBase,null,4), { encoding: "utf8", flag: "w" });
-    fs.writeFileSync(`${__dirname}/userDB_log/log_${moment().format('YYMMDD_HH:mm:ss')}.json`, JSON.stringify(userDataBase,null,4), { encoding: "utf8", flag: "a" });
-    console.log(`***DB updated by ${src}`);
-}
+// function fileLog(content){ // 아직은 더 준비할 것
+//     fs.writeFileSync(path.join(__dirname, 'userDB_log', 'userDB.json'), JSON.stringify(userDataBase,null,4), { encoding: "utf8", flag: "w" });
+//     fs.writeFileSync(`${__dirname}/userDB_log/log_${moment().format('YYMMDD_HH:mm:ss')}.json`, JSON.stringify(userDataBase,null,4), { encoding: "utf8", flag: "a" });
+//     console.log(`***DB updated by ${src}`);
+// }
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -101,40 +101,6 @@ app.get('/unsubscribe', function(req, res) { // 구독해지 요청
     }
 });
 
-
-// app.post('/posttest', (req, res) => { // 정상작동 확인함
-//     res.header("Access-Control-Allow-Origin", "*");
-//     let requestBody = req.body;
-//     console.log(requestBody);
-//     if(requestBody.name != undefined){
-//         // console.log(requestBody);
-//         if(requestBody.email.includes("@") == false) return res.sendFile(path.join(__dirname, 'Frontend', 'fail.html'));
-//         if(requestBody.industSec != "true") requestBody.industSec = "false"; // undefined 인 경우도 잡아냄
-//         if(requestBody.software != "true") requestBody.software = "false";
-//         if(requestBody.CAUnotice != "true") requestBody.CAUnotice = "false";
-//         if(requestBody.integEngineering != "true") requestBody.integEngineering = "false";
-//         if(requestBody.korean != "true") requestBody.korean = "false";
-//         if(requestBody.mechEngineering != "true") requestBody.mechEngineering = "false";
-//         if(requestBody.psychology != "true") requestBody.psychology = "false";
-//         if(requestBody.business != "true") requestBody.business = "false";
-//         if(requestBody.elecEngineering != "true") requestBody.elecEngineering = "false";
-//         if(requestBody.english != "true") requestBody.english = "false";
-//         if(requestBody.enerEngineering != "true") requestBody.enerEngineering = "false";
-//         // console.log(`<Received>\n\tName:${requestBody.name}\n\tindustSec:${requestBody.industSec}\n\tsoftware:${requestBody.software}\n\tCAUnotice:${requestBody.CAUnotice}`);
-//         requestBody.id = nextIdNum; // key값 추가
-//         nextIdNum++; // 다음 사용자를 위해 증감
-
-//         console.log(requestBody);
-
-//         // res.end("HTTP 200 OK"); // 정상 작동 응답
-//         return res.sendFile(path.join(__dirname, 'Frontend', 'success.html'));
-//     } else {
-//         console.log(`Bad Request`);
-//         return res.sendFile(path.join(__dirname, 'Frontend', 'fail.html'));
-//     }
-//     // return res.sendFile(path.join(__dirname, 'Frontend', 'success.html'));
-// });
-
 app.post('/newuser', (req, res) => { // 정상작동 확인함
     let requestBody = req.body;
     if(requestBody.name != undefined){
@@ -164,7 +130,7 @@ app.post('/newuser', (req, res) => { // 정상작동 확인함
         userDataBase.push(requestBody); // DB array에 저장
         // console.log(userDataBase);
         updateDB("newuser");
-        return res.sendFile(path.join(__dirname, 'Frontend', 'success.html'));
+        return res.sendFile(path.join(__dirname, 'Frontend', 'success.html')); 
     } else {
         return res.sendFile(path.join(__dirname, 'Frontend', 'fail.html'));
     }
@@ -202,5 +168,6 @@ app.post('/bounce_handling', (req, res) => {
 server.listen(PORT, function(){ 
     console.log(`Server is running at port ${PORT}`);
 });
-setInterval(() => {refresh(nextIdNum); console.log("refreshed on interval")}, refreshTimeInMinutes*60*1000);
+
+setInterval(() => {refresh(nextIdNum); console.log("*** refreshed on interval")}, refreshTimeInMinutes*60*1000);
 // console.log("refreshed") 가 아니라, refresh() 를 실행시켜야 함.

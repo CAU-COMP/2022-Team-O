@@ -15,7 +15,7 @@ import moment from 'moment';
 
 function updateDB(){
     fs.writeFileSync(path.join(__dirname, 'userDB_log', 'userDB.json'), JSON.stringify(userDataBase), { encoding: "utf8", flag: "w" });
-    fs.writeFileSync(path.join(__dirname, 'userDB_log', `userDB_log_${moment().format('YY/MM/DD_HH:mm:ss')}.json`), JSON.stringify(userDataBase), { encoding: "utf8", flag: "a" });
+    fs.writeFileSync(path.join(__dirname, 'userDB_log')+`userDB_log_${moment().format('YY/MM/DD_HH:mm:ss')}.json`, JSON.stringify(userDataBase), { encoding: "utf8", flag: "a" });
     console.log("***DB updated");
 }
 

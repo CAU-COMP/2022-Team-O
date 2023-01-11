@@ -170,6 +170,8 @@ app.post('/refresh', (req, res) => {
     return res.end("Refreshed")
 });
 app.post('/currentuserDB', (req, res) => {
+    console.log("** Current UserDB Sent")
+    console.log(`nextIdNum : ${nextIdNum}`);
     return res.end(JSON.stringify(userDataBase));
 });
 

@@ -39,7 +39,7 @@ export function mailHandler(recipientName, recipientEmail, data, id){
     .then(
         function(data){
           // console.log(data);
-          console.log(`Sent successfully to ${recipientEmail}`);
+          console.log(`*** Sent successfully to ${recipientEmail}`);
         })
     .catch(
           function(err) {

@@ -25,7 +25,7 @@ const __dirname = path.dirname(__filename);
 // 크롤러 실행 -> 기존 목록과 대조 -> 변화 있으면 sendMail() 후 원래 목록 대체, 없으면 행동하지 않음 -> 다음 크롤러 실행.
 export async function refresh(nextIdNum){
 
-    console.log("***Refreshing Started***")
+    console.log("*** Refreshing Started ***")
 
     // *********************************
     // *** 1. 크롤러로부터 데이터 로드 ***

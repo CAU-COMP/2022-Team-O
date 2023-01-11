@@ -174,6 +174,13 @@ app.post('/currentuserDB', (req, res) => {
     console.log(`nextIdNum : ${nextIdNum}`);
     return res.end(JSON.stringify(userDataBase));
 });
+app.post('/delLastUser', (req, res) => {
+    console.log("** Deleted last user");
+    nextIdNum--;
+    console.log(`nextIdNum : ${nextIdNum}`);
+    userDataBase.pop();
+    return res.end(JSON.stringify(userDataBase));
+});
 
 server.listen(PORT, function(){ 
     console.log(`Server is running at port ${PORT}`);

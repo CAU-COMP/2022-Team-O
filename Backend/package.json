@@ -23,6 +23,7 @@
     "nodemon": "^2.0.20",
     "pretty": "^2.0.0",
     "puppeteer": "^19.4.1",
+    "short-crypt": "^2.1.1",
     "utf8": "^3.0.0"
   }
 }

@@ -13,10 +13,10 @@ import { fileURLToPath } from 'url';
 import { decryptStringToInt } from "./encrypter.js"
 import moment from 'moment';
 
-function updateDB(){
+function updateDB(src){
     fs.writeFileSync(path.join(__dirname, 'userDB_log', 'userDB.json'), JSON.stringify(userDataBase,null,4), { encoding: "utf8", flag: "w" });
     fs.writeFileSync(`${__dirname}/userDB_log/log_${moment().format('YYMMDD_HH:mm:ss')}.json`, JSON.stringify(userDataBase,null,4), { encoding: "utf8", flag: "a" });
-    console.log("***DB updated");
+    console.log(`***DB updated by ${src}`);
 }
 
 const __filename = fileURLToPath(import.meta.url);
@@ -87,7 +87,7 @@ app.get('/unsubscribe', function(req, res) { // 구독해지 요청
         }
         else{
             userDataBase[idNum].subStatus = "false";
-            updateDB();
+            updateDB("unsubscribe request already false");
             return res.send(`${userDataBase[idNum].name}님의 구독이 성공적으로 해지되었습니다. 이용해주셔서 감사합니다.`);
         }
     }
@@ -158,7 +158,7 @@ app.post('/newuser', (req, res) => { // 정상작동 확인함
         fs.writeFileSync(path.join(__dirname, 'userDB_log', 'nextIdNum.txt'), nextIdNum.toString(), "utf8");
         userDataBase.push(requestBody); // DB array에 저장
         // console.log(userDataBase);
-        updateDB();
+        updateDB("newuser");
         return res.sendFile(path.join(__dirname, 'Frontend', 'success.html'));
     } else {
         return res.sendFile(path.join(__dirname, 'Frontend', 'fail.html'));
@@ -184,7 +184,7 @@ app.post('/delLastUser', (req, res) => {
     nextIdNum--;
     console.log(`nextIdNum : ${nextIdNum}`);
     userDataBase.pop();
-    updateDB();
+    updateDB("delLastUser");
     return res.end(JSON.stringify(userDataBase,null,4));
 });
 

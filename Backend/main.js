@@ -10,6 +10,14 @@ import fs from "fs"
 import { refresh } from "./refresh.js"
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { decryptStringToInt } from "./encrypter.js"
+import moment from 'moment';
+
+function updateDB(){
+    fs.writeFileSync(path.join(__dirname, 'userDB_log', 'userDB.json'), JSON.stringify(userDataBase), { encoding: "utf8", flag: "w" });
+    fs.writeFileSync(path.join(__dirname, 'userDB_log', `userDB_log_${moment().format('YY/MM/DD_HH:mm:ss')}.json`), JSON.stringify(userDataBase), { encoding: "utf8", flag: "w" });
+    console.log("***DB updated");
+}
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -71,6 +79,18 @@ app.get('/success.html', function(req, res) {
 app.get('/fail.html', function(req, res) {
     res.sendFile(path.join(__dirname, 'Frontend', 'fail.html'));
 });
+app.get('/unsubscribe', function(req, res) { // 구독해지 요청
+    const idNum = decryptStringToInt(req.query.id);
+    if(idNum != "" && idNum > 0 && idNum < nextIdNum){
+        userDataBase[idNum].subStatus = "false";
+        updateDB();
+        return res.send(`${userDataBase[idNum].name}님의 구독이 성공적으로 해지되었습니다. 이용해주셔서 감사합니다.`);
+    }
+    else{
+        res.send(`이용자를 찾을 수 없습니다.`);
+    }
+});
+
 
 // app.post('/posttest', (req, res) => { // 정상작동 확인함
 //     res.header("Access-Control-Allow-Origin", "*");
@@ -124,7 +144,7 @@ app.post('/newuser', (req, res) => { // 정상작동 확인함
         if(requestBody.enerEngineering != "true") requestBody.enerEngineering = "false";
         // console.log(`<Received>\n\tName:${requestBody.name}\n\tindustSec:${requestBody.industSec}\n\tsoftware:${requestBody.software}\n\tCAUnotice:${requestBody.CAUnotice}`);
         requestBody.id = nextIdNum; // key값 추가
-        requestBody.subStatus = "true";
+        requestBody.subStatus = "true"; 
         nextIdNum++; // 다음 사용자를 위해 증감
 
         console.log(requestBody);
@@ -134,7 +154,7 @@ app.post('/newuser', (req, res) => { // 정상작동 확인함
         fs.writeFileSync(path.join(__dirname, 'userDB_log', 'nextIdNum.txt'), nextIdNum.toString(), "utf8");
         userDataBase.push(requestBody); // DB array에 저장
         // console.log(userDataBase);
-        fs.writeFileSync(path.join(__dirname, 'userDB_log', 'userDB.json'), JSON.stringify(userDataBase), { encoding: "utf8", flag: "w" });
+        updateDB();
         return res.sendFile(path.join(__dirname, 'Frontend', 'success.html'));
     } else {
         return res.sendFile(path.join(__dirname, 'Frontend', 'fail.html'));
@@ -149,6 +169,9 @@ app.post('/newuser', (req, res) => { // 정상작동 확인함
 app.post('/refresh', (req, res) => {
     refresh(nextIdNum);
     return res.end("Refreshed")
+});
+app.post('/currentuserDB', (req, res) => {
+    return res.end(userDataBase);
 });
 
 server.listen(PORT, function(){ 

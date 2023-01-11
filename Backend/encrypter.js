@@ -11,9 +11,9 @@ export function encryptIntToString(data){
 
 export function decryptStringToInt(data){
     const sc = new ShortCrypt(key);
-    console.log(`data : ${data}`);
+    // console.log(`data : ${data}`);
     const dec = sc.decryptURLComponent(data);
-    console.log(`dec : ${dec}`);
+    // console.log(`dec : ${dec}`);
     const len = dec.length;
     let result = "";
     for(let i=0;i<len;i++){
@@ -21,3 +21,4 @@ export function decryptStringToInt(data){
     }
     return result;
 }
+// 과정: 입력값 -> 배열화 -> 루프(각각의 문자 ascii값 더함)

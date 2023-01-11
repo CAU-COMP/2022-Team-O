@@ -60,7 +60,12 @@ let userDataBase = JSON.parse(userDBjsonFile,"utf8");
 // userDB 백업하는 코드 필요함
 
 // console.log(userDataBase);        
-
+app.use(function(req, res, next) {
+    if (req.get('x-amz-sns-message-type')) {
+        req.headers['content-type'] = 'application/json';
+    }
+    next();
+});
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'Frontend', 'public')));

@@ -187,6 +187,8 @@ app.post('/complainthandling', (req, res) => {
             return res.status(200).send("OK");
         }
     }
+    else console.log(requestBody);
+    return res.status(200).send("OK");
 });
 app.post('/bouncehandling', (req, res) => {
     const requestBody = req.body;

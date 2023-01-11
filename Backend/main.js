@@ -82,9 +82,14 @@ app.get('/fail.html', function(req, res) {
 app.get('/unsubscribe', function(req, res) { // 구독해지 요청
     const idNum = decryptStringToInt(req.query.id);
     if(idNum != "" && idNum > 0 && idNum < nextIdNum){
-        userDataBase[idNum].subStatus = "false";
-        updateDB();
-        return res.send(`${userDataBase[idNum].name}님의 구독이 성공적으로 해지되었습니다. 이용해주셔서 감사합니다.`);
+        if(userDataBase[idNum].subStatus == "false"){
+            return res.send(`이미 해지된 구독입니다. 새로 구독하시려면 홈페이지를 이용해주세요.`);
+        }
+        else{
+            userDataBase[idNum].subStatus = "false";
+            updateDB();
+            return res.send(`${userDataBase[idNum].name}님의 구독이 성공적으로 해지되었습니다. 이용해주셔서 감사합니다.`);
+        }
     }
     else{
         res.send(`이용자를 찾을 수 없습니다.`);

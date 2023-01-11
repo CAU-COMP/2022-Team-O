@@ -170,7 +170,7 @@ app.post('/complainthandling', (req, res) => {
     const requestBody = req.body;
     console.log(`complainthandling`);
     console.log(requestBody);
-    res.status(200);
+    return res.status(200).send("OK");
     // return res.end(JSON.stringify(requestBody,null,4));
 });
 app.post('/bouncehandling', (req, res) => {

@@ -167,7 +167,6 @@ app.post('/delLastUser', (req, res) => {
 });
 
 app.post('/complainthandling', (req, res) => {
-    req.headers['content-type'] = 'text/plain';
     const requestBody = req.body;
     console.log(`complainthandling`);
     console.log(requestBody);

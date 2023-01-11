@@ -126,7 +126,6 @@ app.get('/unsubscribe', function(req, res) { // 구독해지 요청
 // });
 
 app.post('/newuser', (req, res) => { // 정상작동 확인함
-    res.header("Access-Control-Allow-Origin", "*");
     let requestBody = req.body;
     if(requestBody.name != undefined){
         console.log(requestBody);
@@ -171,7 +170,7 @@ app.post('/refresh', (req, res) => {
     return res.end("Refreshed")
 });
 app.post('/currentuserDB', (req, res) => {
-    return res.end(userDataBase);
+    return res.end(JSON.stringify(userDataBase));
 });
 
 server.listen(PORT, function(){ 

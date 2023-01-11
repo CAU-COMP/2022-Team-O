@@ -160,8 +160,8 @@ export async function refresh(nextIdNum){
         if(userDataBase[i].english == "true" && updatedContentStorage.english != undefined) {dataToSend.push(updatedContentStorage.english); sendOrNot++;}
         if(userDataBase[i].enerEngineering == "true" && updatedContentStorage.enerEngineering != undefined) {dataToSend.push(updatedContentStorage.enerEngineering); sendOrNot++;}
         if(sendOrNot != 0){
-            console.log(`dataToSend[${moment().format('YYYYMMDD, h:mm:ss a')}]:`);
-            console.log(dataToSend);
+            // console.log(`dataToSend[${moment().format('YYYYMMDD, h:mm:ss a')}]:`);
+            // console.log(dataToSend);
             mailHandler(userDataBase[i].name, userDataBase[i].email, dataToSend, i);
             sendOrNot = 0;
             dataToSend = [];

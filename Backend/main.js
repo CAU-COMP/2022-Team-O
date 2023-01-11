@@ -18,6 +18,11 @@ function updateDB(src){
     fs.writeFileSync(`${__dirname}/userDB_log/log_${moment().format('YYMMDD_HH:mm:ss')}.json`, JSON.stringify(userDataBase,null,4), { encoding: "utf8", flag: "a" });
     console.log(`***DB updated by ${src}`);
 }
+function fileLog(content){
+    fs.writeFileSync(path.join(__dirname, 'userDB_log', 'userDB.json'), JSON.stringify(userDataBase,null,4), { encoding: "utf8", flag: "w" });
+    fs.writeFileSync(`${__dirname}/userDB_log/log_${moment().format('YYMMDD_HH:mm:ss')}.json`, JSON.stringify(userDataBase,null,4), { encoding: "utf8", flag: "a" });
+    console.log(`***DB updated by ${src}`);
+}
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -167,18 +172,19 @@ app.post('/newuser', (req, res) => { // 정상작동 확인함
     // res.send(requestBody);
     // console.log(req.body);
     
-}); // 이런식으로
-// 프런트에 요청: https://kasterra.github.io/handle-POST-data-in-express/
+});
 
 app.post('/refresh', (req, res) => {
     refresh(nextIdNum);
     return res.end("Refreshed")
 });
+
 app.post('/currentuserDB', (req, res) => {
     console.log("** Current UserDB Sent")
     console.log(`nextIdNum : ${nextIdNum}`);
     return res.end(JSON.stringify(userDataBase,null,4));
 });
+
 app.post('/delLastUser', (req, res) => {
     console.log("** Deleted last user");
     nextIdNum--;
@@ -186,6 +192,11 @@ app.post('/delLastUser', (req, res) => {
     userDataBase.pop();
     updateDB("delLastUser");
     return res.end(JSON.stringify(userDataBase,null,4));
+});
+
+app.post('/bounce_handling', (req, res) => {
+    const requestBody = req.body;
+    return res.end(JSON.stringify(requestBody,null,4));
 });
 
 server.listen(PORT, function(){ 

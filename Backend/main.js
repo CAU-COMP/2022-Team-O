@@ -166,9 +166,10 @@ app.post('/delLastUser', (req, res) => {
     return res.end(JSON.stringify(userDataBase,null,4));
 });
 
-app.post('/bounce_handling', (req, res) => {
+app.post('/complainthandling', (req, res) => {
     const requestBody = req.body;
-    console.log(`bounce_handling : ${requestBody}`);
+    console.log(`complainthandling`);
+    console.log(requestBody);
     // return res.end(JSON.stringify(requestBody,null,4));
 });
 app.post('/bouncehandling', (req, res) => {

@@ -61,11 +61,12 @@ let userDataBase = JSON.parse(userDBjsonFile,"utf8");
 
 // console.log(userDataBase);        
 app.use(function(req, res, next) {
-    if (req.get('x-amz-sns-message-type')) {
+    if (req.get('x-amz-sns-message-type')) { // 아마존 헤더이면 json이라 예측할 것
         req.headers['content-type'] = 'application/json';
     }
     next();
 });
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'Frontend', 'public')));

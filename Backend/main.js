@@ -162,8 +162,13 @@ app.post('/delLastUser', (req, res) => {
 
 app.post('/bounce_handling', (req, res) => {
     const requestBody = req.body;
-    console.log(requestBody);
-    return res.end(JSON.stringify(requestBody,null,4));
+    console.log(`bounce_handling : ${requestBody}`);
+    // return res.end(JSON.stringify(requestBody,null,4));
+});
+app.post('/bouncehandling', (req, res) => {
+    const requestBody = req.body;
+    console.log(`bouncehandling : ${requestBody}`);
+    // return res.end(JSON.stringify(requestBody,null,4));
 });
 
 server.listen(PORT, function(){ 

@@ -1,7 +1,8 @@
 import {sendEmail, sendTemplateEmail} from "./sendEmail.js"
+import { encryptIntToString } from "./encrypter.js"
 
 
-export function mailHandler(recipientName, recipientEmail, data){
+export function mailHandler(recipientName, recipientEmail, data, id){
     // 수신자주소, 바디내용, 메일 제목을 받음
     // 바디 내용에는 어느 게시판을 구독했는지에 따라 추가적인 내용이 들어갈 수 있으므로
     // 앞부분 스트링을 bodyContent라는 string에 저장하고,
@@ -15,7 +16,8 @@ export function mailHandler(recipientName, recipientEmail, data){
     let updatedContent = '';
     let numberOfUpdates = 0; // = 각 학과별 key의 개수 확인
 
-    const unsubscribeUrl = "exampleURL";
+    const urlHash = encryptIntToString(id);
+    const unsubscribeUrl = `caunotify.me/unsubscribe?id=${urlHash}`;
 
     for(let i=0;i<numberOfMajors;i++){ // 각 게시판
       updatedContent = updatedContent.concat(`<h2>${data[i].majorName} 게시판:</h2>`);

@@ -13,53 +13,55 @@ import { fileURLToPath } from 'url';
 import { decryptStringToInt } from "./encrypter.js"
 import moment from 'moment';
 
-function updateDB(src){
+function updateUserDB(src){
     fs.writeFileSync(path.join(__dirname, 'userDB_log', 'userDB.json'), JSON.stringify(userDataBase,null,4), { encoding: "utf8", flag: "w" });
     fs.writeFileSync(`${__dirname}/userDB_log/log_${moment().format('YYMMDD_HH:mm:ss')}.json`, JSON.stringify(userDataBase,null,4), { encoding: "utf8", flag: "a" });
-    console.log(`***DB updated by ${src}`);
+    console.log(`***UserDB updated by ${src}`);
 }
-// function fileLog(content){ // 아직은 더 준비할 것
-//     fs.writeFileSync(path.join(__dirname, 'userDB_log', 'userDB.json'), JSON.stringify(userDataBase,null,4), { encoding: "utf8", flag: "w" });
-//     fs.writeFileSync(`${__dirname}/userDB_log/log_${moment().format('YYMMDD_HH:mm:ss')}.json`, JSON.stringify(userDataBase,null,4), { encoding: "utf8", flag: "a" });
-//     console.log(`***DB updated by ${src}`);
-// }
+function updateBounceDB(){
+    fs.writeFileSync(path.join(__dirname, 'mailDB') + '/bounceDB.json', JSON.stringify(bounceDB,null,4), { encoding: "utf8", flag: "w" });
+    console.log(`***BounceDB updated`);
+}
+function updateComplaintDB(){
+    fs.writeFileSync(path.join(__dirname, 'mailDB') + '/complaintDB.json', JSON.stringify(complaintDB,null,4), { encoding: "utf8", flag: "w" });
+    console.log(`***ComplaintDB updated`);
+}
+function findUserByEmail(mailAddress){
+    for(let i=0;i<nextIdNum;i++){
+        if(userDataBase[i].email == mailAddress) return i;
+    }
+    return -1;
+}
 
+// __dirname 생성
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-// const tempDirname = path.dirname(__filename);
-// const __dirname = path.join(tempDirname, '..');
-// console.log(`Directory is ${__dirname}`);
 
-const PORT = 80; // 아마존 EC2 업로드 시에는 HTTP용으로 80번으로 바꿀 예정
 
+// 서버 기본 세팅
+const PORT = 80;
 const app = express();
 const server = http.createServer(app);
-
 const refreshTimeInMinutes = 30; // 30분에 한번씩 refresh() 실행
 
-// console.log(res_IndustSec.url);
-
-// 기존에 저장된 URL이나 title을 저장하는 배열은 항상 초기화될 수 있으므로 let 으로 선언해야함
 
 // 유저별 구독 정보 저장
 let nextIdNum = parseInt(fs.readFileSync(path.join(__dirname, 'userDB_log', 'nextIdNum.txt'),"utf8")); // 유저 DB에 사람이 추가될때마다 +1, ID를 지속적으로 부여
 let userDBjsonFile = fs.readFileSync(path.join(__dirname, 'userDB_log', 'userDB.json'),"utf8");
+let bounceDBjsonFile = fs.readFileSync(path.join(__dirname, 'mailDB', 'bounceDB.json'),"utf8");
+let complaintDBjsonFile = fs.readFileSync(path.join(__dirname, 'mailDB', 'complaintDB.json'),"utf8");
+
+
+// *** DB 읽어오기 ***
 let userDataBase = JSON.parse(userDBjsonFile,"utf8");
-
-// let userDataBase = [];
-
-// for(let i=0; i <= nextIdNum; i++){ // nextIdNum+1 로 바꾸기만 하면 for문이 10번을 돌아가는 버그 걸림
-//     userDataBase.push(userDBparsed);
-//     // console.log(userDataBase)
-//     console.log(`${i}th`)
-//     console.log(userDataBase)
-// }
-// fs.writeFileSync("./userDB_log/userDB_temp.json", JSON.stringify(userDataBase,null,4), "utf8");
+let bounceDB = JSON.parse(bounceDBjsonFile,"utf8");
+let complaintDB = JSON.parse(complaintDBjsonFile,"utf8");
 
 
-// userDB 백업하는 코드 필요함
 
-// console.log(userDataBase);        
+// ***************************************************** 이 밑으로는 서버( express.js ) 코드 *****************************************************
+
+
 app.use(function(req, res, next) {
     if (req.get('x-amz-sns-message-type')) { // 아마존 헤더이면 json이라 예측할 것
         req.headers['content-type'] = 'application/json';
@@ -98,7 +100,7 @@ app.get('/unsubscribe', function(req, res) { // 구독해지 요청
         }
         else{
             userDataBase[idNum].subStatus = "false";
-            updateDB("unsubscribe request already false");
+            updateUserDB("unsubscribe request already false");
             return res.send(`${userDataBase[idNum].name}님의 구독이 성공적으로 해지되었습니다. 이용해주셔서 감사합니다.`);
         }
     }
@@ -135,7 +137,7 @@ app.post('/newuser', (req, res) => { // 정상작동 확인함
         fs.writeFileSync(path.join(__dirname, 'userDB_log', 'nextIdNum.txt'), nextIdNum.toString(), "utf8");
         userDataBase.push(requestBody); // DB array에 저장
         // console.log(userDataBase);
-        updateDB("newuser");
+        updateUserDB("newuser");
         return res.sendFile(path.join(__dirname, 'Frontend', 'success.html')); 
     } else {
         return res.sendFile(path.join(__dirname, 'Frontend', 'fail.html'));
@@ -146,41 +148,64 @@ app.post('/newuser', (req, res) => { // 정상작동 확인함
     
 });
 
+
+
+// refresh, currentuserDB, delLastUser 이렇게 3가지는 보안 위협이 될 수 있으므로 배포 단계에서 제거할 코드
+// ======================================================================
 app.post('/refresh', (req, res) => {
     refresh(nextIdNum);
     return res.end("Refreshed")
 });
-
 app.post('/currentuserDB', (req, res) => {
     console.log("** Current UserDB Sent")
     console.log(`nextIdNum : ${nextIdNum}`);
     return res.end(JSON.stringify(userDataBase,null,4));
 });
-
 app.post('/delLastUser', (req, res) => {
     console.log("** Deleted last user");
     nextIdNum--;
     console.log(`nextIdNum : ${nextIdNum}`);
     userDataBase.pop();
-    updateDB("delLastUser");
+    updateUserDB("delLastUser");
     return res.end(JSON.stringify(userDataBase,null,4));
 });
+// ======================================================================
 
+
+// Mail Error Handling
 app.post('/complainthandling', (req, res) => {
     const requestBody = req.body;
-    console.log(`complainthandling`);
-    console.log(requestBody);
-    const id = requestBody.id;
-    console.log(id);
-    return res.status(200).send("OK");
-    // return res.end(JSON.stringify(requestBody,null,4));
+    if(requestBody.notificationType == "AmazonSnsSubscriptionSucceeded") return res.status(200).send("OK");
+    if(requestBody.notificationType == "Bounce"){
+        // 여기서 필요한 정보는: bounce한 사람 주소인데, 로그는 전체를 남겨두자
+        bounceDB.push(requestBody);
+        updateBounceDB();
+        const userIdNum = findUserByEmail(requestBody.mail.destination.toString());
+        if(userIdNum == -1) return res.status(404).send("Not Found"); // bounce 요청이 왔는데 우리 DB에서는 못찾은 상황. 발생 가능성 매우 드묾.
+        else{
+            userDataBase[userIdNum].subStatus = "false";
+            return res.status(200).send("OK");
+        }
+    }
 });
 app.post('/bouncehandling', (req, res) => {
     const requestBody = req.body;
-    console.log(`bouncehandling : `);
-    console.log(requestBody);
-    // return res.end(JSON.stringify(requestBody,null,4));
+    if(requestBody.notificationType == "AmazonSnsSubscriptionSucceeded") return res.status(200).send("OK");
+    if(requestBody.notificationType == "Bounce"){
+        // 여기서 필요한 정보는: bounce한 사람 주소인데, 로그는 전체를 남겨두자
+        bounceDB.push(requestBody);
+        updateBounceDB();
+        const userIdNum = findUserByEmail(requestBody.mail.destination.toString());
+        if(userIdNum == -1) return res.status(404).send("Not Found"); // bounce 요청이 왔는데 우리 DB에서는 못찾은 상황. 발생 가능성 매우 드묾.
+        else{
+            userDataBase[userIdNum].subStatus = "false";
+            return res.status(200).send("OK");
+        }
+    }
 });
+
+
+
 
 server.listen(PORT, function(){ 
     console.log(`Server is running at port ${PORT}`);

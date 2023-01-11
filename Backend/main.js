@@ -167,7 +167,8 @@ app.post('/bounce_handling', (req, res) => {
 });
 app.post('/bouncehandling', (req, res) => {
     const requestBody = req.body;
-    console.log(`bouncehandling : ${requestBody}`);
+    console.log(`bouncehandling : `);
+    console.log(requestBody);
     // return res.end(JSON.stringify(requestBody,null,4));
 });
 

@@ -5,7 +5,7 @@ import cheerio from "cheerio";
 
 // package.json 에서 type을 module로 설정해 es6 module scope를 따름
 
-const crawlChildEducation = async({ url }) =>{
+const crawlEarlyChildhoodEd = async({ url }) =>{
     url = "http://cauece.cau.ac.kr/bbs/board.php?bo_table=s0406";
     let url_list = [];
     let title_list = [];
@@ -41,10 +41,10 @@ const crawlChildEducation = async({ url }) =>{
     }
 };
 
- //crawlChildEducation({   
+ //crawlEarlyChildhoodEd({   
 //url: "http://cauece.cau.ac.kr/bbs/board.php?bo_table=s0406",
 //}); // 테스트용
 
-export default crawlChildEducation
+export default crawlEarlyChildhoodEd
 
 // 비동기식이기 때문에 url_list의 console.log는 crawl 함수 내에서 이루어져야함.

@@ -1,1 +1,19 @@
-[{"name":"NaSangHyun","email":"na_sanghyun@naver.com","subStatus":"true","industSec":"true","software":"true","CAUnotice":"true","integEngineering":"true","korean":"true","mechEngineering":"true","psychology":"true","business":"true","elecEngineering":"true","english":"true","enerEngineering":"true","id":0}]
+[
+    {
+      "name": "admin",
+      "email": "admin@caunotify.me",
+      "subStatus": "true",
+      "industSec": "true",
+      "software": "true",
+      "CAUnotice": "true",
+      "integEngineering": "true",
+      "korean": "true",
+      "mechEngineering": "true",
+      "psychology": "true",
+      "business": "true",
+      "elecEngineering": "true",
+      "english": "true",
+      "enerEngineering": "true",
+      "id": 0
+    }
+  ]

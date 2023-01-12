@@ -7,7 +7,7 @@ import puppeteer from "puppeteer";
 
 // package.json 에서 type을 module로 설정해 es6 module scope를 따름
 
-const crawlMediaCommunication = async({ url }) =>{
+const crawlMediaComm = async({ url }) =>{
     url = "https://cmc.cau.ac.kr/05_notice/notice_01a.php";
     let url_list = [];
     let title_list = [];
@@ -67,10 +67,10 @@ const crawlMediaCommunication = async({ url }) =>{
     }
 };
 
-//crawlMediaCommunication({
+//crawlMediaComm({
  //   url: "url",
 //}); // 테스트용
 
-export default crawlMediaCommunication
+export default crawlMediaComm
 
 // 비동기식이기 때문에 url_list의 console.log는 crawl 함수 내에서 이루어져야함.

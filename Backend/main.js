@@ -3,15 +3,21 @@
 // refresh.js 에서 추가
 // 프런트에 알림
 
+// Server
 import http from "http";
 import express from "express";
 import bodyParser from "body-parser";
+
+// Util
 import fs from "fs"
-import { refresh } from "./refresh.js"
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { decryptStringToInt } from "./encrypter.js"
 import moment from 'moment';
+
+// Personal Code
+import { refresh } from "./refresh.js"
+import { decryptStringToInt } from "./encrypter.js"
+import { DayOrNight } from "./dayOrNight.js";
 
 function updateUserDB(src){
     fs.writeFileSync(path.join(__dirname, 'userDB_log', 'userDB.json'), JSON.stringify(userDataBase,null,4), { encoding: "utf8", flag: "w" });
@@ -112,19 +118,40 @@ app.get('/unsubscribe', function(req, res) { // 구독해지 요청
 app.post('/newuser', (req, res) => { // 정상작동 확인함
     let requestBody = req.body;
     if(requestBody.name != undefined){
-        // console.log(requestBody);
         if(requestBody.email.includes("@") == false) return res.sendFile(path.join(__dirname, 'Frontend', 'fail.html'));
-        if(requestBody.industSec != "true") requestBody.industSec = "false"; // undefined 인 경우도 잡아냄
-        if(requestBody.software != "true") requestBody.software = "false";
-        if(requestBody.CAUnotice != "true") requestBody.CAUnotice = "false";
-        if(requestBody.integEngineering != "true") requestBody.integEngineering = "false";
-        if(requestBody.korean != "true") requestBody.korean = "false";
-        if(requestBody.mechEngineering != "true") requestBody.mechEngineering = "false";
-        if(requestBody.psychology != "true") requestBody.psychology = "false";
-        if(requestBody.business != "true") requestBody.business = "false";
-        if(requestBody.elecEngineering != "true") requestBody.elecEngineering = "false";
-        if(requestBody.english != "true") requestBody.english = "false";
-        if(requestBody.enerEngineering != "true") requestBody.enerEngineering = "false";
+        // undefined 인 경우도 잡아냄
+        if(requestBody.industSec != "true")         requestBody.industSec = "false";
+        if(requestBody.software != "true")          requestBody.software = "false";
+        if(requestBody.CAUnotice != "true")         requestBody.CAUnotice = "false";
+        if(requestBody.integEngineering != "true")  requestBody.integEngineering = "false";
+        if(requestBody.korean != "true")            requestBody.korean = "false";
+        if(requestBody.mechEngineering != "true")   requestBody.mechEngineering = "false";
+        if(requestBody.psychology != "true")        requestBody.psychology = "false";
+        if(requestBody.business != "true")          requestBody.business = "false";
+        if(requestBody.elecEngineering != "true")   requestBody.elecEngineering = "false";
+        if(requestBody.english != "true")           requestBody.english = "false";
+        if(requestBody.enerEngineering != "true")   requestBody.enerEngineering = "false";
+        if(requestBody.urbanPlanRealEstate != "true") requestBody.urbanPlanRealEstate = "false";
+        if(requestBody.nursing != "true")           requestBody.nursing = "false";
+        if(requestBody.politics != "true")          requestBody.politics = "false";
+        if(requestBody.physicalEd != "true")        requestBody.physicalEd = "false";
+        if(requestBody.education != "true")         requestBody.education = "false";
+        if(requestBody.earlyChildhoodEd != "true")  requestBody.earlyChildhoodEd = "false";
+        if(requestBody.englishEd != "true")         requestBody.englishEd = "false";
+        if(requestBody.chem != "true")              requestBody.chem = "false";
+        if(requestBody.lifeScience != "true")       requestBody.lifeScience = "false";
+        if(requestBody.japanese != "true")          requestBody.japanese = "false";
+        if(requestBody.chinese != "true")           requestBody.chinese = "false";
+        if(requestBody.math != "true")              requestBody.math = "false";
+        if(requestBody.ai != "true")                requestBody.ai = "false";
+        if(requestBody.chemEngineering != "true")   requestBody.chemEngineering = "false";
+        if(requestBody.logistics != "true")         requestBody.logistics = "false";
+        if(requestBody.econ != "true")              requestBody.econ = "false";
+        if(requestBody.physics != "true")           requestBody.physics = "false";
+        if(requestBody.libInfoScience != "true")    requestBody.libInfoScience = "false";
+        if(requestBody.mediaComm != "true")         requestBody.mediaComm = "false";
+        if(requestBody.sociology != "true")         requestBody.sociology = "false";
+        if(requestBody.socialWelfare != "true")     requestBody.socialWelfare = "false";
         // console.log(`<Received>\n\tName:${requestBody.name}\n\tindustSec:${requestBody.industSec}\n\tsoftware:${requestBody.software}\n\tCAUnotice:${requestBody.CAUnotice}`);
         requestBody.id = nextIdNum; // key값 추가
         requestBody.subStatus = "true"; 
@@ -213,5 +240,10 @@ server.listen(PORT, function(){
     console.log(`Server is running at port ${PORT}`);
 });
 
-setInterval(() => {refresh(nextIdNum); console.log("*** interval reached")}, refreshTimeInMinutes*60*1000);
+setInterval(() => {
+    if(DayOrNight == "Day"){
+        refresh(nextIdNum);
+        console.log("*** interval reached");
+    }
+}, refreshTimeInMinutes*60*1000);
 // console.log("refreshed") 가 아니라, refresh() 를 실행시켜야 함.

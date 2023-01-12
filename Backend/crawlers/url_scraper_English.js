@@ -36,7 +36,7 @@ const crawlEnglish = async({ url }) =>{
         }
     });
 //    console.log(url_list);
-//    console.log(title_list);
+//    console.log(title_list); 
     
     return {
         url: url_list,

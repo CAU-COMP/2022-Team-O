@@ -6,7 +6,7 @@ import iconv from "iconv-lite";
 
 // package.json 에서 type을 module로 설정해 es6 module scope를 따름
 
-const crawlUrban = async({ url }) =>{
+const crawlUrbanPlanRealEstate = async({ url }) =>{
     url = "http://planning.cau.ac.kr/bbs/board.php?tbl=notice&bbs_option=";
     let url_list = [];
     let title_list = [];
@@ -50,10 +50,10 @@ const crawlUrban = async({ url }) =>{
     }
 };
 
-//crawlUrban({
+//crawlUrbanPlanRealEstate({
  //    url: "http://planning.cau.ac.kr/bbs/board.php?tbl=notice&bbs_option=",
 // }); // 테스트용
 
-export default crawlUrban
+export default crawlUrbanPlanRealEstate
 
 // 비동기식이기 때문에 url_list의 console.log는 crawl 함수 내에서 이루어져야함.

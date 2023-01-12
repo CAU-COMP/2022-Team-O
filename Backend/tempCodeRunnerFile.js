@@ -1,2 +1,23 @@
-me}:`);
-    // console.log(oldContent
+await crawlIndustSec("url");
+    // console.log("industSec loaded");
+    // await crawlSoftware("url");
+    // console.log("software loaded");
+    // await crawlCAUnotice("url");
+    // console.log("CAUnotice loaded");
+    // await crawlIntegEngineering("url");
+    // console.log("integEngineering loaded");
+    // await crawlKorean("url");
+    // console.log("korean loaded");
+    // await crawlMechEngineering("url");
+    // console.log("mechEngineering loaded");
+    // await crawlPsychology("url");
+    // console.log("psychology loaded");
+    // await crawlBusiness("url");
+    // console.log("business loaded");
+    // await crawlElecEngineering("url");
+    // console.log("elecEngineering loaded");
+    // await crawlEnglish("url");
+    // console.log("english loaded");
+    // await crawlEnerEngineering("url");
+    // console.log("enerEngineering loaded");
+    
